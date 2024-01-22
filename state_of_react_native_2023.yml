@@ -33,15 +33,7 @@ translations:
     
   - key: conclusion.rn2023.bartlomiej_bukowski
     t: |
-      The React Native ecosystem is thriving and becoming better with each new version released. The community is very active and innovative solutions to various challenges faced by programmers are emerging.
-
-      This survey showcases the diversity and versatility of the React Native by covering various aspects of app development and solutions. My own styling problem was solved by the wonderful [NativeWind](https://www.nativewind.dev) library, which provides great control over styles and a great developer experience. This is just one example of how React Native is benefiting from the web React and JavaScript ecosystems to increase its quality and popularity.
-
-      Despite this, there are still some challenges that need to be addressed in the React Native framework. However, the core team members and open source contributors are working tirelessly to fix these issues, making the future of React Native even brighter.
-
-      In 2023, we can expect to see even more performant React Native apps that are indistinguishable from apps written using native technologies.
-
-      P.S. if you're still hungry for more React and JavaScript stats I highly recommend checking out the yearly [State of JS](https://stateofjs.com/en-us/) survey and [Rising Stars](https://risingstars.js.org/2022/en) ranking from [Best Of JS](https://bestofjs.org/).
+      [TBD] Placeholder fro general 2023 conslusion by Bartek
   
   - key: conclusion.rn2023.sebastien_lorber.bio
     t: This Week In React founder and Docusaurus maintainer
@@ -63,17 +55,16 @@ translations:
       
   - key: about.content
     t: >
+      ### [TBD] Changes for 2023
       The State of React Native survey was a grassroots initiative from developers at [Software Mansion](https://swmansion.com/). The survey started on 22nd December 2022 and run till 20th January 2023 gathering 1886 responses in total.
 
       ### Goal
       
-      The goal of the State of React Native survey was to create a resource to compare different aspects of React Native development for you to help you make better technical decisions. The survey can be used as a source for finding alternatives in different categories of app development.
-      <br/>
-      Keep in mind that this type of results always have to be treated with a pinch of salt as it's impossible to capture for the state of the entire ecosystem.
-      <br/>
-      We're thrived to see the upcoming trends in the following editions as with it's first edition we only have a single data point.
+      [Placeholder] Goals of the survey
 
       ### Design
+
+      [TBD] Changes for 2023
 
       The survey was modeled and built on the foundations of [Devographics'](https://www.devographics.com/) [State of JavaScript](https://stateofjs.com/) and [State of CSS](https://stateofcss.com/) survey.
       <br/>
@@ -85,9 +76,13 @@ translations:
 
       ### Audience
 
+      [TBD] Changes for 2023 
+      
       The survey was open for everyone to participate and the responders weren't filtered or selected in any way. We were thrilled to see the survey trending organically on Twitter, Slack and Discord communities. The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter. 
 
       ### Technical Overview
+
+      [TBD] Changes for 2023
 
       To bootstrap this survey, we've asked for permission to use the battle-tested technological stack created by [Devographics](https://www.devographics.com/) which includes:
     
@@ -104,9 +99,7 @@ translations:
 
       ### Lessons learned
 
-      We've gathered considerable amount of feedback to iterate and next year, we would like to focus on the brevity of the survey. With the data gathered, we're free to get rid of some of the freeform fields and make the overall survey shorter.
-      <br/>
-      Next point would be to make results more representative by reaching more diverse communities all over the world.
+      [TBD]
 
 
   - key: options.about_you_age.about_you_age_18_or_youger
@@ -587,4 +580,12 @@ translations:
           competing against the native side but rather extending it in a quite flexible way. 
 
           Although we do not particularly appreciate [Flutter](https://flutter.dev/) as a framework, we still benefit from low-level innovations happening 
-          in its ecosystem thanks to [React Native Skia](https://github.com/Shopify/react-native-skia). 
+          in its ecosystem thanks to [React Native Skia](https://github.com/Shopify/react-native-skia).
+
+  - key: picks.commenter_expert.bio
+    t: "[placeholder][bio] A community expert working for XYZ"
+  - key: picks.commenter_expert.description
+    t: |
+          [placeholder][comment] A placeholder comment from community expert 
+
+          This is a conclusion that we can derive from our data.
