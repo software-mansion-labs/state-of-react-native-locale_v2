@@ -510,7 +510,7 @@ translations:
     t: Retention, interest, usage, and awareness ratio rankings.
   - key: blocks.tools_experience_ranking.note
     t: |
-      Technologies with less than 10% awareness not included. Each ratio is defined as follows:
+      Technologies with less than 10% awareness not included. <br/> Each ratio is defined as follows:
       - <span class='formula'> Retention = &nbsp;<div class='fraction'><div class='num'>would use again</div><div class='denom'>( would use again + would not use again )</div></div></span>
       - <span class='formula'> Interest = &nbsp;<div class='fraction'><div class='num'>want to learn</div><div class='denom'>( want to learn + not interested )</div></div></span>
       - <span class='formula'> Usage = &nbsp;<div class='fraction'><div class='num'>( would use again + would not use again )</div><div class='denom'>total</div></div></span>
