@@ -428,6 +428,15 @@ translations:
   - key: options.opinions_right_direction.4
     t: "Agree Strongly"
 
+  - key: opinions.opinions_right_direction
+    t: "React Native is moving in the right direction"
+
+  - key: opinions.opinions_complex
+    t: "Building React Native apps is overly complex right now"
+
+  - key: opinions.opinions_changing_too_fast
+    t: "The React Native ecosystem is changing too fast"
+
   # newsletter
   - key: blocks.newsletter.title
     t: Stay Tuned
