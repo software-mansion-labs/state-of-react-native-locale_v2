@@ -464,7 +464,7 @@ translations:
     t: |
       This chart splits positive (“want to learn”, “would use again”) vs
       negative (“not interested”, “would not use again”) experiences on
-      both sides of a central axis.
+      both sides of the central axis.
       
       Bar thickness represents the number of respondents aware of a technology.
       Click on the individual label to see more details.
@@ -510,11 +510,11 @@ translations:
     t: Retention, interest, usage, and awareness ratio rankings.
   - key: blocks.tools_experience_ranking.note
     t: |
-      Technologies with less than 10% awareness not included. Each ratio is defined as follows:
-      - Retention: would use again / (would use again + would not use again)
-      - Interest: want to learn / (want to learn + not interested)
-      - Usage: (would use again + would not use again) / total
-      - Awareness: (total - never heard) / total
+      Technologies with less than 10% awareness not included. <br/> Each ratio is defined as follows:
+      - <span class='formula'> Retention = &nbsp;<div class='fraction'><div class='num'>would use again</div><div class='denom'>( would use again + would not use again )</div></div></span>
+      - <span class='formula'> Interest = &nbsp;<div class='fraction'><div class='num'>want to learn</div><div class='denom'>( want to learn + not interested )</div></div></span>
+      - <span class='formula'> Usage = &nbsp;<div class='fraction'><div class='num'>( would use again + would not use again )</div><div class='denom'>total</div></div></span>
+      - <span class='formula'> Awareness = &nbsp;<div class='fraction'><div class='num'>( total - never heard )</div><div class='denom'>total</div></div></span>
 
   # tools experience linechart
   - key: blocks.tools_experience_linechart
@@ -1278,6 +1278,14 @@ translations:
   #   t: |
   #       The actual count is **{bucketPercentage}%**, and those missing **{normalizedPercentageDelta}%** respondents appear as empty dots. 
 
+  - key: opinions.opinions_right_direction
+    t: "React Native is moving in the right direction"
+
+  - key: opinions.opinions_complex
+    t: "Building React Native apps is overly complex right now"
+
+  - key: opinions.opinions_changing_too_fast
+    t: "The React Native ecosystem is changing too fast"
 
   - key: explorer.extra_missing_respondents
     t: |
