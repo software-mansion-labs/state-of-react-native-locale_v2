@@ -561,9 +561,13 @@ translations:
   - key: picks.sebastienlorber_resources.description
     t: |
       2023 has been a productive year for React Native resources:
-        - the official documentation kept improving and now documents properly the [New Architecture](https://reactnative.dev/docs/the-new-architecture/landing-page)- Expo consolidated its documentation with [Expo Router](https://docs.expo.dev/router/introduction/), created a [Changelog page](https://expo.dev/changelog) and a [monthly newsletter](https://expo.dev/mailing-list/signup)- we have 3 thriving React Native podcasts consistently publishing great episodes
+        - the official documentation kept improving and now documents properly the [New Architecture](https://reactnative.dev/docs/the-new-architecture/landing-page)
+        - Expo consolidated its documentation with [Expo Router](https://docs.expo.dev/router/introduction/), created a [Changelog page](https://expo.dev/changelog) and a [monthly newsletter](https://expo.dev/mailing-list/signup)
+        - we have 3 thriving React Native podcasts consistently publishing great episodes
         - the range of courses for learning React Native is growing, including advanced subjects
         - creators took over [William Candillon](https://www.youtube.com/@wcandillon)'s work, producing many interesting Reanimated and Skia demos
+      These are just a few examples, but the community is as vibrant as ever. There's never been a better time to learn and use React Native.
+
   
   - key: picks.tomek_zawadzki.bio
     t: React Native Open Source Developer at Software Mansion
