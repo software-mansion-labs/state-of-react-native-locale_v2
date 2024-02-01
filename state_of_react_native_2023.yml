@@ -435,7 +435,7 @@ translations:
       One of the interesting things I see in the native API package space over the years is the friendly competition between community native API packages and the packages in the Expo ecosystem. Expo has wrappers for nearly all the native APIs, at the same time there is a parallel community package that wraps the same APIs, frequently with very similar download counts. At first glance this may seem to be a wasteful duplication of resources but in practice as both packages are open source it is easy to reuse good ideas, and in 2022/2023 Expo with their config plugins has made it easier for their users to use community packages. The rise of config plugins has contributed significantly to adoption of react-native-firebase (a package I maintain) for instance and has really helped application developers get things done for some specific needs only handled in community packages, while the typical use cases for Expo apps are handled nicely with the Expo packages. Where will the future take us for native APIs? I believe 2024 will be the year most modules will complete the conversion to the New Architecture but one thing will remain true from previous years: the progress of the native module APIs will depend on PRs and support from the community. So be kind to your maintainers and post PRs when you can.
 
   - key: picks.sebastienlorber.bio
-    t: "[This Week In React](https://thisweekinreact.com/) newsletter creator"
+    t: "[This Week In React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter creator"
   - key: picks.sebastienlorber.description
     t: |
       In 2023, we saw a decline in the use of Redux and Apollo on mobile, in favor of lighter alternatives such as vanilla React hooks, Zustand, Jotai. On the async state management side, Apollo is also declining in favor of React-Query.
@@ -453,7 +453,7 @@ translations:
       My own MobX-State-Tree continues to be fairly niche with just 13% usage. It will be interesting to see if our investment in documentation and streamlining performance will have an impact over the next year.
 
   - key: picks.sebastienlorber_data_fetching.bio
-    t: "[This Week In React](https://thisweekinreact.com/) newsletter creator"
+    t: "[This Week In React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter creator"
   - key: picks.sebastienlorber_data_fetching.description
     t: |
       In 2023 fetch API remains the most popular API to retrieve data in a React Native app. React-Query and tRPC are also growing in usage. This year, the advent of Expo server-side features is likely to shake up the landscape of data fetching solutions. [Expo Router v3](https://expo.dev/changelog/2024/01-23-router-3) recently became a full-stack framework with the introduction of API Routes, and the plan is to also support React Native Server Components.
@@ -557,7 +557,7 @@ translations:
       The solutions presented by Apple and Google in form of SwiftUI and Jetpack Compose seem to offer better alternatives in the future, next to the all-time competitor Flutter.
 
   - key: picks.sebastienlorber_resources.bio
-    t: "[This Week In React](https://thisweekinreact.com/) newsletter creator"
+    t: "[This Week In React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter creator"
   - key: picks.sebastienlorber_resources.description
     t: |
       2023 has been a productive year for React Native resources:
