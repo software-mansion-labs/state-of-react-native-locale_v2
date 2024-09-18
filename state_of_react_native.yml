@@ -600,3 +600,33 @@ translations:
 
           Although we do not particularly appreciate [Flutter](https://flutter.dev/) as a framework, we still benefit from low-level innovations happening 
           in its ecosystem thanks to [React Native Skia](https://github.com/Shopify/react-native-skia). 
+  - key: sections.platform_apis.title
+    t: Platform Apis
+  - key: sections.data_fetching.title
+    t: Data fetching
+  - key: sections.navigation.title
+    t: Navigation
+  - key: sections.state_management.title
+    t: State Management
+  - key: sections.platform_apis.title
+    t: Platform Apis
+  - key: sections.styling.title
+    t: Styling
+  - key: sections.component_libraries.title
+    t: Component Libraries
+  - key: sections.animations.title
+    t: Animations
+  - key: sections.debugging_and_profiling.title
+    t: Debugging And Profiling
+  - key: sections.react_native_app_aspects.title
+    t: App Aspects
+  - key: sections.react_native_specific_features.title
+    t: Specific Features
+  - key: sections.deployment.title
+    t: Deployment
+  - key: sections.tools.title
+    t: Tools
+  - key: sections.react_native_alternatives.title
+    t: React Native Alternatives
+  - key: sections.about_you.title
+    t: About You

@@ -52,9 +52,15 @@ translations:
   - key: tabs.by_degree
     t: By Degree
   - key: tabs.by_salary
-    t: By Salary
+    t: By Income
   - key: tabs.by_gender
     t: By Gender
+  - key: tabs.by_race_ethnicity
+    t: By Race & Ethnicity
+  - key: tabs.low_vs_high_income
+    t: Low vs High Income
+  - key: tabs.usa_vs_the_world
+    t: U.S. vs World
 
   ###########################################################################
   # Options
@@ -68,6 +74,42 @@ translations:
     t: Usage
   - key: options.experience_ranking.awareness
     t: Awareness
+
+  - key: ratios.interest
+    aliasFor: options.experience_ranking.interest
+  - key: ratios.usage
+    aliasFor: options.experience_ranking.usage
+  - key: ratios.awareness
+    aliasFor: options.experience_ranking.awareness
+  - key: ratios.retention
+    t: Retention
+  - key: ratios.positivity
+    t: Positivity
+
+  - key: ratios.interest.description
+    t: >
+      Proportion of **positive sentiment** among respondents having **heard about** an item
+  - key: ratios.usage.description
+    t: >
+      Proportion of respondents **having used** an item
+  - key: ratios.awareness.description
+    t: >
+      Proportion of respondents **having heard about or used** an item
+  - key: ratios.retention.description
+    t: >
+      Proportion of **positive sentiment** among respondents having **used** an item
+  - key: ratios.positivity.description
+    t: >
+      Proportion of **positive sentiment** among all respondents
+
+  - key: modes.rank
+    t: Rank
+  - key: modes.value
+    t: Value
+  - key: modes.rank.description
+    t: Place according to rank
+  - key: modes.value.description
+    t: Place according to value
 
   - key: options.features_mode.grouped
     t: Grouped
@@ -126,11 +168,11 @@ translations:
   - key: options.quadrant.4.long
     t: |
       4: High usage, low retention. Reassess these technologies if you're currently using them.
-      
+
   - key: ranges.selector.years_of_experience
     t: Experience
   - key: ranges.selector.yearly_salary
-    t: Salary
+    t: Income
   - key: ranges.selector.company_size
     t: Company Size
 
@@ -184,8 +226,10 @@ translations:
   - key: options.disability_status_others.chronic_fatigue
     t: Chronic Fatigue
   - key: options.disability_status_others.crohn
-    t: Crohn's
-    
+    t: Crohn's Disease
+  - key: options.disability_status_others.depression
+    t: Depression
+
   ###########################################################################
   # Sections
   ###########################################################################
@@ -235,18 +279,23 @@ translations:
   - key: user_info.locale
     t: Language
   - key: user_info.locale.description
-    t: What language did respondents select to fill out the survey?
-  - key: user_info.locale.note
-    t: >
-      This data is collected automatically based on respondent's settings while taking the survey; 
-      Languages with fewer than 20 respondents not shown.
+    t: The language respondents selected to fill out the survey
 
   - key: user_info.source
     t: Source
   - key: user_info.source.description
-    t: How did respondents find out about the survey?
+    t: How respondents found out about the survey
   - key: user_info.source.note
     t: Respondent source is computed based on referrer data, URL tracking data, and self-reported answers.
+
+  - key: options.source.other_answers
+    t: Other sources
+
+  - key: user_info.source_by_gender
+    t: Source by Gender
+
+  - key: user_info.source_by_race_ethnicity
+    t: Source by Race & Ethnicity
 
   - key: user_info.gender_by_country
     t: Gender By Country
@@ -257,6 +306,16 @@ translations:
     t: Years of Experience by Salary Range
   - key: user_info.years_of_experience_by_salary.description
     t: Years of experience by salary range.
+
+  - key: user_info.average_income_by_years_of_experience
+    t: Average Income by Years of Experience
+  - key: user_info.average_income_by_years_of_experience.description
+    t: Average income by years of experience.
+
+  - key: user_info.average_income_by_company_size
+    t: Average Income by Company Size
+  - key: user_info.average_income_by_company_size.description
+    t: Average income by company size.
 
   - key: user_info.yearly_salary_by_country
     t: Salary By Country
@@ -272,6 +331,10 @@ translations:
     t: Salary By Experience
   - key: user_info.yearly_salary_by_experience.description
     t: Yearly salary distribution by experience, sorted by mean salary descending.
+
+  - key: user_info.yearly_salary_usa_vs_the_world
+    t: >
+      Yearly Income: U.S vs World
 
   - key: user_info.race_ethnicity_by_years_of_experience
     t: Race & Ethnicity by Years of Experience
@@ -333,6 +396,22 @@ translations:
     t: Korean
   - key: options.locale.ro-RO
     t: Romanian
+  - key: options.locale.am-ET
+    t: Amharic
+  - key: options.locale.ar-EG
+    t: Arabic
+  - key: options.locale.el-GR
+    t: Greek
+  - key: options.locale.gl-ES
+    t: Galician
+  - key: options.locale.hr-HR
+    t: Croatian
+  - key: options.locale.hu-HU
+    t: Hungarian
+  - key: options.locale.sk-SK
+    t: Slovak
+  - key: options.locale.vi-VN
+    t: Vietnamese
 
   ###########################################################################
   # Features
@@ -356,6 +435,12 @@ translations:
   ###########################################################################
   # Tools & Methodologies
   ###########################################################################
+
+  - key: tools.all_items.experience
+    t: Libraries Experience & Sentiment
+
+  - key: tools.all_items.experience.short
+    aliasFor: tools.experience
 
   # general
   - key: tools.links
@@ -402,15 +487,41 @@ translations:
     t: Homepage
   - key: blocks.entity.github_link
     t: GitHub
+  - key: blocks.entity.twitter_link
+    t: Twitter
+  - key: blocks.entity.mastodon_link
+    t: Mastodon
+  - key: blocks.entity.blog_link
+    t: Blog
+  - key: blocks.entity.rss_link
+    t: RSS
+  - key: blocks.entity.twitch_link
+    t: Twitch
+  - key: blocks.entity.npm_link
+    t: npm
+  - key: blocks.entity.youtube_link
+    t: YouTube
+  - key: blocks.entity.mdn_link
+    t: MDN
+  - key: blocks.entity.caniuse_link
+    t: CanIUse
+
+  # people
+  - key: blocks.people.name
+    t: Name
+  - key: blocks.people.social_links
+    t: Links
+  - key: blocks.people.responses
+    t: Responses
 
   # cardinality
   - key: blocks.all_sections_tools_cardinality_by_user
     t: Technology Usage Cardinality
   - key: blocks.all_sections_tools_cardinality_by_user.description
     t: >
-        For each section, which percentage of respondents **use** 
-        (defined as having answered “would use again”) one, two, three, etc. technologies.
-        The bottom-most bar represents the sum of all other bars.  
+      For each section, which percentage of respondents **use** 
+      (defined as having answered “would use again”) one, two, three, etc. technologies.
+      The bottom-most bar represents the sum of all other bars.
 
   - key: blocks.cardinality.max
     t: Most common answer
@@ -420,7 +531,7 @@ translations:
     t: Changes Over Time
   - key: blocks.tools_arrows.description
     t: |
-      Each line goes from 2016 to 2020. A higher point means a technology has been used by more people,
+      Each line goes from the earliest to the latest available year of data. A higher point means a technology has been used by more people,
       and a point further to the right means more users want to learn it; or have used it and would use it again.
   - key: blocks.tools_arrows.note
     t: |
@@ -432,18 +543,20 @@ translations:
   # tools quadrant
   - key: blocks.tools_quadrant
     t: Retention vs Usage
+  - key: tools.scatterplot_overview
+    aliasFor: blocks.tools_quadrant
   - key: blocks.tools_quadrant.description
     t: |
       This chart shows each technology's **retention ratio** over its total **user count**.
       It can be divided into four quadrants:
 
-        - **ASSESS**: Low usage, high retention. Technologies worth keeping an eye on.
+        - **1**: Low usage, high retention. Technologies worth keeping an eye on.
 
-        - **ADOPT**: High usage, high retention. Safe technologies to adopt.
+        - **2**: High usage, high retention. Safe technologies to adopt.
 
-        - **AVOID**: Low usage, low retention. Technologies probably best avoided currently.
+        - **3**: Low usage, low retention. Technologies that are harder to recommend currently.
 
-        - **ANALYZE**: High usage, low retention. Reassess these technologies if you're currently using them.
+        - **4**: High usage, low retention. Reassess these technologies if you're currently using them.
 
   # category other tools
   - key: blocks.category_other_tools
@@ -459,20 +572,19 @@ translations:
 
   # tool positive/negative split ("marimekko" chart)
   - key: blocks.tools_experience_marimekko
-    t: Sentiment Split
+    t: Positive/Negative Split
   - key: blocks.tools_experience_marimekko.description
     t: |
       This chart splits positive (“want to learn”, “would use again”) vs
       negative (“not interested”, “would not use again”) experiences on
-      both sides of the central axis.
-      
+      both sides of a central axis.
+
       Bar thickness represents the number of respondents aware of a technology.
-      Click on the individual label to see more details.
 
   # tool tier list
   - key: blocks.tools_tier_list
     t: Library Tier List
-  - key: blocks.tools_tier_list.description
+  - key: blocks.tools_tier_list.note
     t: |
       This chart ranks libraries based on their retention ratio (percentage of users
       who would use a library again). Note that libraries used by less than 10% of survey 
@@ -501,7 +613,7 @@ translations:
 
   # tools experience ranking
   - key: blocks.tools_experience_ranking
-    t: Ranking
+    t: Rankings Over Time
   - key: blocks.tools_experience_ranking.percentages
     t: Percentages
   - key: blocks.tools_experience_ranking.rankings
@@ -510,21 +622,20 @@ translations:
     t: Retention, interest, usage, and awareness ratio rankings.
   - key: blocks.tools_experience_ranking.note
     t: |
-      Technologies with less than 10% awareness not included. <br/> Each ratio is defined as follows:
-      - <span class='formula'> Retention = &nbsp;<div class='fraction'><div class='num'>would use again</div><div class='denom'>( would use again + would not use again )</div></div></span>
-      - <span class='formula'> Interest = &nbsp;<div class='fraction'><div class='num'>want to learn</div><div class='denom'>( want to learn + not interested )</div></div></span>
-      - <span class='formula'> Usage = &nbsp;<div class='fraction'><div class='num'>( would use again + would not use again )</div><div class='denom'>total</div></div></span>
-      - <span class='formula'> Awareness = &nbsp;<div class='fraction'><div class='num'>( total - never heard )</div><div class='denom'>total</div></div></span>
+      Technologies with less than 10% awareness not included. Each ratio is defined as follows:
+
+      - Retention: **would use again** / (**would use again** + **would not use again**)
+      - Interest: **want to learn** / (**want to learn** + **not interested**)
+      - Usage: (**would use again** + **would not use again**) / **total**
+      - Awareness: (**total** - **never heard**) / **total**
 
   # tools experience linechart
   - key: blocks.tools_experience_linechart
-    t: Experience Over Time
+    t: Ratios Over Time
   - key: blocks.tools_experience_linechart.description
     t: Retention, interest, usage, and awareness ratio over time.
   - key: blocks.tools_experience_linechart.note
     aliasFor: blocks.tools_experience_ranking.note
-  - key: blocks.animations_other
-    t: Other graphics and animations solutions
 
   # happiness
   - key: blocks.happiness
@@ -554,7 +665,26 @@ translations:
       The size of the **outer circle** corresponds to the total number of users who know about a feature (*know about it* + *have used it* respondents), while
       the **inner circle** represents those who have actually used it (*have used it* respondents).
 
-      Hover on each circle to see detailed stats, including the ratio between both values. 
+      Hover on each circle to see detailed stats, including the ratio between both values.
+
+  # features_experience_linechart
+  - key: blocks.features_experience_linechart
+    t: Ratios Over Time
+  - key: blocks.features_experience_linechart.description
+    t: Usage and awareness ratios over time for the highest-rating features.
+  - key: blocks.features_experience_linechart.note
+    t: |
+      Each ratio is defined as follows:
+
+      - Usage: (**have used it**) / **total**
+      - Awareness: (**have used it** + **know about it **) / **total**
+
+  - key: blocks.features_experience_ranking
+    t: Rankings Over Time
+  - key: blocks.features_experience_ranking.description
+    t: Usage and awareness rankings over time.
+  - key: blocks.features_experience_ranking.note
+    aliasFor: blocks.features_experience_linechart.note
 
   # export
   - key: export.export
@@ -567,9 +697,11 @@ translations:
     t: >
       You can copy paste this query into our <a target="_blank" rel="nofollow" href="https://graphiql.devographics.com/">public GraphQL API</a>.
   - key: export.export_json
-    t: Get JSON Data
+    t: JSON Data
   - key: export.export_graphql
-    t: Get GraphQL Query
+    t: GraphQL Query
+  - key: export.export_filters
+    t: Filters Code
 
   - key: custom_data.heading
     t: Custom Chart
@@ -590,13 +722,13 @@ translations:
   - key: custom_data.details
     t: >
 
-        1. Copy the contents of the "GraphQL Query" textfield and paste them into the middle panel of the [GraphQL API explorer](https://graphiql.stateofjs.com/).
+      1. Copy the contents of the "GraphQL Query" textfield and paste them into the middle panel of the [GraphQL API explorer](https://graphiql.stateofjs.com/).
 
-        2. Modify the query by adding one or more **filters** using the left-hand explorer sidebar. Make sure to keep the overall structure of the data the same.
+      2. Modify the query by adding one or more **filters** using the left-hand explorer sidebar. Make sure to keep the overall structure of the data the same.
 
-        3. In the explorer window, click the Play ("Execute Query") button.
+      3. In the explorer window, click the Play ("Execute Query") button.
 
-        4. Copy the results of the modified query (`{ data: … }` ) into the "Custom Data" textfield above and submit.
+      4. Copy the results of the modified query (`{ data: … }` ) into the "Custom Data" textfield above and submit.
 
   # Tools usage variations
   - key: blocks.tools_usage_variations
@@ -636,40 +768,80 @@ translations:
 
   # other
   - key: blocks.freeform
-    t: (freeform question)
+    t: Freeform
+
+  # Reading List
+  - key: features.reading_list
+    t: Reading List
+  - key: features.reading_list.note
+    t: >
+      How many time each item was added to respondent's Reading List, a feature that lets people
+      learn more about specific topics as they take the survey.
 
   ###########################################################################
   # Charts
   ###########################################################################
 
   - key: chart_units.respondents
-    t: "{count} question respondents ({percentage}% completion percentage)"
+    t: "**{count}** question respondents out of **{total}** survey participants (**{percentage}%** completion percentage)"
   - key: chart_units.percentage
     t: Percents
   - key: chart_units.count
     t: Count
   - key: chart_units.percentage_question
     t: "% of question respondents"
+  - key: chart_units.percentageQuestion
+    aliasFor: chart_units.percentage_question
   - key: chart_units.percentage_survey
     t: "% of survey respondents"
+  - key: chart_units.percentageSurvey
+    aliasFor: chart_units.percentage_survey
+  - key: chart_units.percentage_bucket
+    t: Percentages
+  - key: chart_units.percentageBucket
+    aliasFor: chart_units.percentage_bucket
+  - key: chart_units.average
+    t: Average
+  - key: chart_units.averageByFacet
+    aliasFor: chart_units.average
+
+  - key: chart_units.facetCounts
+    t: Counts
+
+  - key: chart_units.percentilesByFacet
+    t: Percentiles
 
   - key: charts.average
-    t: Average
+    t: Average {axis}
   - key: charts.mean
     t: Mean
-  - key: charts.overall
-    t: Overall
   - key: charts.all_respondents
     t: All Respondents
+  - key: charts.overall
+    aliasFor: charts.all_respondents
   - key: charts.facet_responses
-    t: '{count} responses'
+    t: "{count} responses"
+  - key: charts.facet_respondents
+    t: "({count} respondents)"
+
+  - key: charts.nth_percentile
+    t: "{percentile}th percentile"
+  - key: charts.nth_percentile_value
+    t: "{percentile}th percentile: {value}"
+
+  - key: charts.freeform_data_indicator
+    t: (freeform answers)
+  - key: charts.insufficient_data
+    t: Insufficient Data
+  - key: charts.insufficient_data.description
+    t: Segments with fewer than {value} respondents are not included in the results.
 
   - key: charts.axis_legends.years_of_experience
     t: Years of Experience
   - key: charts.axis_legends.yearly_salary
     t: Salary Range (USD)
   - key: charts.axis_legends.company_size
-    t: Number of Employees
+    t: Organization Size
   - key: charts.axis_legends.backend_proficiency
     t: Back-end Proficiency
   - key: charts.axis_legends.css_proficiency
@@ -680,9 +852,13 @@ translations:
     t: Percentage of Users
   - key: charts.axis_legends.users_count
     t: User Count
+  - key: charts.axis_legends.users_average
+    t: Average {axis}
   - key: charts.axis_legends.interest_percentage
     t: Interest %
   - key: charts.axis_legends.satisfaction_percentage
+    t: Retention %
+  - key: charts.axis_legends.retention_percentage
     t: Retention %
   - key: charts.axis_legends.usage_percentage
     t: Usage %
@@ -697,7 +873,7 @@ translations:
     aliasFor: charts.axis_legends.usage_percentage
   - key: chart_units.awareness_percentage
     aliasFor: charts.axis_legends.awareness_percentage
-    
+
   - key: charts.axis_legends.happiness
     t: Happiness
   - key: charts.axis_legends.knowledge_score
@@ -708,8 +884,21 @@ translations:
     t: Age
   - key: charts.axis_legends.users_percentage_survey
     t: "% of survey respondents"
+  - key: charts.axis_legends.users_percentageSurvey
+    aliasFor: charts.axis_legends.users_percentage_survey
   - key: charts.axis_legends.users_percentage_question
     t: "% of question respondents"
+  - key: charts.axis_legends.users_percentageQuestion
+    aliasFor: charts.axis_legends.users_percentage_question
+  - key: charts.axis_legends.users_percentage_bucket
+    t: "% of bucket respondents"
+  - key: charts.axis_legends.users_percentageBucket
+    aliasFor: charts.axis_legends.users_percentage_bucket
+
+  - key: charts.axis_legends.users_averageByFacet
+    aliasFor: chart_units.average
+  - key: charts.axis_legends.users_percentilesByFacet
+    aliasFor: chart_units.percentilesByFacet
 
   - key: charts.ranges_multiple_diverging_lines.baseline
     t: baseline
@@ -753,6 +942,68 @@ translations:
 
   - key: charts.no_answer
     t: No Answer
+  - key: charts.no_answer.short
+    t: No Answer
+
+  - key: charts.no_match
+    t: Unmatched Answers
+  - key: charts.no_match.short
+    t: Unmatched Answers
+  - key: charts.no_match.description
+    t: Freeform answers that could not be matched to a specific datapoint
+
+  - key: charts.cutoff_answers
+    t: Cutoff Answers
+  - key: charts.cutoff_answers.short
+    t: Cutoff Answers
+  - key: charts.cutoff_answers.description
+    t: Answers that scored below the defined threshold
+
+  - key: charts.other_answers
+    t: Other Answers
+  - key: charts.other_answers.short
+    t: Other Answers
+  - key: charts.other_answers.description
+    t: Other answers not included above
+
+  - key: charts.overlimit_answers
+    t: Over Limit
+  - key: charts.overlimit_answers.short
+    t: Over Limit
+  - key: charts.overlimit_answers.description
+    t: Answers that were outside of the defined number of items requested
+
+  - key: charts.freeform_data
+    t: Freeform Data
+  - key: charts.freeform_data.description
+    t: Data gathered through a freeform text field
+
+  - key: charts.tick.links
+    t: Links
+
+  - key: charts.resources
+    t: Useful Links
+
+  - key: charts.facets_clarification
+    t: >
+      Note that the percentages shown above are influenced by how many respondents
+      overall belong to each group.
+
+  - key: charts.average_clarification
+    t: >
+      Note that averages are calculated by taking the midpoint value of each range as an approximate representative value.
+
+  - key: charts.share
+    t: Share Chart…
+  - key: charts.export
+    t: Export Data…
+
+  - key: charts.mode
+    t: >
+      Mode:
+  - key: charts.view
+    t: >
+      View:
 
   ###########################################################################
   # Comments
@@ -765,11 +1016,18 @@ translations:
   - key: comments.description
     t: |
       These comments were submitted as part of the survey 
-      through an optional freeform text field next to the main question. 
+      through an optional freeform text field next to the main question.
   - key: comments.report_abuse
     t: Report this comment
   - key: comments.share
     t: Share Comment
+
+  - key: comments.filter.experience
+    t: "Experience: "
+  - key: comments.filter.sentiment
+    t: "Sentiment: "
+  - key: comments.filter.all
+    t: All
 
   ###########################################################################
   # Sharing
@@ -790,7 +1048,7 @@ translations:
   - key: share.site.body
     t: "Here are some interesting survey results: {link}"
   - key: share.block.twitter_text
-    t: "{hashtag} {year}: {title} {link}"
+    t: "{siteTitle}: {title}"
   - key: share.block.subject
     t: "{siteTitle} Survey Results"
   - key: share.block.body
@@ -808,7 +1066,7 @@ translations:
   - key: share.link
     t: Link to section
   - key: share.url
-    t: Get link
+    t: Copy link
   - key: share.close
     t: Close
 
@@ -829,10 +1087,16 @@ translations:
     t: Item
   - key: table.percentage_survey
     t: "% of survey respondents"
+  - key: table.percentageSurvey
+    aliasFor: table.percentage_survey
   - key: table.percentage_question
     t: "% of question respondents"
+  - key: table.percentageQuestion
+    aliasFor: table.percentage_question
   - key: table.percentage_facet
     t: "% of facet respondents"
+  - key: table.percentageFacet
+    aliasFor: table.percentage_facet
   - key: table.count
     t: Count
   - key: table.year
@@ -857,7 +1121,6 @@ translations:
   - key: table.awareness_percentage
     aliasFor: charts.axis_legends.awareness_percentage
 
-
   - key: table.percentages_table
     t: Percentages
   - key: table.rankings_table
@@ -880,6 +1143,9 @@ translations:
     t: Would use again %
   - key: table.interested_percentage
     t: Interested %
+
+  - key: table.not_available
+    t: No datatable available.
 
   ###########################################################################
   # Awards
@@ -906,12 +1172,17 @@ translations:
   - key: award.tool_usage_delta_award.title
     t: Most Adopted Technology
   - key: award.tool_usage_delta_award.description
-    t: Awarded to the technology with the largest year-over-year “would use again” progression.
+    t: Awarded to the technology with the largest year-over-year usage progression.
+
+  - key: award.tool_retention_award.title
+    t: Highest Retention
+  - key: award.tool_retention_award.description
+    t: Awarded to the technology with the highest percentage of returning users.
 
   - key: award.tool_satisfaction_award.title
-    t: Highest Retention
+    aliasFor: award.tool_retention_award.title
   - key: award.tool_satisfaction_award.description
-    t: Awarded to the technology with the highest percentage of returning users.
+    aliasFor: award.tool_retention_award.description
 
   - key: award.tool_interest_award.title
     t: Highest Interest
@@ -933,10 +1204,20 @@ translations:
   - key: award.most_write_ins_award.description
     t: Awarded to the item with the most write-in answers
 
-  - key: award.most_commented_featured_award.title
-    t: Most Commented
-  - key: award.most_commented_featured_award.description
-    t: Awarded to the feature with the most comments.
+  - key: award.most_commented_feature_award.title
+    t: Most Commented Feature
+  - key: award.most_commented_feature_award.description
+    t: Awarded to the feature which received the most comments.
+
+  - key: award.most_commented_tool_award.title
+    t: Most Commented Library
+  - key: award.most_commented_tool_award.description
+    t: Awarded to the library which received the most comments.
+
+  - key: award.most_loved_tool_award.title
+    t: Most Loved Library
+  - key: award.most_loved_tool_award.description
+    t: Awarded to the technology with the highest proportion of positive opinions.
 
   ###########################################################################
   # Hints
@@ -991,7 +1272,7 @@ translations:
   - key: hints.share_hint
     t: >
       The <span class="hint-icon hint-share-button">Share</span> tab makes it easy to share any chart, 
-      or even download it as an image. 
+      or even download it as an image.
 
   - key: hints.bracket_hint
     t: >
@@ -1000,7 +1281,7 @@ translations:
 
   - key: hints.comments_hint
     t: >
-      The <span class="hint-icon hint-comment-button">Comment</span> tab lets you view comments left by survey respondents as they were filling out the survey. 
+      The <span class="hint-icon hint-comment-button">Comment</span> tab lets you view comments left by survey respondents as they were filling out the survey.
 
   ###########################################################################
   # Sponsor Chart
@@ -1013,11 +1294,10 @@ translations:
     t: >
       Thanks for supporting the survey. Your avatar should appear next to the chart you picked
       within the next hour or so. If it doesn't, please [get in touch](mailto:chartsponsor@stateofjs.com).
-    
 
   - key: sponsor.sponsored_by
     t: >
-        **{name}** donated **${amount}** to sponsor this chart
+      **{name}** donated **${amount}** to sponsor this chart
 
   - key: sponsor.sponsor_button
     t: Sponsor This Chart
@@ -1027,14 +1307,14 @@ translations:
 
   - key: sponsor.sponsor_chart.description
     t: >
-        Support this survey financially by donating $10 or more, and get your
-        Twitter avatar featured next to a chart!
+      Support this survey financially by donating $10 or more, and get your
+      Twitter avatar featured next to a chart!
 
   - key: sponsor.chart_id
-    t: 'Chart ID: '
+    t: "Chart ID: "
 
   - key: sponsor.sponsor_this_chart
-    t: Sponsor This Chart (${baseAmount}+) 
+    t: Sponsor This Chart (${baseAmount}+)
 
   - key: sponsor.how_it_works.title
     t: How It Works
@@ -1042,19 +1322,18 @@ translations:
   - key: sponsor.how_it_works.description
     t: >
       1. When you **click the "Sponsor This Chart" button**, you will be redirected to our partner [SendOwl](https://www.sendowl.com/)'s checkout page. 
-      
-      
-      2. You can then **adjust the amount** you'd like to sponsor the survey for, starting at USD10.  
-      
-      
-      3. Once you checkout, you will be able to **provide your Twitter username**. 
-      
-      
-      4. You will see a **File Download** page, but you can safely ignore it. 
-      
-      
-      5. The site will rebuild in the background and your username and donation will **appear next to the chart within the next hour**. 
 
+
+      2. You can then **adjust the amount** you'd like to sponsor the survey for, starting at USD10.  
+
+
+      3. Once you checkout, you will be able to **provide your Twitter username**. 
+
+
+      4. You will see a **File Download** page, but you can safely ignore it. 
+
+
+      5. The site will rebuild in the background and your username and donation will **appear next to the chart within the next hour**.
 
   - key: sponsor.faq.title
     t: F.A.Q.
@@ -1075,26 +1354,25 @@ translations:
   #   t: Can I donate on somebody else's behalf?
 
   # - key: sponsor.faq.donation_public.description
-  #   t: You can enter a Twitter username other than your own, but that person will have the right to remove the donation if they request it. 
+  #   t: You can enter a Twitter username other than your own, but that person will have the right to remove the donation if they request it.
 
   - key: sponsor.faq.refund.title
     t: What's your refund policy?
 
   - key: sponsor.faq.refund.description
-    t: All donations are refundable within a 1-week period, minus transaction fees. 
+    t: All donations are refundable within a 1-week period, minus transaction fees.
 
   - key: sponsor.faq.influence.title
     t: Do donations influence the survey contents?
 
   - key: sponsor.faq.influence.description
-    t: Donations take place once the survey is already published, and donors to not have any influence on the contents of the survey. 
+    t: Donations take place once the survey is already published, and donors to not have any influence on the contents of the survey.
 
   - key: sponsor.faq.feedback.title
     t: Where can I leave feedback/ask questions?
 
   - key: sponsor.faq.feedback.description
     t: You can do so [on GitHub](https://github.com/StateOfJS/Monorepo/issues/69) or [in our Discord](https://discord.gg/tuWRUWVyJs).
-
 
   ###########################################################################
   # Data Explorer
@@ -1105,7 +1383,7 @@ translations:
   - key: sections.data_explorer.description
     t: |
       Dynamically explore the survey's audience by picking two questions, and seeing how
-      respondents are distributed between them. 
+      respondents are distributed between them.
 
   - key: hints.data_explorer
     t: |
@@ -1140,7 +1418,7 @@ translations:
   - key: explorer.extra_respondents.tooltip
     t: Highlighted dots indicate higher-than-expected results.
   - key: explorer.missing_respondents.tooltip
-    t: Empty dots indicate lower-than-expected results. 
+    t: Empty dots indicate lower-than-expected results.
 
   - key: explorer.units_count
     t: Count
@@ -1203,13 +1481,8 @@ translations:
     t: Respondents per dot
   - key: explorer.show_cell_counts
     t: Show cell counts
-
-  - key: explorer.sections.demographics
-    t: Demographics
-  - key: explorer.sections.features
-    t: Features
-  - key: explorer.sections.tools
-    t: Libraries
+  - key: explorer.show_no_answer
+    t: Show “No Answer” cells
 
   - key: explorer.all_fields
     t: All fields
@@ -1221,71 +1494,62 @@ translations:
   - key: explorer.count_details.1
     t: |
       **{xAxisTotal}** “{xAxisLabel}” respondents selected “{xAnswerLabel}”.
-  
+
   - key: explorer.count_details.2
     t: |
-        **{yAxisPercentage}%** of “{yAxisLabel}” respondents selected “{yAnswerLabel}”. 
-  
+      **{yAxisPercentage}%** of “{yAxisLabel}” respondents selected “{yAnswerLabel}”.
+
   - key: explorer.count_details.3
     t: |
-        Applying that percentage to the previous **{xAxisTotal}** respondents figure 
-        gives us an expected baseline of **{normalizedCount}** respondents in this intersection. 
-  
+      Applying that percentage to the previous **{xAxisTotal}** respondents figure 
+      gives us an expected baseline of **{normalizedCount}** respondents in this intersection.
+
   - key: explorer.count_details.4_extra
     t: |
-        The actual count is **{bucketCount}**, and those extra **{normalizedCountDelta}** respondents are *highlighted*. 
- 
+      The actual count is **{cellCount}**, and those extra **{normalizedCountDelta}** respondents are *highlighted*.
+
   - key: explorer.count_details.4_missing
     t: |
-        The actual count is **{bucketCount}**, and those missing **{normalizedCountDelta}** respondents appear as empty dots. 
+      The actual count is **{cellCount}**, and those missing **{normalizedCountDelta}** respondents appear as empty dots.
 
   - key: explorer.percentage_details.1_extra
     t: |
       Overall, **{xAxisPercentage}%** of “{xAxisLabel}” respondents selected “{xAnswerLabel}”, but
-      within “{yAxisLabel}” respondents who selected “{yAnswerLabel}” that percentage climbs to  **{bucketPercentage}%**.
-  
+      within **“{yAxisLabel}” respondents who selected “{yAnswerLabel}”** that percentage climbs to  **{bucketPercentage}%**.
+
   - key: explorer.percentage_details.1_missing
     t: |
       Overall, **{xAxisPercentage}%** of “{xAxisLabel}” respondents selected “{xAnswerLabel}”, but
-      within “{yAxisLabel}” respondents who selected “{yAnswerLabel}” that percentage climbs to  **{bucketPercentage}%**.
+      within **“{yAxisLabel}” respondents who selected “{yAnswerLabel}”** that percentage drops to  **{bucketPercentage}%**.
 
   - key: explorer.percentage_details.2_extra
     t: |
-        Those extra **{normalizedPercentageDelta}%** respondents are *highlighted*. 
-  
+      Those extra **{normalizedPercentageDelta}%** respondents are *highlighted*.
+
   - key: explorer.percentage_details.2_missing
     t: |
-        Those missing **{normalizedPercentageDelta}%** respondents appear as empty dots. 
+      Those missing **{normalizedPercentageDelta}%** respondents appear as empty dots.
 
   # - key: explorer.percentage_details.1
   #   t: |
   #     **{xAxisPercentage}%** of **{xAxisTotal}** “{xAxisLabel}” respondents selected “{xAnswerLabel}”.
-  
+
   # - key: explorer.percentage_details.2
   #   t: |
-  #       **{yAxisPercentage}%** of “{yAxisLabel}” respondents selected “{yAnswerLabel}”. 
-  
+  #       **{yAxisPercentage}%** of “{yAxisLabel}” respondents selected “{yAnswerLabel}”.
+
   # - key: explorer.percentage_details.3
   #   t: |
-  #       Applying that percentage to the previous **{xAxisTotal}** respondents figure 
-  #       gives us an expected baseline of **{normalizedPercentage}%** of respondents in this intersection. 
-  
+  #       Applying that percentage to the previous **{xAxisTotal}** respondents figure
+  #       gives us an expected baseline of **{normalizedPercentage}%** of respondents in this intersection.
+
   # - key: explorer.percentage_details.4_extra
   #   t: |
-  #       The actual percentage is **{bucketPercentage}%**, and those extra **{normalizedPercentageDelta}%** respondents are *highlighted*. 
-  
+  #       The actual percentage is **{bucketPercentage}%**, and those extra **{normalizedPercentageDelta}%** respondents are *highlighted*.
+
   # - key: explorer.percentage_details.4_missing
   #   t: |
-  #       The actual count is **{bucketPercentage}%**, and those missing **{normalizedPercentageDelta}%** respondents appear as empty dots. 
-
-  - key: opinions.opinions_right_direction
-    t: "React Native is moving in the right direction"
-
-  - key: opinions.opinions_complex
-    t: "Building React Native apps is overly complex right now"
-
-  - key: opinions.opinions_changing_too_fast
-    t: "The React Native ecosystem is changing too fast"
+  #       The actual count is **{bucketPercentage}%**, and those missing **{normalizedPercentageDelta}%** respondents appear as empty dots.
 
   - key: explorer.extra_missing_respondents
     t: |
@@ -1293,10 +1557,274 @@ translations:
 
       The chart above aims to identify areas showing higher-than-expected 
       or lower-than-expected values compared to a calculated baseline. 
-      
+
       For example, assuming there are 1000 CSS Grid users, and that 50% of survey respondents work in a large company, 
       you'd expect to find 500 CSS Grid users working in large companies. 
 
       Any deviation above or below that expected total could potentially indicate an interesting
       correlation between both variables, and is highlighted on the chart with either colored 
       dots (for extra respondents above the baseline) or empty dots (for missing respondents).
+
+  ###########################################################################
+  # Filters
+  ###########################################################################
+
+  - key: filters.compare_data
+    t: Compare Data
+  - key: filters.customize_chart
+    t: Add Filters…
+  - key: filters.docs
+    t: Documentation
+  - key: filters.compare_chart
+    t: Customize “{chartName}”
+  - key: filters.edit_variant_with_name
+    t: Edit “{name}”
+  - key: filters.edit_name
+    t: "Edit Name"
+  - key: filters.edit_name.description
+    t: "Edit chart variant name:"
+  - key: filters.create_variant
+    t: Create New Variant
+  - key: filters.delete_variant
+    t: Delete Chart
+  - key: filters.delete_variant_confirm
+    t: Delete chart variant “{name}”?
+  - key: filters.edit_variant
+    t: Edit Options…
+  - key: filters.filters.description
+    t: |
+      Define a combination of filters to compare multiple versions of the same chart side-by-side
+  - key: filters.facets.description
+    t: |
+      Pick a variable and use it to further break down each row of a chart into segments.
+  - key: filters.grid_mode
+    t: Filters
+  - key: filters.combined_mode
+    t: Combined
+  - key: filters.facet_mode
+    t: Facets
+  - key: filters.facet
+    t: "Facet:"
+
+  - key: filters.facet_view
+    t: Segmented bars
+  - key: filters.grid_view
+    t: Side-by-side grid
+
+  - key: filters.series.heading
+    t: Series {index}
+  - key: filters.series.add
+    t: Add Series…
+  - key: filters.series.delete
+    t: Delete Series
+  - key: filters.series.year
+    t: |
+      {year} data
+  - key: filters.series.show_default
+    t: |
+      Show default series
+  - key: filters.series.no_data
+    t: No data
+
+  - key: filters.condition.add
+    t: Add Filter
+  - key: filters.condition.delete
+    t: Delete Filter
+  - key: filters.condition.and
+    t: and
+  - key: filters.operators.eq
+    t: is
+  - key: filters.operators.in
+    t: is one of
+  - key: filters.operators.nin
+    t: is not one of
+  - key: filters.operators.lt
+    t: is lower than
+  - key: filters.operators.gt
+    t: is greater than
+  - key: filters.value.add
+    t: Add Value
+  - key: filters.value.delete
+    t: Delete Value
+
+  - key: filters.legend.default
+    t: Default
+
+  - key: filters.cancel
+    t: Cancel
+  - key: filters.submit
+    t: Update Chart
+  - key: filters.copy_link
+    t: Copy link to filters
+  - key: filters.get_code
+    t: Get filters code
+
+  - key: filters.presets.title
+    t: "Presets:"
+  - key: filters.presets.save
+    t: Save current filters as preset…
+  - key: filters.presets.delete
+    t: Delete Preset
+  - key: filters.presets.enter_name
+    t: |
+      Enter a name for your new preset:
+  - key: filters.presets.previous_years
+    t: Previous Years
+  - key: filters.presets.gender
+    t: Gender
+  - key: filters.presets.top_countries
+    t: Top Countries
+  - key: filters.presets.salary_low_high
+    t: |
+      Low vs High Salary
+  - key: filters.presets.experience_low_high
+    t: |
+      Low vs High Experience
+  - key: filters.presets.company_size_low_high
+    t: |
+      Small vs Large Company
+
+  - key: filters.facet.select
+    t: Select a facet…
+
+  - key: filters.by_x
+    t: By {name}
+
+  - key: filters.vs_x
+    t: Vs. {name}
+
+  - key: dataloader.failed_request
+    t: >
+      Oh no! The API request failed with the following message:
+  - key: dataloader.submit_report_prompt
+    t: >
+      Submit a bug report to let us know about this issue, and we'll do our best to
+      fix it:
+  - key: dataloader.submit_issue
+    t: Submit Issue
+
+  # advanced options
+
+  - key: filters.advanced_options
+    t: Advanced Options
+
+  - key: filters.options.cutoff
+    t: Cutoff Threshold
+  - key: filters.options.cutoff.description
+    t: Exclude any value under this threshold from the data
+
+  - key: filters.options.limit
+    t: Limit
+  - key: filters.options.limit.description
+    t: Limit the results to the first n items
+
+  - key: filters.options.showDefaultSeries
+    aliasFor: filters.series.show_default
+  - key: filters.options.showDefaultSeries.description
+    t: Show the default (unfiltered) data series when using Grid mode
+
+  ###########################################################################
+  # Chart Controls
+  ###########################################################################
+
+  - key: charts.group_by
+    t: >
+      Group by:
+  - key: charts.group.experience
+    t: Experience
+  - key: charts.group.sentiment
+    t: Sentiment
+
+  - key: charts.display_mode
+    t: >
+      Display mode:
+  - key: charts.display_mode.split
+    t: Split View
+  - key: charts.display_mode.stacked
+    t: Stacked View
+
+  - key: charts.order
+    t: >
+      Sort order:
+
+  - key: charts.sort_by
+    t: >
+      Sort by:
+  - key: charts.sort_by_sort
+    t: >
+      Sort by "**{sort}**""
+  - key: charts.sorted_by_sort_order
+    t: >
+      Sorted by "**{sort}**"", **{order}**
+  - key: charts.order.asc
+    t: Ascending
+  - key: charts.order.desc
+    t: Descending
+
+  - key: charts.actions.customize
+    aliasFor: filters.customize_chart
+  - key: charts.actions.data
+    t: Get Chart Data
+  - key: charts.actions.share
+    t: Share Chart
+
+  - key: charts.vs
+    t: vs.
+
+  - key: charts.custom_variant
+    t: Variant {index}
+  - key: charts.new_variant_name_prompt
+    t: Enter a short descriptive name for your new chart (e.g. “vs. Income”, “by Gender”, etc.)
+
+  - key: charts.show_all_rows
+    t: Show All
+  - key: charts.show_all_rows.x_hidden
+    t: Show All ({count} hidden)
+
+  - key: charts.metadata.completion
+    t: >
+      **{value}** completion rate (out of {total} survey participants)
+  - key: charts.metadata.respondents
+    t: >
+      **{value}** question respondents
+  - key: charts.metadata.average
+    t: >
+      **{value}** mean (average) value
+  - key: charts.metadata.median
+    t: >
+      **{value}** median value
+
+  ###########################################################################
+  # Multi Items Experience Chart
+  ###########################################################################
+
+  - key: charts.multiexp.cell_group_tooltip.experience
+    t: >
+      **{value}%** of respondents answered "**{answer}**"
+
+  - key: charts.multiexp.cell_group_tooltip.sentiment
+    t: >
+      **{value}%** of respondents had a **{answer}** sentiment
+
+  - key: charts.multiexp.cell_tooltip
+    t: >
+      **{value}%** of respondents answered "**{experience}**" and had a **{sentiment}** sentiment
+
+  - key: charts.multiexp.cell_tooltip_neutral
+    t: >
+      **{value}%** of respondents answered "**{experience}**" and did not pick any sentiment
+
+  ###########################################################################
+  # Raw Freeform Answers
+  ###########################################################################
+
+  - key: answers.answers
+    t: Freeform Answers
+  - key: answers.answers_for
+    t: Answers matching “{name}”
+  - key: answers.description
+    t: |
+      These freeform answers were matched to the **{name}** keyword through a combination of
+      automated and manual data processing.
+  - key: answers.report_abuse
+    t: Report this answer
