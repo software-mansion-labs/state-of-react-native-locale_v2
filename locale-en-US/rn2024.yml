@@ -584,3 +584,10 @@ translations:
       We’re yet to unfold what React Server Components and the New Architecture will bring to the table. I’d like to define the current state of React Native as stable but definitely not boring. It seems like in these uncertain times the ecosystem thrives.  
 
       I hope you found this survey data reassuring in the same way I did. I’m sure you’re going to use it to make better informed decisions.
+
+######################################################
+#########           QUESTIONS           #########
+######################################################
+
+  - key: sections.platform_apis_questions.question
+    t: "What Platform APIs have you used in 2023 in React Native? Check all that apply"

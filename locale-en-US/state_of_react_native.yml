@@ -600,33 +600,133 @@ translations:
 
           Although we do not particularly appreciate [Flutter](https://flutter.dev/) as a framework, we still benefit from low-level innovations happening 
           in its ecosystem thanks to [React Native Skia](https://github.com/Shopify/react-native-skia). 
+  
+  
+  
+  
+  ######################################################
+  ##########           SECTIONS            #########
+  ######################################################
+  
   - key: sections.platform_apis.title
     t: Platform Apis
+  - key: sections.platform_apis.description
+    t: "The features provided by the operation system."
+  - key: platform_apis.platform_apis_questions.question
+    t: "What Platform APIs have you used in 2023 in React Native? Check all that apply"
+
   - key: sections.data_fetching.title
     t: Data fetching
+  - key: sections.data_fetching.description
+    t: "What data fetching solutions do you regularly use in your React Native apps?"
+
   - key: sections.navigation.title
     t: Navigation
+
+  - key: sections.navigation.description
+    t: "What navigation solutions do you regularly use in your React Native apps?"
+ 
   - key: sections.state_management.title
-    t: State Management
-  - key: sections.platform_apis.title
-    t: Platform Apis
+    t: State Management 
+  - key: sections.state_management.description
+    t: "What state management solutions do you regularly use in your React Native apps?"
+  
   - key: sections.styling.title
     t: Styling
+  - key: sections.styling.description
+    t: "What styling techniques do you regularly use in your React Native apps?"
+
   - key: sections.component_libraries.title
     t: Component Libraries
+  - key: sections.component_libraries.description
+    t: "What UI components libraries do you regularly use in your React Native apps?"
+
   - key: sections.animations.title
     t: Animations
+  - key: sections.animations.description
+    t: "What graphics and animations solutions do you use in your React Native apps?"
+
   - key: sections.debugging_and_profiling.title
     t: Debugging And Profiling
+  - key: sections.debugging_and_profiling.description
+    t: "What tools do you use to debug your React Native apps?"
+  - key: debugging_and_profiling.debugging_and_profiling_debugging_tools.question
+    t: "What tools do you use to debug your React Native apps? Check all that apply"
+  - key: debugging_and_profiling.debugging_and_profiling_problems_debugging_tools.question
+    t: "What problems have you run into? Check all that apply"
+  - key: debugging_and_profiling.debugging_and_profiling_problems_javascript_debugging_features_chrome_dev_tools.question
+    t: "Which Chrome DevTools features do you use (across current React Native debugging tools and/or for web development)? Check all that apply"
+  - key: debugging_and_profiling.debugging_and_profiling_problems_javascript.question
+    t: "What problems have you run into? Check all that apply"
+  - key: debugging_and_profiling.debugging_and_profiling_profiling_tools.question
+    t: "What tools do you use to profile React Native app performance? Check all that apply"
+
+
   - key: sections.react_native_app_aspects.title
     t: App Aspects
+  - key: sections.react_native_app_aspects.description
+    t: "What solutions to other well-defined problems do you regularly use in your React Native apps?"
+  - key: react_native_app_aspects.react_native_app_aspects_analytics.question
+    t: "Analytics"
+  - key: react_native_app_aspects.react_native_app_aspects_analytics.description
+    t: "Check all that apply"
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.question
+    t: "Crash Reporting"
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.description
+    t: "Check all that apply"
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.question
+    t: "Data Visualisation"
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.description
+    t: "Check all that apply"
+  - key: react_native_app_aspects.react_native_app_aspects_storage.question
+    t: "Storage"
+  - key: react_native_app_aspects.react_native_app_aspects_storage.description
+    t: "Check all that apply"
+  - key: react_native_app_aspects.react_native_app_aspects_testing.question
+    t: "Testing"
+  - key: react_native_app_aspects.react_native_app_aspects_testing.description
+    t: "Check all that apply"
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.question
+    t: "Other popular libraries"
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.description
+    t: "Check all that apply"
+
   - key: sections.react_native_specific_features.title
-    t: Specific Features
+    t: React Native features
+  - key: sections.react_native_specific_features.description
+    t: "What is your knowledge of the features specific to React Native development?"
+  - key: react_native_specific_features.react_native_features_version.question
+    t: "React Native version"
+  - key: react_native_specific_features.react_native_features_version.description
+    t: "Which version do you use mainly?"
+  - key: react_native_specific_features.react_native_features_strategies.question
+    t: "Upgrade strategy"
+  - key: react_native_specific_features.react_native_features_strategies.description
+    t: "What is your main strategy for upgrading React Native to a new versions?"
+  - key: react_native_specific_features.react_native_bridgeless_mode.question
+    t: "Bridgeless mode"
+  - key: react_native_specific_features.react_native_features_brownfield.question
+    t: "Brownfield"
+  - key: react_native_specific_features.react_native_features_brownfield.description
+    t: "What type of React Native project are you working on?"
+  - key: react_native_specific_features.react_native_features_ota_updates.question
+    t: "Over-The-Air updates"
+  - key: react_native_specific_features.react_native_features_ota_updates.description
+    t: "What Over-The-Air updates solutions do you use? Check all that apply"
+  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing.question
+    t: "Mobile-Web code sharing"
+  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing.description
+    t: "What methods do you employ for sharing code between mobile and web platforms in your project, if any? Check all that apply"
+
   - key: sections.deployment.title
     t: Deployment
+
   - key: sections.tools.title
     t: Tools
+
   - key: sections.react_native_alternatives.title
     t: React Native Alternatives
+
   - key: sections.about_you.title
     t: About You
+
