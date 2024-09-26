@@ -602,11 +602,10 @@ translations:
           in its ecosystem thanks to [React Native Skia](https://github.com/Shopify/react-native-skia). 
   
   
-  
   ######################################################
-  ##########           QUESTIONS            #########
+  ##########           QUESTIONS            ############
   ######################################################
-  
+
   - key: sections.platform_apis.title
     t: Platform Apis
   - key: sections.platform_apis.description
@@ -621,7 +620,6 @@ translations:
 
   - key: sections.navigation.title
     t: Navigation
-
   - key: sections.navigation.description
     t: What navigation solutions do you regularly use in your React Native apps?
  
@@ -659,7 +657,6 @@ translations:
     t: What problems have you run into? Check all that apply
   - key: debugging_and_profiling.debugging_and_profiling_profiling_tools.question
     t: What tools do you use to profile React Native app performance? Check all that apply
-
 
   - key: sections.react_native_app_aspects.title
     t: App Aspects
@@ -725,7 +722,6 @@ translations:
     t: React Native Alternatives
   - key: sections.react_native_alternatives.description
     t: What other cross-platform app development solutions are you familiar with?
-  
 
   - key: sections.resources.title
     t: Resources
@@ -800,7 +796,6 @@ translations:
   - key: opinions.opinions_advantages_multiple.description
     t: What are advantages of React Native over other solutions? Check all that apply
 
-
   - key: sections.about_you.title
     t: About You
   - key: sections.about_you.description
@@ -846,3 +841,48 @@ translations:
     t: How did you find out about this survey?
   - key: about_you.about_you_what_to_improve.question
     t: How could we improve this survey?
+
+  - key: sections.developer_background.title
+    t: Developer Background
+  - key: sections.developer_background.description
+    t: What's your background as a developer?
+  - key: developer_background.developer_background_before.question
+    t: Before React Native
+  - key: developer_background.developer_background_before.description
+    t: What was your background before you started using React Native? Check all that apply
+  - key: developer_background.developer_background_usage_type.question
+    t: How do you use React Native?
+  - key: developer_background.developer_background_primarily_system.question
+    t: Desktop OS
+  - key: developer_background.developer_background_primarily_system.description
+    t: What desktop OS do you primarily use?
+  - key: developer_background.developer_background_users_count.question
+    t: Top React Native app user count
+  - key: developer_background.developer_background_users_count.description
+    t: What is the user count of your top React Native app?
+  - key: developer_background.developer_background_team_size.question
+    t: Mobile app team size
+  - key: developer_background.developer_background_team_size.description
+    t: What is your mobile app team size?
+  - key: developer_background.developer_background_platforms.question
+    t: Platforms used for React Native
+  - key: developer_background.developer_background_platforms.description
+    t: What are the platforms that you use React Native for? Check all that apply
+  - key: developer_background.developer_background_releases_count.question
+    t: Released React Native apps count
+  - key: developer_background.developer_background_releases_count.description
+    t: How many React Native apps have you released on Google Play or App Store?
+  - key: developer_background.developer_background_os_target.question
+    t: Target OS
+  - key: developer_background.developer_background_industry_sector.question
+    t: Industry sectors using React Native
+  - key: developer_background.developer_background_industry_sector.description
+    t: Which industry sector(s) are you using React Native in? Check all that apply.
+  - key: developer_background.developer_background_contribution_to_rn.question
+    t: Contribution to React Native
+  - key: developer_background.developer_background_contribution_to_rn.description
+    t: Have you contributed to React Native upstream in 2023 (commits/PRs)?
+  - key: developer_background.developer_background_contribution_to_lib.question
+    t: Open Source Contribution to React Native libraries
+  - key: developer_background.developer_background_contribution_to_lib.description
+    t: Have you contributed to any React Native community library in 2023 (commits/PRs)?
