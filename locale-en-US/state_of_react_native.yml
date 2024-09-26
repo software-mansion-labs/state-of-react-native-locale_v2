@@ -800,3 +800,49 @@ translations:
   - key: opinions.opinions_advantages_multiple.description
     t: What are advantages of React Native over other solutions? Check all that apply
 
+
+  - key: sections.about_you.title
+    t: About You
+  - key: sections.about_you.description
+    t: Let's get to know you a little better.
+  - key: about_you.about_you_country.question
+    t: Your country or region
+  - key: about_you.about_you_country.description
+    t: Where do you currently reside?
+  - key: about_you.about_you_age.question
+    t: Your age
+  - key: about_you.about_you_age.description
+    t: How old are you, in years?
+  - key: about_you.about_you_experience.question
+    t: Years of experience
+  - key: about_you.about_you_experience.description
+    t: How long have you been working as a programmer or studying programming?
+  - key: about_you.about_you_experience_in_rn.question
+    t: Years of experience in React Native
+  - key: about_you.about_you_experience_in_rn.description
+    t: How long have you been working with or studying React Native, in years?
+  - key: about_you.about_you_company_size.question
+    t: Company size
+  - key: about_you.about_you_company_size.description
+    t: How big is your company, in the number of employees?
+  - key: about_you.about_you_education_degree.question
+    t: Higher education degree
+  - key: about_you.about_you_education_degree.description
+    t: Do you have a higher education degree?
+  - key: about_you.about_you_salary.question
+    t: Yearly salary
+  - key: about_you.about_you_salary.description
+    t: Your yearly salary in U.S. dollars.
+  - key: about_you.about_you_gender.question
+    t: Your gender
+  - key: about_you.about_you_gender.description
+    t: Which of the following options describes you, if any?
+  - key: about_you.about_you_gender.note
+    t: >
+      While we know collecting and publishing diversity data can be a sensitive issue,
+      we do think it's important to obtain this data to help measure and improve
+      the survey's efforts in terms of inclusivity and representativeness.
+  - key: about_you.about_you_how_you_know.question
+    t: How did you find out about this survey?
+  - key: about_you.about_you_what_to_improve.question
+    t: How could we improve this survey?
