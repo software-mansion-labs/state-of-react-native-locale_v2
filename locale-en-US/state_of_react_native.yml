@@ -606,6 +606,7 @@ translations:
   ##########           QUESTIONS            ############
   ######################################################
 
+  # Platform APIs section
   - key: sections.platform_apis.title
     t: Platform Apis
   - key: sections.platform_apis.description
@@ -613,36 +614,63 @@ translations:
   - key: platform_apis.platform_apis_questions.question
     t: What Platform APIs have you used in 2023 in React Native? Check all that apply
 
+  # Data Fetching section
   - key: sections.data_fetching.title
     t: Data fetching
   - key: sections.data_fetching.description
     t: What data fetching solutions do you regularly use in your React Native apps?
+  - key: data_fetching.data_fetching_pain_points
+    t: Data Fetching Pain Points
+  - key: data_fetching.data_fetching_pain_points.question
+    t: What pain points have you encountered related to data fetching?
 
+  # Navigation section
   - key: sections.navigation.title
     t: Navigation
   - key: sections.navigation.description
     t: What navigation solutions do you regularly use in your React Native apps?
+  - key: navigation.navigation_pain_points
+    t: Navigation Pain Points
+  - key: navigation.navigation_pain_points.question
+    t: What pain points have you encountered related to navigation?
  
+  # State Management section
   - key: sections.state_management.title
     t: State Management 
   - key: sections.state_management.description
     t: What state management solutions do you regularly use in your React Native apps?
+  - key: state_management.state_management_pain_points
+    t: State Management Pain Points
+  - key: state_management.state_management_pain_points.question
+    t: What pain points have you encountered related to state management?
   
+  # Styling section
   - key: sections.styling.title
     t: Styling
   - key: sections.styling.description
     t: What styling techniques do you regularly use in your React Native apps?
+  - key: styling.styling_pain_points
+    t: Styling Pain Points
+  - key: styling.styling_pain_points.question
+    t: What pain points have you encountered related to styling?
 
+  # Component Libraries section
   - key: sections.component_libraries.title
     t: Component Libraries
   - key: sections.component_libraries.description
     t: What UI components libraries do you regularly use in your React Native apps?
 
+  # Animations section
   - key: sections.animations.title
     t: Animations
   - key: sections.animations.description
     t: What graphics and animations solutions do you use in your React Native apps?
+  - key: animations.animations_pain_points
+    t: Animations Pain Points
+  - key: animations.animations_pain_points.question
+    t: What pain points have you encountered related to animations?
 
+  # Debugging and Profiling section
   - key: sections.debugging_and_profiling.title
     t: Debugging And Profiling
   - key: sections.debugging_and_profiling.description
@@ -658,6 +686,7 @@ translations:
   - key: debugging_and_profiling.debugging_and_profiling_profiling_tools.question
     t: What tools do you use to profile React Native app performance? Check all that apply
 
+  # App Aspects section
   - key: sections.react_native_app_aspects.title
     t: App Aspects
   - key: sections.react_native_app_aspects.description
@@ -687,6 +716,7 @@ translations:
   - key: react_native_app_aspects.react_native_app_aspects_other_libraries.description
     t: Check all that apply
 
+  # React Native Features section
   - key: sections.react_native_specific_features.title
     t: React Native features
   - key: sections.react_native_specific_features.description
@@ -714,15 +744,19 @@ translations:
   - key: react_native_specific_features.react_native_features_mobile_web_code_sharing.description
     t: What methods do you employ for sharing code between mobile and web platforms in your project, if any? Check all that apply
 
+  # Deployment section
   - key: sections.deployment.title
     t: Deployment
   - key: sections.deployment.description
     t: How do you build and submit your app for the App Store or Google Play?
+
+  # React Native Alternatives section
   - key: sections.react_native_alternatives.title
     t: React Native Alternatives
   - key: sections.react_native_alternatives.description
     t: What other cross-platform app development solutions are you familiar with?
 
+  # Resources section
   - key: sections.resources.title
     t: Resources
   - key: sections.resources.description
@@ -756,6 +790,7 @@ translations:
   - key: resources.resources_surveys.description
     t: What other developer surveys do you participate in? Check all that apply
   
+  # React Native Tools section
   - key: sections.tools.title
     t: React Native Tools
   - key: sections.tools.description
@@ -773,6 +808,7 @@ translations:
   - key: tools.tools_starter_templates.description
     t: Which starter templates or boilerplates do you use? Check all that apply
 
+  # Opinions section
   - key: sections.opinions.title
     t: Opinions
   - key: sections.opinions.description
@@ -796,6 +832,7 @@ translations:
   - key: opinions.opinions_advantages_multiple.description
     t: What are advantages of React Native over other solutions? Check all that apply
 
+  # About You section
   - key: sections.about_you.title
     t: About You
   - key: sections.about_you.description
@@ -842,6 +879,7 @@ translations:
   - key: about_you.about_you_what_to_improve.question
     t: How could we improve this survey?
 
+  # Developer Background section
   - key: sections.developer_background.title
     t: Developer Background
   - key: sections.developer_background.description
@@ -886,3 +924,38 @@ translations:
     t: Open Source Contribution to React Native libraries
   - key: developer_background.developer_background_contribution_to_lib.description
     t: Have you contributed to any React Native community library in 2023 (commits/PRs)?
+
+
+  ###########################################################################
+  # FAQ/About
+  ###########################################################################
+
+  - key: faq.is_answering_every_question_mandatory
+    t: Is answering every question mandatory?
+  - key: faq.is_answering_every_question_mandatory.description
+    t: No, every question of the survey is optional and can freely be skipped.
+
+  - key: faq.will_my_data_be_public
+    t: Will my data be made public?
+  - key: faq.will_my_data_be_public.description
+    t: The data will be made public in a form of readable charts and graphs. We will not publish any identifiable information.
+
+  - key: faq.when_will_results_be_released
+    t: When will the results be made available?
+  - key: faq.when_will_results_be_released.description
+    t: The results are going to be released a few weeks after the survey closes.
+
+  - key: faq.who_runs_the_survey
+    t: Who runs this survey?
+  - key: faq.who_runs_the_survey.description
+    t: This survey is run by Software Mansion. We are a software development company based in Poland, with a strong focus on React Native app development and multimedia streaming.
+
+  - key: faq.this_survey_looks_familiar
+    t: This survey looks very familiar!
+  - key: faq.this_survey_looks_familiar.description
+    t: It's because it's using the same infrastructure as State of JavaScript and State of CSS surveys made by Devographics.
+
+  - key: faq.how_was_survey_design
+    t: How was this survey designed?
+  - key: faq.how_was_survey_design.description
+    t: The survey was designed based on our expertise and the community feedback gathered on <a href="https://github.com/software-mansion/state-of-react-native/discussions/6">this GitHub discussion</a>.
