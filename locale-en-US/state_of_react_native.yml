@@ -777,14 +777,14 @@ translations:
     t: Podcasts
   - key: resources.resources_podcast_multiple.description
     t: What React Native or general programming-related podcasts do you listen to? Check all that apply
-  - key: resources.resources_video.question
-    t: Video creators
-  - key: resources.resources_video.description
-    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc. Write all that apply 
-  - key: resources.resources_people.question
-    t: Influential people
-  - key: resources.resources_people.description
-    t: People you read, follow, or just want to highlight for their work. Write all that apply 
+  - key: resources.video_creators_rn
+    t: Video Creators
+  - key: resources.video_creators_rn.question
+    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc. Write all that apply
+  - key: resources.people_rn
+    t: People
+  - key: resources.people_rn.question
+    t: People you read, follow, or just want to highlight for their work. Write all that apply
   - key: resources.resources_surveys.question
     t: Other developer surveys
   - key: resources.resources_surveys.description
