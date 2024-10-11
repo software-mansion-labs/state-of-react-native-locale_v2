@@ -173,7 +173,10 @@ translations:
       Thanks for filling out the survey! Your data is saved.
   - key: general.thanks2
     t: >
-      Help us get the word out by sharing this survey! Every bit counts, and it'll help make our data even
+      Help us get the word out by sharing this survey!
+  - key: general.thanks3
+    t: >
+      Every bit counts, and it'll help make our data even
       more representative.
   - key: thanks.learn_more_about
     t: "Some of the features you might want to learn more about:"
