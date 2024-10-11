@@ -72,7 +72,7 @@ translations:
     t: No browser implementation yet
 
   - key: general.skip_question
-    t: Skip
+    t: Skip question
 
   - key: general.unskip_question
     t: Answer Question
@@ -220,9 +220,9 @@ translations:
     t: Cancel
 
   - key: experience.leave_comment
-    t: Leave a Comment (optional)
+    t: Add a comment
   - key: experience.leave_comment_short
-    t: Leave a Comment
+    t: Add a comment
   - key: experience.tell_us_more
     t: "You answered “{response}”. Tell us more about your choice:"
   - key: experience.tell_us_more_generic

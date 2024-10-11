@@ -53,9 +53,9 @@ translations:
   - key: general.no_preview_surveys
     t: No surveys available to preview.
   - key: general.start_survey
-    t: Start Survey »
+    t: Start Survey
   - key: general.continue_survey
-    t: Continue Survey »
+    t: Continue Survey
   - key: general.completion
     t: "{completion}% completed"
   - key: general.started_on
@@ -63,11 +63,11 @@ translations:
   - key: general.last_modified_on
     t: Last modified on {updatedAt}
   - key: general.review_survey
-    t: Review Survey »
+    t: Review Survey
   - key: general.review_answers
-    t: Review Answers »
+    t: Review Answers
   - key: general.preview_survey
-    t: Preview Survey »
+    t: Preview Survey
   - key: general.finish_survey
     t: Finish Survey
   - key: general.next_section

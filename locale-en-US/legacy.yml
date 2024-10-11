@@ -51,7 +51,7 @@ translations:
   - key: general.start_survey
     t: Start Survey »
   - key: general.continue_survey
-    t: Continue Survey »
+    t: Continue Survey
   - key: general.review_survey
     t: Review Survey »
   - key: general.preview_survey
