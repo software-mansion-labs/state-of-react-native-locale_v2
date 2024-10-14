@@ -1430,13 +1430,13 @@ translations:
   - key: user_info.company_size
     t: Company Size
   - key: user_info.company_size.question
-    t: How many people work at your organization, including yourself?
+    t: How big is your company, in the number of employees?
 
   # salary ranges
   - key: user_info.yearly_salary
     t: Yearly Income
   - key: user_info.yearly_salary.question
-    t: What is your yearly gross (pre-tax) income in U.S. dollar?
+    t: Your yearly salary in U.S. dollars.
 
   # job title
   - key: user_info.job_title
@@ -1467,7 +1467,7 @@ translations:
     t: Gender
   - key: user_info.gender.question
     t: >
-      Which one of the following options describes you?
+      Which of the following options describes you, if any?
   - key: user_info.gender.note
     t: >
       While we know collecting and publishing diversity data can be a sensitive issue,
