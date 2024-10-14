@@ -168,9 +168,12 @@ translations:
       Also, you can help us get the word out by sharing this survey. Every bit counts, and it'll help make our data even
       more representative:
 
+  - key: general.thanks0
+    t: >
+      Thanks for filling out the survey!
   - key: general.thanks1
     t: >
-      Thanks for filling out the survey! Your data is saved.
+       Your data was saved.
   - key: general.thanks2
     t: >
       Help us get the word out by sharing this survey!
@@ -631,6 +634,15 @@ translations:
     t: 11 to 20 years
   - key: options.years_of_experience.range_more_than_20
     t: More than 20 years
+
+  - key: options.years_of_experience_rn.range_less_than_1
+    t: Less than one year
+  - key: options.years_of_experience_rn.range_1_2
+    t: 1 to 2 years
+  - key: options.years_of_experience_rn.range_3_5
+    t: 3 to 5 years
+  - key: options.years_of_experience_rn.range_more_than_5
+    t: More than 5 years
 
   # years of experience (short versions)
   - key: options.years_of_experience.range_less_than_1.short
@@ -1406,7 +1418,13 @@ translations:
   - key: user_info.years_of_experience
     t: Years of Experience
   - key: user_info.years_of_experience.question
-    t: How long have you been working or studying in this field, in years?
+    t: How long have you been working as a programmer or studying programming?
+
+  # years of experience
+  - key: user_info.years_of_experience_rn
+    t: RN Experience
+  - key: user_info.years_of_experience_rn.question
+    t: How long have you been working with or studying React Native, in years?
 
   # company size
   - key: user_info.company_size
