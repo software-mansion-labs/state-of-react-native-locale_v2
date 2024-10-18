@@ -764,9 +764,9 @@ translations:
   - key: options.higher_education_degree.no_degree
     t: No
   - key: options.higher_education_degree.yes_related
-    t: Yes, in a field related to my current profession
+    t: Yes, related to my profession
   - key: options.higher_education_degree.yes_unrelated
-    t: Yes, but in a field unrelated to my current profession
+    t: Yes, unrelated to my profession
 
   # degree (short versions)
   - key: options.higher_education_degree.no_degree.short
