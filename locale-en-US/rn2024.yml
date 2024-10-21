@@ -244,11 +244,11 @@ translations:
   - key: options.tools.developer_background_before.answer.c
     t: Android developer
   - key: options.tools.developer_background_before.answer.d
-    t: Frontend developer (other than React e.g. Vue, Angular, SolidJS, Svelte, etc.)
+    t: Frontend developer (other than React)
   - key: options.tools.developer_background_before.answer.e
-    t: Backend developer (PHP, Node.js, JVM, Python, etc.)
+    t: Backend developer
   - key: options.tools.developer_background_before.answer.f
-    t: Desktop developer (e.g. macOS, Windows, Linux)
+    t: Desktop developer
   - key: options.tools.developer_background_before.answer.g
     t: QA engineer
   - key: options.tools.developer_background_before.answer.h

@@ -1516,6 +1516,11 @@ translations:
     t: People
   - key: resources.communities
     t: Online communities
+  - key: resources.resources_video
+    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
+  - key: resources.resources_people
+    t: People you read, follow, or just want to highlight for their work.
+
 
   - key: resources.surveys
     t: Other surveys
