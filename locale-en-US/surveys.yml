@@ -1,0 +1,197 @@
+locale: en-US
+translations:
+  ###########################################################################
+  # General
+  ###########################################################################
+
+  - key: general.no_preview_surveys
+    t: No surveys to preview
+  - key: general.global_nav
+    t: Global
+  - key: general.survey_status_preview
+    t: Preview
+  - key: general.survey_status_open
+    t: Open
+  - key: general.survey_status_closed
+    t: Closed
+  - key: general.survey_status_hidden
+    t: Hidden
+
+  - key: general.pick_up_to
+    t: Pick up to {limit} items.
+
+
+  ###########################################################################
+  # Other UI Strings
+  ###########################################################################
+
+  - key: textlist.placeholder
+    t: Item {index}…
+
+  - key: feature.unimplemented
+    t: No browser implementation yet
+
+  - key: general.skip_question
+    t: Skip question
+
+  - key: general.unskip_question
+    t: Answer Question
+
+  - key: general.skip_question.description
+    t: Skip question and mark it as completed
+
+  - key: general.unskip_question.description
+    t: Unskip question and answer it
+
+  - key: years.less_than_one_year
+    t: Less than one year
+
+  - key: years.years
+    t: years
+
+
+  - key: general.numeric_input.invalid_input
+    t: Please make sure you enter a valid number.
+
+  - key: general.numeric_input.unit.years
+    t: years
+  - key: general.numeric_input.unit.years_old
+    t: years old
+  - key: general.numeric_input.unit.hours
+    t: hours
+
+  ###########################################################################
+  # Errors & Messages
+  ###########################################################################
+
+  - key: error.duplicate_response
+    t: Sorry, you already have a session in progress for this survey.
+
+  - key: error.report_issue
+    t: Report issue
+
+  - key: success.data_saved
+    t: Data Saved
+  - key: success.data_saved.description
+    t: Your data has been saved.
+
+  ###########################################################################
+  # Accounts
+  ###########################################################################
+
+  - key: accounts.create_account
+    t: Continue with Account
+  - key: accounts.create_account.description
+    t: Having an account lets you **access your own data in the future** and be notified when survey results are published.
+  - key: accounts.create_account.note
+    t: If you **already have an account** we will send you a magic log-in link by email.
+  - key: accounts.create_account.action
+    t: Continue with Account
+  - key: accounts.your_email
+    t: Your Email
+
+  - key: accounts.upgrade_account.action
+    t: Upgrade your account
+  - key: accounts.upgrade_account.description
+    t: Upgrading your account with an email address will let you access your survey response after you end your session.
+
+  - key: accounts.continue_as_guest
+    t: Continue as Guest
+  - key: accounts.continue_as_guest.description
+    t: Taking the survey anonymously means you **won't be able to access your data again** after you end your session.
+  - key: accounts.continue_as_guest.action
+    t: Continue as Guest
+
+  - key: accounts.magic_link.no_email
+    t: Please enter your email
+  - key: accounts.magic_link.success
+    t: Check your inbox! We sent you a magic link, just click it to confirm your account and log in.
+    # Open known mail provider directly in browser with the right search params
+  - key: accounts.magic_link.browser
+    t: <a href="{link}">Click to open your inbox.</a>
+
+  ###########################################################################
+  # Form Controls
+  ###########################################################################
+
+  - key: bracket.vs
+    t: VS
+  - key: bracket.start_over
+    t: Start Over
+  - key: bracket.winner
+    t: >
+    Winner:
+  - key: bracket.round
+    t: Round
+  - key: bracket.empty_bracket
+    t: Pending result (complete the previous round first)
+  - key: bracket.result
+    t: Result
+  - key: bracket.cancel
+    t: Cancel
+
+  - key: experience.leave_comment
+    t: Add a comment
+  - key: experience.leave_comment_short
+    t: Add a comment
+  - key: experience.tell_us_more
+    t: "You answered “{response}”. Tell us more about your choice:"
+  - key: experience.tell_us_more_generic
+    t: "Tell us more about your answer:"
+  - key: experience.tell_us_more_no_value
+    t: "You didn't pick any response. Tell us why:"
+
+  ###########################################################################
+  # Response
+  ###########################################################################
+
+  - key: response.completion
+    t: "{completion}% completed"
+
+  - key: response.details
+    t: Started on {startedAt}, {completion}% completed.
+
+  ###########################################################################
+  # Reading List
+  ###########################################################################
+
+  - key: readinglist.prompt
+    t: >
+      You picked “{option}”. If you'd like to learn more about this feature at the end of the survey, you can click the "+" icon in the corner above to add it to your **reading list**.
+
+  - key: readinglist.add_to_list
+    t: Add to Your Reading List
+
+  - key: readinglist.remove_from_list
+    t: Remove from Reading List
+
+  - key: readinglist.added_to_list
+    t: Added “{label}” to your reading list.
+
+  - key: readinglist.title
+    t: Reading List
+
+  - key: readinglist.description
+    t: >
+      Save items here using the "+" button, and you'll get a list of links to learn more about them at the end of the survey.
+
+  - key: readinglist.empty
+    t: >
+      You don't have any items in your reading list.
+      Try going back to the survey and adding features or libraries you'd like
+      to learn more about using the "+" button.
+
+  - key: readinglist.results
+    t: >
+      Here are some resources to learn more about the items in your reading list:
+
+  - key: readinglist.homepage_link
+    t: Homepage
+
+  - key: readinglist.receive_copy
+    t: >
+      Enter your email to get a copy of your reading list straight in your inbox:
+  - key: readinglist.send_by_email
+    t: Send
+  - key: readinglist.email_sent
+    t: Thanks! Your reading list is on its way to your inbox.
