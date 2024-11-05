@@ -41,6 +41,8 @@ translations:
     t: Previous section
   - key: general.new
     t: New
+  - key: general.privacy_policy
+    t: Privacy policy
 
 
   # navigation
