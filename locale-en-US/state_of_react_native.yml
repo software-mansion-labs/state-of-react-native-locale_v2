@@ -384,19 +384,19 @@ translations:
   - key: options.tools_js_ts.0
     t: "100% JS"
   - key: options.tools_js_ts.1
-    t: "|"
+    t: "90% / 10%"
   - key: options.tools_js_ts.2
-    t: "|"
+    t: "75% / 25%"
   - key: options.tools_js_ts.3
-    t: "|"
+    t: "60 / 40%"
   - key: options.tools_js_ts.4
-    t: "50%/50%"
+    t: "50% / 50%"
   - key: options.tools_js_ts.5
-    t: "|"
+    t: "40% / 60%"
   - key: options.tools_js_ts.6
-    t: "|"
+    t: "25% / 75%"
   - key: options.tools_js_ts.7
-    t: "|"
+    t: "10% / 90%"
   - key: options.tools_js_ts.8
     t: "100% TS"
 
