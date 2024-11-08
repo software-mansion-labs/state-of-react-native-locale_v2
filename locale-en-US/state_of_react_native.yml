@@ -433,9 +433,6 @@ translations:
   - key: options.opinions_right_direction.4
     t: "Agree Strongly"
 
-  - key: opinions.opinions_right_direction
-    t: "React Native is moving in the right direction"
-
   - key: opinions.opinions_complex
     t: "Building React Native apps is overly complex right now"
 
@@ -864,8 +861,6 @@ translations:
     t: React Native Features
   - key: sections.react_native_specific_features.question
     t: What is your knowledge of the features specific to React Native development?
-  - key: react_native_specific_features.react_native_features_version
-    t: React Native version
   - key: react_native_specific_features.react_native_features_version
     t: Which React Native version do you use mainly?
   - key: react_native_specific_features.react_native_features_strategies
@@ -1436,12 +1431,6 @@ translations:
 
   - key: react_native_features.brownfield
     t: Do you integrate React Native with applications written using other technology?
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_green
-    t: I mainly work on standalone React Native apps (greenfield)
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_brown
-    t: I mainly work on integrated React Native apps (brownfield)
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_both
-    t: I work on both standalone and brownfield apps
   - key: react_native_features.ota_updates
     t: OTA updates solutions
   - key: react_native_features.mobile_web_code_sharing
@@ -1470,8 +1459,6 @@ translations:
     t: Config plugins
   - key: options.rn_tools.tools_config_plugins
     t: Config plugins
-  - key: rn_tools.tools_custom_development_client
-    t: Custom Development Client
   - key: rn_tools.tools_other_tools
     t: Other development tools
 
