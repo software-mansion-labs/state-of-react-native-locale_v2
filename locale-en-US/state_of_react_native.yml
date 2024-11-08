@@ -388,7 +388,7 @@ translations:
   - key: options.tools_js_ts.2
     t: "75% / 25%"
   - key: options.tools_js_ts.3
-    t: "60 / 40%"
+    t: "60% / 40%"
   - key: options.tools_js_ts.4
     t: "50% / 50%"
   - key: options.tools_js_ts.5
