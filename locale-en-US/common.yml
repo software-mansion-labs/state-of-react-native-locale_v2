@@ -45,6 +45,8 @@ translations:
     t: Privacy policy
   - key: general.take_survey
     t: Participate in the State of React Native survey to share your insights.
+  - key: general.newly_added
+    t: Added in 2024
 
   # navigation
   - key: general.table_of_contents
