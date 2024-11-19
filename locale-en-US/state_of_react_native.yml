@@ -1,13 +1,1144 @@
 #########################################################################
-
-# These translations only concern `results` and not `surveyform`!
-# I've added the survey locales to common.yml instead for them to load in `surveyform`
-
+#                 TRANSLATIONS FOR SURVEYFORM                           #
 #########################################################################
+# TODO: INSPECT WHAT OTHER PARTS ALSO CONSUME THESE TRANSLATIONS
 
 locale: en-US
 namespace: js
 translations:
+  ######################################################
+  ##########           QUESTIONS            ############
+  ######################################################
+
+  ######################################################
+  #########        DEVELOPER BACKGROUND        #########
+  ######################################################
+
+  - key: developer_background.intro_message
+    t: |
+      Welcome to the survey! This first part is all about sharing your background as a developer. Let's get to know each other as a fellow React Native developers 😊
+
+  # Before React Native
+  - key: developer_background.developer_background_before
+    t: Before React Native
+  - key: developer_background.developer_background_before.question
+    t: What was your background before you started using React Native?
+
+  - key: options.developer_background_before.developer_background_before_react
+    t: React developer
+  - key: options.developer_background_before.developer_background_before_ios
+    t: iOS developer
+  - key: options.developer_background_before.developer_background_before_android
+    t: Android developer
+  - key: options.developer_background_before.developer_background_before_frontend
+    t: Frontend developer (other than React e.g. Vue, Angular, SolidJS, Svelte, etc.)
+  - key: options.developer_background_before.developer_background_before_backend
+    t: Backend developer (PHP, Node.js, JVM, Python, etc.)
+  - key: options.developer_background_before.developer_background_before_desktop
+    t: Desktop developer (e.g. macOS, Windows, Linux)
+  - key: options.developer_background_before.developer_background_before_qa
+    t: QA engineer
+  - key: options.developer_background_before.developer_background_before_devops
+    t: DevOps
+  - key: options.developer_background_before.developer_background_before_embedded
+    t: Embedded developer
+  - key: options.developer_background_before.developer_background_before_non_technical
+    t: Non-technical role
+  - key: options.developer_background_before.developer_background_before_started_with_rn
+    t: Started with React Native
+
+  # Usage Type
+  - key: developer_background.developer_background_usage_type
+    t: Usage Type
+  - key: developer_background.developer_background_usage_type.question
+    t: How do you use React Native?
+
+  - key: options.developer_background_usage_type.developer_background_usage_type_professional
+    t: Professionally
+  - key: options.developer_background_usage_type.developer_background_usage_type_student
+    t: As a student
+  - key: options.developer_background_usage_type.developer_background_usage_type_hobby
+    t: As a hobby
+
+  # Desktop OS
+  - key: developer_background.developer_background_primarily_system
+    t: Desktop OS
+  - key: developer_background.developer_background_primarily_system.question
+    t: What desktop OS do you primarily use?
+
+  - key: options.developer_background_primarily_system.developer_background_primarily_system_macos
+    t: macOS
+  - key: options.developer_background_primarily_system.developer_background_primarily_system_linux
+    t: Linux
+  - key: options.developer_background_primarily_system.developer_background_primarily_system_windows
+    t: Windows
+
+  # Top React Native App User Count
+  - key: developer_background.developer_background_users_count
+    t: Top React Native App User Count
+  - key: developer_background.developer_background_users_count.question
+    t: What is the user count of your top React Native app?
+
+  - key: options.developer_background_users_count.developer_background_users_count_only_me
+    t: Only me
+  - key: options.developer_background_users_count.developer_background_users_count_2_100
+    t: 2-100
+  - key: options.developer_background_users_count.developer_background_users_count_101_1k
+    t: 101-1k
+  - key: options.developer_background_users_count.developer_background_users_count_1k_10k
+    t: 1k-10k
+  - key: options.developer_background_users_count.developer_background_users_count_10k_100k
+    t: 10k-100k
+  - key: options.developer_background_users_count.developer_background_users_count_100k_1m
+    t: 100k-1M
+  - key: options.developer_background_users_count.developer_background_users_count_1m_plus
+    t: 1M and more
+
+  # Mobile App Team Size
+  - key: developer_background.developer_background_team_size
+    t: Mobile App Team Size
+  - key: developer_background.developer_background_team_size.question
+    t: What is your mobile app team size?
+
+  - key: options.developer_background_team_size.developer_background_team_size_solo
+    t: Solo developer
+  - key: options.developer_background_team_size.developer_background_team_size_two
+    t: "2"
+  - key: options.developer_background_team_size.developer_background_team_size_3_5
+    t: 3-5
+  - key: options.developer_background_team_size.developer_background_team_size_6_10
+    t: 6-10
+  - key: options.developer_background_team_size.developer_background_team_size_more_than_10
+    t: more than 10
+
+  # Platforms Used for React Native
+  - key: developer_background.developer_background_platforms
+    t: Platforms Used for React Native
+  - key: developer_background.developer_background_platforms.question
+    t: What are the platforms that you use React Native for?
+
+  - key: options.developer_background_platforms.developer_background_platforms_ios
+    t: iOS
+  - key: options.developer_background_platforms.developer_background_platforms_android
+    t: Android
+  - key: options.developer_background_platforms.developer_background_platforms_web
+    t: Web
+  - key: options.developer_background_platforms.developer_background_platforms_macos
+    t: macOS
+  - key: options.developer_background_platforms.developer_background_platforms_windows
+    t: Windows
+  - key: options.developer_background_platforms.developer_background_platforms_android_tv
+    t: Android TV
+  - key: options.developer_background_platforms.developer_background_platforms_tvos
+    t: tvOS
+  - key: options.developer_background_platforms.developer_background_platforms_skia
+    t: React Native Skia (Linux & macOS)
+
+  # Contribution to React Native
+  - key: developer_background.developer_background_contribution_to_rn
+    t: Contribution to React Native
+  - key: developer_background.developer_background_contribution_to_rn.question
+    t: Have you contributed to React Native?
+  - key: developer_background.developer_background_contribution_to_rn.description
+    t: Contributions in 2024 (commits/PRs)
+
+  - key: options.developer_background_contribution_to_rn.answer_yes
+    t: Yes
+  - key: options.developer_background_contribution_to_rn.answer_no
+    t: No
+
+  # Open Source Contribution to React Native Libraries
+  - key: developer_background.developer_background_contribution_to_lib
+    t: Open Source Contribution to React Native Libraries
+  - key: developer_background.developer_background_contribution_to_lib.question
+    t: Have you contributed to any React Native community library?
+  - key: developer_background.developer_background_contribution_to_lib.description
+    t: Contributions in 2024 (commits/PRs)
+
+  - key: options.developer_background_contribution_to_lib.answer_yes
+    t: Yes
+  - key: options.developer_background_contribution_to_lib.answer_no
+    t: No
+
+  # Released React Native Apps Count
+  - key: developer_background.developer_background_releases_count
+    t: Released React Native Apps Count
+  - key: developer_background.developer_background_releases_count.question
+    t: How many React Native apps have you published?
+  - key: developer_background.developer_background_releases_count.description
+    t: Published to the app stores
+
+  - key: options.developer_background_releases_count.developer_background_releases_count_none
+    t: None
+  - key: options.developer_background_releases_count.developer_background_releases_count_one
+    t: "1"
+  - key: options.developer_background_releases_count.developer_background_releases_count_2_5
+    t: 2-5
+  - key: options.developer_background_releases_count.developer_background_releases_count_5_10
+    t: 5-10
+  - key: options.developer_background_releases_count.developer_background_releases_count_more_than_10
+    t: More than 10
+
+  # Target OS
+  - key: developer_background.developer_background_os_target
+    t: Target mobile OS version
+  - key: developer_background.developer_background_os_target.question
+    t: What mobile OS versions do you target?
+
+  - key: options.developer_background_os_target.developer_background_os_target_most_recent
+    t: The most recent versions (iOS 18+, Android 15+)
+  - key: options.developer_background_os_target.developer_background_os_target_reasonably_current
+    t: Reasonably current (iOS 17+, Android 13+)
+  - key: options.developer_background_os_target.developer_background_os_target_old
+    t: Old (iOS 14+, Android 9+) <!-- https://github.com/react-native-community/discussions-and-proposals/discussions/812 -->
+  - key: options.developer_background_os_target.developer_background_os_target_as_old_as_possible
+    t: As old as possible (iOS 8+, Android 5+)
+
+  # Industry Sectors Using React Native
+  - key: developer_background.developer_background_industry_sector
+    t: Industry Sectors Using React Native
+  - key: developer_background.developer_background_industry_sector.question
+    t: Which industry sector(s) are you using React Native in?
+
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_art_design
+    t: Art & Design
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_agriculture
+    t: Agriculture
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_automotive
+    t: Automotive
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_beauty
+    t: Beauty
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_books_reference
+    t: Books & Reference
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_construction
+    t: Construction
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_communication
+    t: Communication
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_consulting
+    t: Consulting & Services
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_crypto
+    t: Crypto & Web3
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_cyber_security
+    t: Cyber Security
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_dating
+    t: Dating
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_education
+    t: Education
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_energy
+    t: Energy
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_entertainment
+    t: Entertainment
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_events
+    t: Events
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_finance
+    t: Finance
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_food_drink
+    t: Food & Drink
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_government
+    t: Government
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_games
+    t: Games
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_health_fitness
+    t: Health & Fitness
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_house_home
+    t: House & Home
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_insurance
+    t: Insurance
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_logistics
+    t: Logistics
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_lifestyle
+    t: Lifestyle
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_manufacturing
+    t: Manufacturing
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_marketing_tools
+    t: Marketing/Sales/Analytics Tools
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_medical
+    t: Medical
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_music_audio
+    t: Music & Audio
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_navigation
+    t: Navigation
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_news_media
+    t: News, Media, & Blogging
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_photo
+    t: Photo
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_productivity
+    t: Productivity
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_programming_tools
+    t: Programming & Technical Tools
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_real_estate
+    t: Real Estate
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_shopping
+    t: Shopping
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_social_media
+    t: Social Media
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_sports
+    t: Sports
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_student
+    t: Student
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_transport
+    t: Transport
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_travel
+    t: Travel
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_weather
+    t: Weather
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_video
+    t: Video
+
+  ######################################################
+  #########        PLATFORM APIS               #########
+  ######################################################
+  - key: platform_apis.intro_message
+    t: |
+      This section of the survey is all about the variety of APIs you can use on the devices.
+
+      Tell us what is your experience using them in your React Native apps.
+      Is it very hard to achieve what you want to, or "<i>it just works</i>"?
+      Be sure to express your feelings by clicking the <b>Positive experience</b> or <b>Negative experience</b> buttons!
+      You can even express your pain points observations if you want to 😉
+
+      By the way, if you want to learn more about specific piece of technology, please make sure to press <b>"+" button</b> and add it to your <b>reading list</b>!
+
+  - key: sections.platform_apis.title
+    t: Platform APIs
+  - key: platform_apis.platform_apis_questions
+    t: Available platform APIs
+  - key: platform_apis.platform_apis_questions.question
+    t: What APIs do you use in your React Native apps?
+  - key: platform_apis.platform_apis_pain_points
+    t: Platform APIs pain points
+  - key: platform_apis.platform_apis_pain_points.question
+    t: Platform APIs pain points
+  - key: platform_apis.platform_apis_pain_points.description
+    t: What pain points have you encountered related to the APIs mentioned above? Specify the individual API if applicable.
+
+  ######################################################
+  #########        STATE MANAGEMENT            #########
+  ######################################################
+  - key: state_management.intro_message
+    t: |
+      This next part of the survey is about sharing your experiences with various libraries that address the most fundamental challenges of React Native apps.
+
+      You can indicate your familiarity with each library by choosing one of the following options:
+      - **Never heard of it**: this is the first time you've seen it - or you've heard of it but have no idea what it does.
+      - **Heard of it**: you've read or heard about it, but haven't actually used it yet.
+      - **Used it**: you've used it at least once, even just to play around with..
+
+      Also, if you want to tell us more about any of your choices, just click the <b>"Add a comment"</b> button!
+
+  - key: sections.state_management.title
+    t: State Management
+  - key: sections.state_management.description
+    t: What state management solutions do you regularly use in your React Native apps?
+  - key: state_management.state_management_others.question
+    t: Other state management solutions
+  - key: state_management.state_management_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: state_management.state_management_others
+    t: Other solutions
+  - key: state_management.state_management_pain_points
+    t: State management pain points
+  - key: state_management.state_management_pain_points.question
+    t: State management pain points
+  - key: state_management.state_management_pain_points.description
+    t:
+      What pain points have you encountered with state management in your React Native projects?
+      If applicable, point out the specific solution and its problems.
+  - key: state_management.state_management_ratios
+    t: State Management Ratios Over Time
+  - key: state_management.state_management_experience
+    t: State Management Experience & Sentiment
+
+  ######################################################
+  #########           DATA FETCHING            #########
+  ######################################################
+  - key: sections.data_fetching.title
+    t: Data fetching
+  - key: sections.data_fetching.description
+    t: What data fetching solutions do you regularly use in your React Native apps?
+  - key: data_fetching.data_fetching_others.question
+    t: Other data fetching solutions not mentioned above
+  - key: data_fetching.data_fetching_others
+    t: Other solutions
+  - key: data_fetching.data_fetching_pain_points
+    t: Data fetching pain points
+  - key: data_fetching.data_fetching_pain_points.question
+    t: Data fetching pain points
+  - key: data_fetching.data_fetching_pain_points.description
+    t: What pain points have you encountered with data fetching in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: data_fetching.data_fetching_ratios
+    t: Navigation Ratios Over Time
+  - key: data_fetching.data_fetching_experience
+    t: Navigation Experience & Sentiment
+
+  ######################################################
+  #########             NAVIGATION             #########
+  ######################################################
+  - key: sections.navigation.title
+    t: Navigation
+  - key: sections.navigation.description
+    t: What navigation solutions do you regularly use in your React Native apps?
+  - key: navigation.navigation_others.question
+    t: Other navigation solutions not mentioned above
+  - key: navigation.navigation_others
+    t: Other solutions
+  - key: navigation.navigation_pain_points
+    t: Navigation pain points
+  - key: navigation.navigation_pain_points.question
+    t: Navigation pain points
+  - key: navigation.navigation_pain_points.description
+    t: What pain points have you encountered with navigation in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: navigation.navigation_ratios
+    t: Navigation Ratios Over Time
+  - key: navigation.navigation_experience
+    t: Navigation Experience & Sentiment
+
+  ######################################################
+  #########              STYLING               #########
+  ######################################################
+  - key: sections.styling.title
+    t: Styling
+  - key: sections.styling.description
+    t: What styling techniques do you regularly use in your React Native apps?
+  - key: styling.styling_techniques_other.question
+    t: Other styling solutions not mentioned above
+  - key: styling.styling_techniques_other
+    t: Other solutions
+  - key: styling.styling_pain_points
+    t: Styling pain points
+  - key: styling.styling_pain_points.question
+    t: Styling pain points
+  - key: styling.styling_pain_points.description
+    t: What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: styling.styling_techniques_pain_points
+    t: Styling pain points
+  - key: styling.styling_techniques_pain_points.question
+    t: Styling pain points
+  - key: styling.styling_techniques_pain_points.description
+    t: What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: styling.styling_ratios
+    t: Styling Ratios Over Time
+  - key: styling.styling_experience
+    t: Styling Experience & Sentiment
+
+  ######################################################
+  #########        COMPONENT LIBRARIES         #########
+  ######################################################
+  - key: sections.component_libraries.title
+    t: Components Libraries
+  - key: sections.component_libraries.description
+    t: What UI components libraries do you regularly use in your React Native apps?
+  - key: component_libraries.component_libraries_others.question
+    t: Other component libraries solutions not mentioned above
+  - key: component_libraries.component_libraries_others
+    t: Other solutions
+  - key: component_libraries.component_libraries_pain_points
+    t: Components libraries pain points
+  - key: component_libraries.component_libraries_pain_points.question
+    t: Components libraries pain points
+  - key: component_libraries.component_libraries_pain_points.description
+    t: What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: component_libraries.component_libraries_ratios
+    t: Component Libraries Ratios Over Time
+  - key: component_libraries.component_libraries_experience
+    t: Components Libraries Experience & Sentiment
+
+  ######################################################
+  #########        ANIMATIONS                  #########
+  ######################################################
+  - key: sections.animations.title
+    t: Animations
+  - key: sections.animations.description
+    t: What graphics and animations solutions do you use in your React Native apps?
+  - key: animations.animations_other.question
+    t: Other animations solutions not mentioned above
+  - key: animations.animations_other
+    t: Other solutions
+  - key: animations.animations_pain_points
+    t: Graphics and animations pain points
+  - key: animations.animations_pain_points.question
+    t: Graphics and animations pain points
+  - key: animations.animations_pain_points.description
+    t: What pain points have you encountered with graphics and animations in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: animations.animations_ratios
+    t: Animations Ratios Over Time
+  - key: animations.animations_experience
+    t: Animations Experience & Sentiment
+
+  ######################################################
+  #########        DEBUGGING AND PROFILING     #########
+  ######################################################
+
+  - key: sections.debugging_and_profiling.title
+    t: Debugging And Profiling
+  - key: sections.debugging_and_profiling.description
+    t: What tools do you use to debug your React Native apps?
+  - key: debugging_and_profiling.debugging_profiling_others.question
+    t: Other debugging and profiling solutions not mentioned above
+  - key: debugging_and_profiling.debugging_profiling_others
+    t: Other solutions
+  - key: debugging_and_profiling.debugging_profiling_pain_points
+    t: Debugging and profiling pain points
+  - key: debugging_and_profiling.debugging_profiling_pain_points.question
+    t: Debugging and profiling pain points
+  - key: debugging_and_profiling.debugging_profiling_pain_points.description
+    t: What pain points have you encountered with debugging and profiling in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: debugging_and_profiling.debugging_and_profiling_experience
+    t: Debugging And Profiling Experience & Sentiment
+
+  #############################################################################################
+  #############################################################################################
+  #############################################################################################
+  # YET TO BE REVIEWED
+  #############################################################################################
+  #############################################################################################
+  #############################################################################################
+
+  # App Aspects section
+  - key: sections.react_native_app_aspects.title
+    t: App Aspects
+  - key: sections.react_native_app_aspects.description
+    t: What solutions to other well-defined problems do you regularly use in your React Native apps?
+  - key: react_native_app_aspects.react_native_app_aspects_analytics
+    t: Analytics
+  - key: react_native_app_aspects.react_native_app_aspects_analytics.question
+    t: What analytics solutions do you regularly use in your React Native apps?
+  - key: react_native_app_aspects.react_native_app_aspects_analytics.description
+    t: Check all that apply
+  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points
+    t: Analytics pain points
+  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points.question
+    t: Analytics pain points
+  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points.description
+    t: What pain points have you encountered with analytics in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting
+    t: Crash reporting
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.question
+    t: What crash reporting solutions do you regularly use in your React Native apps?
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.description
+    t: Check all that apply
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points
+    t: Crash reporting pain points
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points.question
+    t: Crash reporting pain points
+  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points.description
+    t: What pain points have you encountered with crash reporting in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation
+    t: Data visualisation
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.question
+    t: What data visualisation solutions do you regularly use in your React Native apps?
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.description
+    t: Check all that apply
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points
+    t: Data visualisation pain points
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points.question
+    t: Data visualisation pain points
+  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points.description
+    t: What pain points have you encountered with data visualisation in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: react_native_app_aspects.react_native_app_aspects_storage
+    t: Storage
+  - key: react_native_app_aspects.react_native_app_aspects_storage.question
+    t: What storage solutions do you regularly use in your React Native apps?
+  - key: react_native_app_aspects.react_native_app_aspects_storage.description
+    t: Check all that apply
+  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points
+    t: Storage pain points
+  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points.question
+    t: Storage pain points
+  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points.description
+    t: What pain points have you encountered with storage in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: react_native_app_aspects.react_native_app_aspects_testing
+    t: Testing
+  - key: react_native_app_aspects.react_native_app_aspects_testing.question
+    t: What testing solutions do you regularly use in your React Native apps?
+  - key: react_native_app_aspects.react_native_app_aspects_testing.description
+    t: Check all that apply
+  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points
+    t: Testing pain points
+  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points.question
+    t: Testing pain points
+  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points.description
+    t: What pain points have you encountered with testing in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries
+    t: Other popular libraries
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.question
+    t: What other popular libraries do you regularly use in your React Native apps?
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.description
+    t: Check all that apply
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points
+    t: Other libraries pain points
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points.question
+    t: Other libraries pain points
+  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points.description
+    t: What pain points have you encountered with other libraries in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: react_native_app_aspects.react_native_app_aspects_architecture_local_first
+    t: Local-first app architecture
+
+  # React Native Features section
+  - key: sections.react_native_specific_features.title
+    t: React Native Features
+  - key: sections.react_native_specific_features.question
+    t: What is your knowledge of the features specific to React Native development?
+  - key: react_native_specific_features.react_native_features_version
+    t: Which React Native version do you use mainly?
+  - key: react_native_specific_features.react_native_features_strategies
+    t: Upgrade strategy
+  - key: react_native_specific_features.react_native_features_strategies.question
+    t: What is your main strategy for upgrading React Native to a new versions?
+  - key: react_native_specific_features.react_native_bridgeless_mode
+    t: Bridgeless mode
+  - key: react_native_specific_features.react_native_bridgeless_mode.question
+    t: Bridgeless mode
+  - key: react_native_specific_features.react_native_features_brownfield
+    t: Brownfield
+  - key: react_native_specific_features.react_native_features_brownfield.question
+    t: What type of React Native project are you working on?
+  - key: react_native_specific_features.react_native_features_ota_updates
+    t: Over-The-Air updates
+  - key: react_native_specific_features.react_native_features_ota_updates.question
+    t: What Over-The-Air updates solutions do you use? Check all that apply
+  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing
+    t: Mobile-Web code sharing
+  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing.question
+    t: What methods do you employ for sharing code between mobile and web platforms in your project, if any? Check all that apply
+  - key: react_native_specific_features.react_native_features_experience
+    t: React Native Features Experience & Sentiment
+
+  # Deployment section
+  - key: sections.deployment.title
+    t: Deployment
+  - key: sections.deployment.description
+    t: How do you build and submit your app for the App Store or Google Play?
+  - key: deployment.deployment_ratios
+    t: Animations Ratios Over Time
+  - key: deployment.deployment_experience
+    t: Animations Experience & Sentiment
+
+  # React Native Alternatives section
+  - key: sections.react_native_alternatives.title
+    t: React Native Alternatives
+  - key: sections.react_native_alternatives.description
+    t: What other cross-platform app development solutions are you familiar with?
+  - key: react_native_alternatives.react_native_alternatives_experience
+    t: React Native Alternatives Experience & Sentiment
+
+  # Resources section
+  - key: sections.resources.title
+    t: Resources
+  - key: sections.resources.description
+    t: What React Native resources do you consult?
+  - key: resources.resources_initially_learn_react_native
+    t: Learning methods
+  - key: resources.resources_initially_learn_react_native.question
+    t: What methods do you use to learn React Native?
+  - key: resources.resources_initially_learn_react_native.description
+    t: Check all that apply
+  - key: resources.resources_read_multiple
+    t: Blogs, magazines & newsletters
+  - key: resources.resources_read_multiple.question
+    t: What blogs, magazines or newsletters do you consult to keep up with React Native news?
+  - key: resources.resources_read_multiple.description
+    t: Check all that apply
+  - key: resources.resources_course_multiple
+    t: Sites, courses & books
+  - key: resources.resources_course_multiple.question
+    t: What sites, courses or books do you consult to learn React Native?
+  - key: resources.resources_course_multiple.description
+    t: Check all that apply
+  - key: resources.resources_podcast_multiple
+    t: Podcasts
+  - key: resources.resources_podcast_multiple.question
+    t: What React Native or general programming-related podcasts do you listen to?
+  - key: resources.resources_podcast_multiple.description
+    t: Check all that apply
+  - key: resources.video_creators_rn
+    t: Video Creators
+  - key: resources.video_creators_rn.question
+    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
+  - key: resources.video_creators_rn.description
+    t: Write all that apply
+  - key: resources.people_rn
+    t: People
+  - key: resources.people_rn.question
+    t: People you read, follow, or just want to highlight for their work.
+  - key: resources.people_rn.description
+    t: Write all that apply
+  - key: resources.resources_surveys
+    t: Other developer surveys
+  - key: resources.resources_surveys.question
+    t: What other developer surveys do you participate in?
+  - key: resources.resources_surveys.description
+    t: Check all that apply
+
+  # React Native Tools section
+  - key: sections.rn_tools.title
+    t: React Native Tools
+  - key: sections.rn_tools.description
+    t: The tools you use to develop React Native apps.
+  - key: rn_tools.rn_tools_js_ts.question
+    t: JavaScript/TypeScript Balance
+  - key: rn_tools.rn_tools_js_ts.description
+    t: How do you divide your time between writing JavaScript and TypeScript code?
+  - key: rn_tools.rn_tools_package_managers.question
+    t: Package Managers
+  - key: rn_tools.rn_tools_package_managers.description
+    t: Which package managers do you use? Check all that apply
+  - key: rn_tools.rn_tools_starter_templates.question
+    t: Starter Templates
+  - key: rn_tools.rn_tools_starter_templates.description
+    t: Which starter templates or boilerplates do you use? Check all that apply
+  - key: rn_tools.rn_tools_experience
+    t: React Native Tools Experience & Sentiment
+
+  # Opinions section
+  - key: sections.opinions.title
+    t: Opinions
+  - key: sections.opinions.description
+    t: How do you feel about the state of React Native?
+  - key: opinions.opinions_right_direction
+    t: React Native direction
+  - key: opinions.opinions_right_direction.question
+    t: Is React Native moving in the right direction?
+  - key: opinions.opinions_complex.question
+    t: Building React Native apps is overly complex right now
+  - key: opinions.opinions_changing_too_fast.question
+    t: The React Native ecosystem is changing too fast
+  - key: opinions.opinions_pain_points_multiple
+    t: React Native pain points
+  - key: opinions.opinions_pain_points_multiple.question
+    t: What are the things that makes you feel annoyed while developing React Native apps?
+  - key: opinions.opinions_pain_points_multiple.description
+    t: Check all that apply
+
+  - key: opinions.opinions_missing_multiple
+    t: Missing features
+  - key: opinions.opinions_missing_multiple.question
+    t: What do you feel currently is missing from React Native?
+  - key: opinions.opinions_missing_multiple.description
+    t: Check all that apply
+
+  - key: opinions.opinions_advantages_multiple
+    t: React Native advantages
+  - key: opinions.opinions_advantages_multiple.question
+    t: What are advantages of React Native over other solutions?
+  - key: opinions.opinions_advantages_multiple.description
+    t: Check all that apply
+
+  # About You section
+  - key: sections.about_you.title
+    t: About You
+  - key: sections.about_you.description
+    t: Let's get to know you a little better.
+  - key: about_you.about_you_country.question
+    t: Your country or region
+  - key: about_you.about_you_country.description
+    t: Where do you currently reside?
+  - key: about_you.about_you_age.question
+    t: Your age
+  - key: about_you.about_you_age.description
+    t: How old are you, in years?
+  - key: about_you.about_you_experience.question
+    t: Years of experience
+  - key: about_you.about_you_experience.description
+    t: How long have you been working as a programmer or studying programming?
+  - key: about_you.about_you_experience_in_rn.question
+    t: Years of experience in React Native
+  - key: about_you.about_you_experience_in_rn.description
+    t: How long have you been working with or studying React Native, in years?
+  - key: about_you.about_you_company_size.question
+    t: Company size
+  - key: about_you.about_you_company_size.description
+    t: How big is your company, in the number of employees?
+  - key: about_you.about_you_education_degree.question
+    t: Higher education degree
+  - key: about_you.about_you_education_degree.description
+    t: Do you have a higher education degree?
+  - key: about_you.about_you_salary.question
+    t: Yearly salary
+  - key: about_you.about_you_salary.description
+    t: Your yearly salary in U.S. dollars.
+  - key: about_you.about_you_gender.question
+    t: Your gender
+  - key: about_you.about_you_gender.description
+    t: Which of the following options describes you, if any?
+  - key: about_you.about_you_gender.note
+    t: >
+      While we know collecting and publishing diversity data can be a sensitive issue,
+      we do think it's important to obtain this data to help measure and improve
+      the survey's efforts in terms of inclusivity and representativeness.
+  - key: about_you.about_you_how_you_know.question
+    t: How did you find out about this survey?
+  - key: about_you.about_you_what_to_improve.question
+    t: How could we improve this survey?
+
+  # Developer Background section
+  - key: sections.developer_background.title
+    t: Developer Background
+  - key: sections.developer_background.description
+    t: What's your background as a developer?
+
+  # deployment
+  - key: deployment.deployment_pain_points
+    t: Deployment pain points
+  - key: deployment.deployment_pain_points.question
+    t: Deployment pain points
+  - key: deployment.deployment_pain_points.description
+    t: What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  ###########################################################################
+  # FAQ/About
+  ###########################################################################
+
+  - key: faq.is_answering_every_question_mandatory
+    t: Is answering every question mandatory?
+  - key: faq.is_answering_every_question_mandatory.description
+    t: No, every question of the survey is optional and can freely be skipped.
+
+  - key: faq.will_my_data_be_public
+    t: Will my data be made public?
+  - key: faq.will_my_data_be_public.description
+    t: The data will be made public in a form of readable charts and graphs. We will not publish any identifiable information.
+
+  - key: faq.when_will_results_be_released
+    t: When will the results be made available?
+  - key: faq.when_will_results_be_released.description
+    t: The results are going to be released a few weeks after the survey closes.
+
+  - key: faq.who_runs_the_survey
+    t: Who runs this survey?
+  - key: faq.who_runs_the_survey.description
+    t: This survey is run by Software Mansion. We are a software development company based in Poland, with a strong focus on React Native app development and multimedia streaming.
+
+  - key: faq.this_survey_looks_familiar
+    t: This survey looks very familiar!
+  - key: faq.this_survey_looks_familiar.description
+    t: It's because it's using the same infrastructure as State of JavaScript and State of CSS surveys made by Devographics.
+
+  - key: faq.how_was_survey_design
+    t: How was this survey designed?
+  - key: faq.how_was_survey_design.description
+    t: The survey was designed based on our expertise and the community feedback gathered on <a href="https://github.com/software-mansion/state-of-react-native/discussions/6">this GitHub discussion</a>.
+
+  ######################################################
+  #########             FEATURES               #########
+  ######################################################
+
+  - key: react_native_features.version
+    t: React Native version
+  - key: options.react_native_features_version.react_native_features_version_0_63_or_lower
+    t: 0.63 or lower
+  - key: options.react_native_features_version.react_native_features_version_0_64
+    t: "0.64"
+  - key: options.react_native_features_version.react_native_features_version_0_65
+    t: "0.65"
+  - key: options.react_native_features_version.react_native_features_version_0_66
+    t: "0.66"
+  - key: options.react_native_features_version.react_native_features_version_0_67
+    t: "0.67"
+  - key: options.react_native_features_version.react_native_features_version_0_68
+    t: "0.68"
+  - key: options.react_native_features_version.react_native_features_version_0_69
+    t: "0.69"
+  - key: options.react_native_features_version.react_native_features_version_0_70
+    t: "0.70"
+  - key: options.react_native_features_version.react_native_features_version_0_71
+    t: "0.71"
+  - key: options.react_native_features_version.react_native_features_version_0_72
+    t: "0.72"
+  - key: options.react_native_features_version.react_native_features_version_0_73
+    t: "0.73"
+  - key: options.react_native_features_version.react_native_features_version_0_74
+    t: "0.74"
+  - key: options.react_native_features_version.react_native_features_version_0_75
+    t: "0.75"
+  - key: options.react_native_features_version.react_native_features_version_next
+    t: next
+  - key: options.react_native_features_version.react_native_features_version_nightly
+    t: nightly
+
+  - key: react_native_features.strategies
+    t: React Native version upgrading strategy
+  - key: options.react_native_features_strategies.react_native_features_strategies_stay_latest
+    t: Stay on the latest version
+  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_occasionally
+    t: Upgrade occasionally
+  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_for_new_features
+    t: Upgrade for the new features
+  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_parallel_with_expo
+    t: Upgrade in parallel with Expo SDK releases
+  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_if_necessary
+    t: Don't upgrade until I have to
+  - key: options.react_native_features_strategies.react_native_features_strategies_other
+    t: Other React Native version upgrading strategy
+
+  - key: react_native_features.brownfield
+    t: Do you integrate React Native with applications written using other technology?
+  - key: react_native_features.ota_updates
+    t: OTA updates solutions
+  - key: react_native_features.mobile_web_code_sharing
+    t: Mobile-Web code sharing
+
+  - key: deployment.deployment_other
+    t: Other solutions
+  - key: deployment.deployment_other.question
+    t: Other ways to build app and release to the stores
+
+  - key: rn_tools.tools_js_ts
+    t: JavaScript/TypeScript Balance
+  - key: rn_tools.tools_package_managers
+    t: Package managers
+  - key: rn_tools.tools_starter_templates
+    t: Starter templates
+  - key: rn_tools.tools_custom_development_client
+    t: Custom Development Client
+  - key: options.rn_tools.tools_custom_development_client
+    t: Custom Development Client
+  - key: rn_tools.tools_upgrade_helper
+    t: Upgrade Helper
+  - key: options.rn_tools.tools_upgrade_helper
+    t: Upgrade Helper
+  - key: rn_tools.tools_config_plugins
+    t: Config plugins
+  - key: options.rn_tools.tools_config_plugins
+    t: Config plugins
+  - key: rn_tools.tools_other_tools
+    t: Other development tools
+
+  - key: react_native_alternatives.react_native_alternatives_other
+    t: Other React Native alternatives
+
+  ######################################################
+  #########             RESOURCES              #########
+  ######################################################
+
+  - key: resources.initially_learn_react_native
+    t: Learning methods
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_official_docs
+    t: Official React Native docs
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_expo_docs
+    t: Expo docs
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_react_native_directory
+    t: React Native Directory
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_books
+    t: Books
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_videos
+    t: Videos
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_x
+    t: X platform
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_free
+    t: Online courses (free)
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_paid
+    t: Online courses (paid)
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_school_higher_education
+    t: School / higher education
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_podcasts
+    t: Podcasts
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_coding_bootcamp
+    t: Coding bootcamp
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_on_the_job_training
+    t: On-the-job training
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_mentoring
+    t: Mentoring
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_self_directed_learning
+    t: Self-directed learning
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_other
+    t: Other learning methods
+
+  - key: resources.read_multiple
+    t: "Blogs, magazines & newsletters"
+
+  - key: resources.course_multiple
+    t: Sites, courses & books
+
+  - key: options.resources_course_multiple.resources_course_multiple_other_courses_sites
+    t: Other courses or sites
+
+  - key: resources.podcast_multiple
+    t: Podcasts
+  - key: options.resources_podcast_multiple.resources_podcast_multiple_other_podcasts
+    t: Other podcasts
+
+  - key: resources.read
+    t: Other blogs, magazines or newsletters
+  - key: resources.course
+    t: Other sites, courses & books
+  - key: resources.podcast
+    t: Other podcasts
+  - key: resources.video
+    t: Video creators
+  - key: resources.people
+    t: People
+  - key: resources.communities
+    t: Online communities
+  - key: resources.resources_video
+    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
+  - key: resources.resources_people
+    t: People you read, follow, or just want to highlight for their work.
+
+  - key: resources.surveys
+    t: Other surveys
+    description: Which other developer surveys do you participate in?
+
+  - key: options.resources_surveys.resources_communities
+    t: Communities (e.g. Slack, Discord, etc.)
+
+  - key: options.resources_surveys.resources_surveys_other
+    t: Other surveys not mentioned above
+
+  - key: opinions.right_direction
+    t: React Native is moving in the right direction
+
+  - key: opinions.complex
+    t: Building React Native apps is overly complex right now
+
+  - key: opinions.changing_too_fast
+    t: The React Native ecosystem is changing too fast
+
+  - key: opinions.pain_points
+    t: Other React Native pain points
+
+  - key: opinions.missing
+    t: Other missing features
+
+  - key: opinions.advantages
+    t: Other React Native advantages
+
+  - key: opinions.happy
+    t: How happy are you with the general state of React Native?
+
+  - key: opinions.pain_points_multiple
+    t: React Native pain points
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_deployment
+    t: App deployment
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_building
+    t: App building
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_dealing_with_native_code
+    t: Dealing with native code
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_debugging
+    t: Debugging
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_documentation
+    t: Documentation
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_unusable_error_messages
+    t: Unusable error messages
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_graphics_and_animations
+    t: Graphics and animations
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_keyboard_handling
+    t: Keyboard handling
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_navigation_solutions
+    t: Navigation solutions
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_new_architecture
+    t: New architecture
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_performance
+    t: Performance
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_platforms_inconsistencies
+    t: Platforms inconsistencies
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_project_setup
+    t: Project setup
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_reliance_on_third_party_modules
+    t: Reliance on third-party modules
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_stability
+    t: Stability
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_styling_limitations
+    t: Styling limitations
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_unmaintained_packages
+    t: Unmaintained packages
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_upgrades
+    t: Upgrades
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_managing_secrets
+    t: Managing secrets
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_setting_up_servers
+    t: Setting up servers
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_continuous_deployment
+    t: Continuous deployment
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_code_sharing_with_web
+    t: Sharing Code with Web
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_bundle_size
+    t: Bundle size
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_build_times
+    t: Build times
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_pain_monorepos
+    t: Monorepos
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_end_to_end_testing
+    t: E2E testing
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_other_pain_points
+    t: Other pain points
+
+  - key: opinions.missing_multiple
+    t: Missing features
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_android_shadows
+    t: Android shadows
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_animations_gestures
+    t: Better animations/gestures
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_debugging
+    t: Better debugging
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_profiling
+    t: Better profiling
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_documentation
+    t: Better documentation
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_flatlist
+    t: Better FlatList
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_keyboard_handling
+    t: Better keyboard handling
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_performance
+    t: Better performance
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_testing
+    t: Better testing
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_web_compatibility
+    t: Better web compatibility
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_css_features
+    t: CSS features
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_first_party_libraries
+    t: First-party libraries
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_multithreading
+    t: Multithreading
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_swiftui_jetpack_compose_integration
+    t: SwiftUI/Jetpack Compose integration
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_fetch_stream_support
+    t: Fetch API stream support (GPT-like apps)
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_other_missing_features
+    t: Other missing features
+
+  - key: opinions.advantages_multiple
+    t: React Native advantages
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_code_sharing
+    t: Code sharing
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_community
+    t: Community
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_cost_effective
+    t: Cost-effective
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_cross_platform
+    t: Cross-platform
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_developer_experience
+    t: Developer experience
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_documentation
+    t: Documentation
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_easy_to_learn
+    t: Easy to learn
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_ecosystem
+    t: Ecosystem
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_expo
+    t: Expo
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_fast_iteration
+    t: Fast iteration
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_hot_reloading
+    t: Hot reloading
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_native_feel_of_app
+    t: Native feel of app
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_over_the_air_updates
+    t: Over-the-air updates
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_performance
+    t: Performance
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_single_codebase
+    t: Single codebase
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_stable
+    t: Stable
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_time_to_market
+    t: Time to market
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_web_technologies
+    t: Web technologies
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_other_advantages
+    t: Other advantages
+
   - key: general.results.description
     t: A survey about everything React Native
 
@@ -605,1086 +1736,7 @@ translations:
   - key: answer_yes
     t: Yes
   - key: answer_no
-
     t: No
-
-  ######################################################
-  ##########           QUESTIONS            ############
-  ######################################################
-
-  # Platform APIs section
-  - key: sections.platform_apis.title
-    t: Platform APIs
-  - key: platform_apis.platform_apis_questions
-    t: Available platform APIs
-  - key: platform_apis.platform_apis_questions.question
-    t: What APIs do you use in your React Native apps?
-  - key: platform_apis.platform_apis_pain_points
-    t: Platform APIs pain points
-  - key: platform_apis.platform_apis_pain_points.question
-    t: Platform APIs pain points
-  - key: platform_apis.platform_apis_pain_points.description
-    t: What pain points have you encountered related to the APIs mentioned above? Specify the individual API if applicable.
-
-  # Data Fetching section
-  - key: sections.data_fetching.title
-    t: Data fetching
-  - key: sections.data_fetching.description
-    t: What data fetching solutions do you regularly use in your React Native apps?
-  - key: data_fetching.data_fetching_others.question
-    t: Other data fetching solutions not mentioned above
-  - key: data_fetching.data_fetching_others
-    t: Other solutions
-  - key: data_fetching.data_fetching_pain_points
-    t: Data fetching pain points
-  - key: data_fetching.data_fetching_pain_points.question
-    t: Data fetching pain points
-  - key: data_fetching.data_fetching_pain_points.description
-    t: What pain points have you encountered with data fetching in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: data_fetching.data_fetching_ratios
-    t: Navigation Ratios Over Time
-  - key: data_fetching.data_fetching_experience
-    t: Navigation Experience & Sentiment
-
-  # Navigation section
-  - key: sections.navigation.title
-    t: Navigation
-  - key: sections.navigation.description
-    t: What navigation solutions do you regularly use in your React Native apps?
-  - key: navigation.navigation_others.question
-    t: Other navigation solutions not mentioned above
-  - key: navigation.navigation_others
-    t: Other solutions
-  - key: navigation.navigation_pain_points
-    t: Navigation pain points
-  - key: navigation.navigation_pain_points.question
-    t: Navigation pain points
-  - key: navigation.navigation_pain_points.description
-    t: What pain points have you encountered with navigation in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: navigation.navigation_ratios
-    t: Navigation Ratios Over Time
-  - key: navigation.navigation_experience
-    t: Navigation Experience & Sentiment
-
-  # State Management section
-  - key: sections.state_management.title
-    t: State Management
-  - key: sections.state_management.description
-    t: What state management solutions do you regularly use in your React Native apps?
-  - key: state_management.state_management_others.question
-    t: Other state management solutions not mentioned above
-  - key: state_management.state_management_others
-    t: Other solutions
-  - key: state_management.state_management_pain_points
-    t: State management pain points
-  - key: state_management.state_management_pain_points.question
-    t: State management pain points
-  - key: state_management.state_management_pain_points.description
-    t:
-      What pain points have you encountered with state management in your React Native projects?
-      If applicable, point out the specific solution and its problems.
-  - key: state_management.state_management_ratios
-    t: State Management Ratios Over Time
-  - key: state_management.state_management_experience
-    t: State Management Experience & Sentiment
-
-  # Styling section
-  - key: sections.styling.title
-    t: Styling
-  - key: sections.styling.description
-    t: What styling techniques do you regularly use in your React Native apps?
-  - key: styling.styling_techniques_other.question
-    t: Other styling solutions not mentioned above
-  - key: styling.styling_techniques_other
-    t: Other solutions
-  - key: styling.styling_pain_points
-    t: Styling pain points
-  - key: styling.styling_pain_points.question
-    t: Styling pain points
-  - key: styling.styling_pain_points.description
-    t: What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: styling.styling_techniques_pain_points
-    t: Styling pain points
-  - key: styling.styling_techniques_pain_points.question
-    t: Styling pain points
-  - key: styling.styling_techniques_pain_points.description
-    t: What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: styling.styling_ratios
-    t: Styling Ratios Over Time
-  - key: styling.styling_experience
-    t: Styling Experience & Sentiment
-
-  # Component Libraries section
-  - key: sections.component_libraries.title
-    t: Component Libraries
-  - key: sections.component_libraries.description
-    t: What UI components libraries do you regularly use in your React Native apps?
-  - key: component_libraries.component_libraries_others.question
-    t: Other component libraries solutions not mentioned above
-  - key: component_libraries.component_libraries_others
-    t: Other solutions
-  - key: component_libraries.component_libraries_pain_points
-    t: UI components libraries pain points
-  - key: component_libraries.component_libraries_pain_points.question
-    t: UI components libraries pain points
-  - key: component_libraries.component_libraries_pain_points.description
-    t: What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: component_libraries.component_libraries_ratios
-    t: Component Libraries Ratios Over Time
-  - key: component_libraries.component_libraries_experience
-    t: Component Libraries Experience & Sentiment
-  # Animations section
-  - key: sections.animations.title
-    t: Animations
-  - key: sections.animations.description
-    t: What graphics and animations solutions do you use in your React Native apps?
-  - key: animations.animations_other.question
-    t: Other animations solutions not mentioned above
-  - key: animations.animations_other
-    t: Other solutions
-  - key: animations.animations_pain_points
-    t: Graphics and animations pain points
-  - key: animations.animations_pain_points.question
-    t: Graphics and animations pain points
-  - key: animations.animations_pain_points.description
-    t: What pain points have you encountered with graphics and animations in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: animations.animations_ratios
-    t: Animations Ratios Over Time
-  - key: animations.animations_experience
-    t: Animations Experience & Sentiment
-
-  # Debugging and Profiling section
-  - key: sections.debugging_and_profiling.title
-    t: Debugging And Profiling
-  - key: sections.debugging_and_profiling.description
-    t: What tools do you use to debug your React Native apps?
-  - key: debugging_and_profiling.debugging_profiling_others.question
-    t: Other debugging and profiling solutions not mentioned above
-  - key: debugging_and_profiling.debugging_profiling_others
-    t: Other solutions
-  - key: debugging_and_profiling.debugging_profiling_pain_points
-    t: Debugging and profiling pain points
-  - key: debugging_and_profiling.debugging_profiling_pain_points.question
-    t: Debugging and profiling pain points
-  - key: debugging_and_profiling.debugging_profiling_pain_points.description
-    t: What pain points have you encountered with debugging and profiling in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: debugging_and_profiling.debugging_and_profiling_experience
-    t: Debugging And Profiling Experience & Sentiment
-
-  # App Aspects section
-  - key: sections.react_native_app_aspects.title
-    t: App Aspects
-  - key: sections.react_native_app_aspects.description
-    t: What solutions to other well-defined problems do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_analytics
-    t: Analytics
-  - key: react_native_app_aspects.react_native_app_aspects_analytics.question
-    t: What analytics solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_analytics.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points
-    t: Analytics pain points
-  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points.question
-    t: Analytics pain points
-  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points.description
-    t: What pain points have you encountered with analytics in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting
-    t: Crash reporting
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.question
-    t: What crash reporting solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points
-    t: Crash reporting pain points
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points.question
-    t: Crash reporting pain points
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points.description
-    t: What pain points have you encountered with crash reporting in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation
-    t: Data visualisation
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.question
-    t: What data visualisation solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points
-    t: Data visualisation pain points
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points.question
-    t: Data visualisation pain points
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points.description
-    t: What pain points have you encountered with data visualisation in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_storage
-    t: Storage
-  - key: react_native_app_aspects.react_native_app_aspects_storage.question
-    t: What storage solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_storage.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points
-    t: Storage pain points
-  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points.question
-    t: Storage pain points
-  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points.description
-    t: What pain points have you encountered with storage in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_testing
-    t: Testing
-  - key: react_native_app_aspects.react_native_app_aspects_testing.question
-    t: What testing solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_testing.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points
-    t: Testing pain points
-  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points.question
-    t: Testing pain points
-  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points.description
-    t: What pain points have you encountered with testing in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries
-    t: Other popular libraries
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.question
-    t: What other popular libraries do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points
-    t: Other libraries pain points
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points.question
-    t: Other libraries pain points
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points.description
-    t: What pain points have you encountered with other libraries in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_architecture_local_first
-    t: Local-first app architecture
-
-  # React Native Features section
-  - key: sections.react_native_specific_features.title
-    t: React Native Features
-  - key: sections.react_native_specific_features.question
-    t: What is your knowledge of the features specific to React Native development?
-  - key: react_native_specific_features.react_native_features_version
-    t: Which React Native version do you use mainly?
-  - key: react_native_specific_features.react_native_features_strategies
-    t: Upgrade strategy
-  - key: react_native_specific_features.react_native_features_strategies.question
-    t: What is your main strategy for upgrading React Native to a new versions?
-  - key: react_native_specific_features.react_native_bridgeless_mode
-    t: Bridgeless mode
-  - key: react_native_specific_features.react_native_bridgeless_mode.question
-    t: Bridgeless mode
-  - key: react_native_specific_features.react_native_features_brownfield
-    t: Brownfield
-  - key: react_native_specific_features.react_native_features_brownfield.question
-    t: What type of React Native project are you working on?
-  - key: react_native_specific_features.react_native_features_ota_updates
-    t: Over-The-Air updates
-  - key: react_native_specific_features.react_native_features_ota_updates.question
-    t: What Over-The-Air updates solutions do you use? Check all that apply
-  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing
-    t: Mobile-Web code sharing
-  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing.question
-    t: What methods do you employ for sharing code between mobile and web platforms in your project, if any? Check all that apply
-  - key: react_native_specific_features.react_native_features_experience
-    t: React Native Features Experience & Sentiment
-
-  # Deployment section
-  - key: sections.deployment.title
-    t: Deployment
-  - key: sections.deployment.description
-    t: How do you build and submit your app for the App Store or Google Play?
-  - key: deployment.deployment_ratios
-    t: Animations Ratios Over Time
-  - key: deployment.deployment_experience
-    t: Animations Experience & Sentiment
-
-  # React Native Alternatives section
-  - key: sections.react_native_alternatives.title
-    t: React Native Alternatives
-  - key: sections.react_native_alternatives.description
-    t: What other cross-platform app development solutions are you familiar with?
-  - key: react_native_alternatives.react_native_alternatives_experience
-    t: React Native Alternatives Experience & Sentiment
-
-  # Resources section
-  - key: sections.resources.title
-    t: Resources
-  - key: sections.resources.description
-    t: What React Native resources do you consult?
-  - key: resources.resources_initially_learn_react_native
-    t: Learning methods
-  - key: resources.resources_initially_learn_react_native.question
-    t: What methods do you use to learn React Native?
-  - key: resources.resources_initially_learn_react_native.description
-    t: Check all that apply
-  - key: resources.resources_read_multiple
-    t: Blogs, magazines & newsletters
-  - key: resources.resources_read_multiple.question
-    t: What blogs, magazines or newsletters do you consult to keep up with React Native news?
-  - key: resources.resources_read_multiple.description
-    t: Check all that apply
-  - key: resources.resources_course_multiple
-    t: Sites, courses & books
-  - key: resources.resources_course_multiple.question
-    t: What sites, courses or books do you consult to learn React Native?
-  - key: resources.resources_course_multiple.description
-    t: Check all that apply
-  - key: resources.resources_podcast_multiple
-    t: Podcasts
-  - key: resources.resources_podcast_multiple.question
-    t: What React Native or general programming-related podcasts do you listen to?
-  - key: resources.resources_podcast_multiple.description
-    t: Check all that apply
-  - key: resources.video_creators_rn
-    t: Video Creators
-  - key: resources.video_creators_rn.question
-    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
-  - key: resources.video_creators_rn.description
-    t: Write all that apply
-  - key: resources.people_rn
-    t: People
-  - key: resources.people_rn.question
-    t: People you read, follow, or just want to highlight for their work.
-  - key: resources.people_rn.description
-    t: Write all that apply
-  - key: resources.resources_surveys
-    t: Other developer surveys
-  - key: resources.resources_surveys.question
-    t: What other developer surveys do you participate in?
-  - key: resources.resources_surveys.description
-    t: Check all that apply
-
-  # React Native Tools section
-  - key: sections.rn_tools.title
-    t: React Native Tools
-  - key: sections.rn_tools.description
-    t: The tools you use to develop React Native apps.
-  - key: rn_tools.rn_tools_js_ts.question
-    t: JavaScript/TypeScript Balance
-  - key: rn_tools.rn_tools_js_ts.description
-    t: How do you divide your time between writing JavaScript and TypeScript code?
-  - key: rn_tools.rn_tools_package_managers.question
-    t: Package Managers
-  - key: rn_tools.rn_tools_package_managers.description
-    t: Which package managers do you use? Check all that apply
-  - key: rn_tools.rn_tools_starter_templates.question
-    t: Starter Templates
-  - key: rn_tools.rn_tools_starter_templates.description
-    t: Which starter templates or boilerplates do you use? Check all that apply
-  - key: rn_tools.rn_tools_experience
-    t: React Native Tools Experience & Sentiment
-
-  # Opinions section
-  - key: sections.opinions.title
-    t: Opinions
-  - key: sections.opinions.description
-    t: How do you feel about the state of React Native?
-  - key: opinions.opinions_right_direction
-    t: React Native direction
-  - key: opinions.opinions_right_direction.question
-    t: Is React Native moving in the right direction?
-  - key: opinions.opinions_complex.question
-    t: Building React Native apps is overly complex right now
-  - key: opinions.opinions_changing_too_fast.question
-    t: The React Native ecosystem is changing too fast
-  - key: opinions.opinions_pain_points_multiple
-    t: React Native pain points
-  - key: opinions.opinions_pain_points_multiple.question
-    t: What are the things that makes you feel annoyed while developing React Native apps?
-  - key: opinions.opinions_pain_points_multiple.description
-    t: Check all that apply
-
-  - key: opinions.opinions_missing_multiple
-    t: Missing features
-  - key: opinions.opinions_missing_multiple.question
-    t: What do you feel currently is missing from React Native?
-  - key: opinions.opinions_missing_multiple.description
-    t: Check all that apply
-
-  - key: opinions.opinions_advantages_multiple
-    t: React Native advantages
-  - key: opinions.opinions_advantages_multiple.question
-    t: What are advantages of React Native over other solutions?
-  - key: opinions.opinions_advantages_multiple.description
-    t: Check all that apply
-
-  # About You section
-  - key: sections.about_you.title
-    t: About You
-  - key: sections.about_you.description
-    t: Let's get to know you a little better.
-  - key: about_you.about_you_country.question
-    t: Your country or region
-  - key: about_you.about_you_country.description
-    t: Where do you currently reside?
-  - key: about_you.about_you_age.question
-    t: Your age
-  - key: about_you.about_you_age.description
-    t: How old are you, in years?
-  - key: about_you.about_you_experience.question
-    t: Years of experience
-  - key: about_you.about_you_experience.description
-    t: How long have you been working as a programmer or studying programming?
-  - key: about_you.about_you_experience_in_rn.question
-    t: Years of experience in React Native
-  - key: about_you.about_you_experience_in_rn.description
-    t: How long have you been working with or studying React Native, in years?
-  - key: about_you.about_you_company_size.question
-    t: Company size
-  - key: about_you.about_you_company_size.description
-    t: How big is your company, in the number of employees?
-  - key: about_you.about_you_education_degree.question
-    t: Higher education degree
-  - key: about_you.about_you_education_degree.description
-    t: Do you have a higher education degree?
-  - key: about_you.about_you_salary.question
-    t: Yearly salary
-  - key: about_you.about_you_salary.description
-    t: Your yearly salary in U.S. dollars.
-  - key: about_you.about_you_gender.question
-    t: Your gender
-  - key: about_you.about_you_gender.description
-    t: Which of the following options describes you, if any?
-  - key: about_you.about_you_gender.note
-    t: >
-      While we know collecting and publishing diversity data can be a sensitive issue,
-      we do think it's important to obtain this data to help measure and improve
-      the survey's efforts in terms of inclusivity and representativeness.
-  - key: about_you.about_you_how_you_know.question
-    t: How did you find out about this survey?
-  - key: about_you.about_you_what_to_improve.question
-    t: How could we improve this survey?
-
-  # Developer Background section
-  - key: sections.developer_background.title
-    t: Developer Background
-  - key: sections.developer_background.description
-    t: What's your background as a developer?
-
-  # Before React Native
-  - key: developer_background.developer_background_before
-    t: Before React Native
-  - key: developer_background.developer_background_before.question
-    t: What was your background before you started using React Native?
-
-  # Usage Type
-  - key: developer_background.developer_background_usage_type
-    t: Usage Type
-  - key: developer_background.developer_background_usage_type.question
-    t: How do you use React Native?
-
-  # Desktop OS
-  - key: developer_background.developer_background_primarily_system
-    t: Desktop OS
-  - key: developer_background.developer_background_primarily_system.question
-    t: What desktop OS do you primarily use?
-
-  # Top React Native App User Count
-  - key: developer_background.developer_background_users_count
-    t: Top React Native App User Count
-  - key: developer_background.developer_background_users_count.question
-    t: What is the user count of your top React Native app?
-
-  # Mobile App Team Size
-  - key: developer_background.developer_background_team_size
-    t: Mobile App Team Size
-  - key: developer_background.developer_background_team_size.question
-    t: What is your mobile app team size?
-
-  # Platforms Used for React Native
-  - key: developer_background.developer_background_platforms
-    t: Platforms Used for React Native
-  - key: developer_background.developer_background_platforms.question
-    t: What are the platforms that you use React Native for?
-
-  # Released React Native Apps Count
-  - key: developer_background.developer_background_releases_count
-    t: Released React Native Apps Count
-  - key: developer_background.developer_background_releases_count.question
-    t: How many React Native apps have you published?
-  - key: developer_background.developer_background_releases_count.description
-    t: Published to the app stores
-
-  # Target OS
-  - key: developer_background.developer_background_os_target
-    t: Target OS
-  - key: developer_background.developer_background_os_target.question
-    t: What mobile OS versions do you target?
-
-  # Industry Sectors Using React Native
-  - key: developer_background.developer_background_industry_sector
-    t: Industry Sectors Using React Native
-  - key: developer_background.developer_background_industry_sector.question
-    t: Which industry sector(s) are you using React Native in?
-
-  # Contribution to React Native
-  - key: developer_background.developer_background_contribution_to_rn
-    t: Contribution to React Native
-  - key: developer_background.developer_background_contribution_to_rn.question
-    t: Have you contributed to React Native?
-  - key: developer_background.developer_background_contribution_to_rn.description
-    t: Contributions in 2024 (commits/PRs)
-
-  # Open Source Contribution to React Native Libraries
-  - key: developer_background.developer_background_contribution_to_lib
-    t: Open Source Contribution to React Native Libraries
-  - key: developer_background.developer_background_contribution_to_lib.question
-    t: Have you contributed to any React Native community library?
-  - key: developer_background.developer_background_contribution_to_lib.description
-    t: Contributions in 2024 (commits/PRs)
-
-  # deployment
-  - key: deployment.deployment_pain_points
-    t: Deployment pain points
-  - key: deployment.deployment_pain_points.question
-    t: Deployment pain points
-  - key: deployment.deployment_pain_points.description
-    t: What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
-
-  ###########################################################################
-  # FAQ/About
-  ###########################################################################
-
-  - key: faq.is_answering_every_question_mandatory
-    t: Is answering every question mandatory?
-  - key: faq.is_answering_every_question_mandatory.description
-    t: No, every question of the survey is optional and can freely be skipped.
-
-  - key: faq.will_my_data_be_public
-    t: Will my data be made public?
-  - key: faq.will_my_data_be_public.description
-    t: The data will be made public in a form of readable charts and graphs. We will not publish any identifiable information.
-
-  - key: faq.when_will_results_be_released
-    t: When will the results be made available?
-  - key: faq.when_will_results_be_released.description
-    t: The results are going to be released a few weeks after the survey closes.
-
-  - key: faq.who_runs_the_survey
-    t: Who runs this survey?
-  - key: faq.who_runs_the_survey.description
-    t: This survey is run by Software Mansion. We are a software development company based in Poland, with a strong focus on React Native app development and multimedia streaming.
-
-  - key: faq.this_survey_looks_familiar
-    t: This survey looks very familiar!
-  - key: faq.this_survey_looks_familiar.description
-    t: It's because it's using the same infrastructure as State of JavaScript and State of CSS surveys made by Devographics.
-
-  - key: faq.how_was_survey_design
-    t: How was this survey designed?
-  - key: faq.how_was_survey_design.description
-    t: The survey was designed based on our expertise and the community feedback gathered on <a href="https://github.com/software-mansion/state-of-react-native/discussions/6">this GitHub discussion</a>.
-
-  ######################################################
-  #########        DEVELOPER BACKGROUND        #########
-  ######################################################
-
-  - key: options.developer_background_contribution_to_rn.answer_yes
-    t: Yes
-  - key: options.developer_background_contribution_to_rn.answer_no
-    t: No
-  - key: options.developer_background_contribution_to_lib.answer_yes
-    t: Yes
-  - key: options.developer_background_contribution_to_lib.answer_no
-    t: No
-
-  - key: options.developer_background_before.developer_background_before_react
-    t: React developer
-  - key: options.developer_background_before.developer_background_before_ios
-    t: iOS developer
-  - key: options.developer_background_before.developer_background_before_android
-    t: Android developer
-  - key: options.developer_background_before.developer_background_before_frontend
-    t: Frontend developer (other than React e.g. Vue, Angular, SolidJS, Svelte, etc.)
-  - key: options.developer_background_before.developer_background_before_backend
-    t: Backend developer (PHP, Node.js, JVM, Python, etc.)
-  - key: options.developer_background_before.developer_background_before_desktop
-    t: Desktop developer (e.g. macOS, Windows, Linux)
-  - key: options.developer_background_before.developer_background_before_qa
-    t: QA engineer
-  - key: options.developer_background_before.developer_background_before_devops
-    t: DevOps
-  - key: options.developer_background_before.developer_background_before_embedded
-    t: Embedded developer
-  - key: options.developer_background_before.developer_background_before_non_technical
-    t: Non-technical role
-  - key: options.developer_background_before.developer_background_before_started_with_rn
-    t: Started with React Native
-
-  - key: options.developer_background_usage_type.developer_background_usage_type_professional
-    t: Professionally
-  - key: options.developer_background_usage_type.developer_background_usage_type_student
-    t: As a student
-  - key: options.developer_background_usage_type.developer_background_usage_type_hobby
-    t: As a hobby
-
-  - key: options.developer_background_primarily_system.developer_background_primarily_system_macos
-    t: macOS
-  - key: options.developer_background_primarily_system.developer_background_primarily_system_linux
-    t: Linux
-  - key: options.developer_background_primarily_system.developer_background_primarily_system_windows
-    t: Windows
-
-  - key: options.developer_background_users_count.developer_background_users_count_only_me
-    t: Only me
-  - key: options.developer_background_users_count.developer_background_users_count_2_100
-    t: 2-100
-  - key: options.developer_background_users_count.developer_background_users_count_101_1k
-    t: 101-1k
-  - key: options.developer_background_users_count.developer_background_users_count_1k_10k
-    t: 1k-10k
-  - key: options.developer_background_users_count.developer_background_users_count_10k_100k
-    t: 10k-100k
-  - key: options.developer_background_users_count.developer_background_users_count_100k_1m
-    t: 100k-1M
-  - key: options.developer_background_users_count.developer_background_users_count_1m_plus
-    t: 1M and more
-
-  - key: options.developer_background_team_size.developer_background_team_size_solo
-    t: Solo developer
-  - key: options.developer_background_team_size.developer_background_team_size_two
-    t: "2"
-  - key: options.developer_background_team_size.developer_background_team_size_3_5
-    t: 3-5
-  - key: options.developer_background_team_size.developer_background_team_size_6_10
-    t: 6-10
-  - key: options.developer_background_team_size.developer_background_team_size_more_than_10
-    t: more than 10
-
-  - key: options.developer_background_platforms.developer_background_platforms_ios
-    t: iOS
-  - key: options.developer_background_platforms.developer_background_platforms_android
-    t: Android
-  - key: options.developer_background_platforms.developer_background_platforms_web
-    t: Web
-  - key: options.developer_background_platforms.developer_background_platforms_macos
-    t: macOS
-  - key: options.developer_background_platforms.developer_background_platforms_windows
-    t: Windows
-  - key: options.developer_background_platforms.developer_background_platforms_android_tv
-    t: Android TV
-  - key: options.developer_background_platforms.developer_background_platforms_tvos
-    t: tvOS
-  - key: options.developer_background_platforms.developer_background_platforms_skia
-    t: React Native Skia (Linux & macOS)
-
-  - key: options.developer_background_releases_count.developer_background_releases_count_none
-    t: None
-  - key: options.developer_background_releases_count.developer_background_releases_count_one
-    t: "1"
-  - key: options.developer_background_releases_count.developer_background_releases_count_2_5
-    t: 2-5
-  - key: options.developer_background_releases_count.developer_background_releases_count_5_10
-    t: 5-10
-  - key: options.developer_background_releases_count.developer_background_releases_count_more_than_10
-    t: More than 10
-
-  - key: options.developer_background_os_target.developer_background_os_target_most_recent
-    t: The most recent versions (iOS 18+, Android 15+)
-  - key: options.developer_background_os_target.developer_background_os_target_reasonably_current
-    t: Reasonably current (iOS 17+, Android 13+)
-  - key: options.developer_background_os_target.developer_background_os_target_old
-    t: Old (iOS 14+, Android 9+) <!-- https://github.com/react-native-community/discussions-and-proposals/discussions/812 -->
-  - key: options.developer_background_os_target.developer_background_os_target_as_old_as_possible
-    t: As old as possible (iOS 8+, Android 5+)
-
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_art_design
-    t: Art & Design
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_agriculture
-    t: Agriculture
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_automotive
-    t: Automotive
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_beauty
-    t: Beauty
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_books_reference
-    t: Books & Reference
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_construction
-    t: Construction
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_communication
-    t: Communication
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_consulting
-    t: Consulting & Services
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_crypto
-    t: Crypto & Web3
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_cyber_security
-    t: Cyber Security
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_dating
-    t: Dating
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_education
-    t: Education
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_energy
-    t: Energy
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_entertainment
-    t: Entertainment
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_events
-    t: Events
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_finance
-    t: Finance
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_food_drink
-    t: Food & Drink
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_government
-    t: Government
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_games
-    t: Games
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_health_fitness
-    t: Health & Fitness
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_house_home
-    t: House & Home
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_insurance
-    t: Insurance
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_logistics
-    t: Logistics
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_lifestyle
-    t: Lifestyle
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_manufacturing
-    t: Manufacturing
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_marketing_tools
-    t: Marketing/Sales/Analytics Tools
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_medical
-    t: Medical
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_music_audio
-    t: Music & Audio
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_navigation
-    t: Navigation
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_news_media
-    t: News, Media, & Blogging
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_photo
-    t: Photo
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_productivity
-    t: Productivity
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_programming_tools
-    t: Programming & Technical Tools
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_real_estate
-    t: Real Estate
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_shopping
-    t: Shopping
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_social_media
-    t: Social Media
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_sports
-    t: Sports
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_student
-    t: Student
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_transport
-    t: Transport
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_travel
-    t: Travel
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_weather
-    t: Weather
-  - key: options.developer_background_industry_sector.developer_background_industry_sector_video
-    t: Video
-
-  ######################################################
-  #########             FEATURES               #########
-  ######################################################
-
-  - key: react_native_features.version
-    t: React Native version
-  - key: options.react_native_features_version.react_native_features_version_0_63_or_lower
-    t: 0.63 or lower
-  - key: options.react_native_features_version.react_native_features_version_0_64
-    t: "0.64"
-  - key: options.react_native_features_version.react_native_features_version_0_65
-    t: "0.65"
-  - key: options.react_native_features_version.react_native_features_version_0_66
-    t: "0.66"
-  - key: options.react_native_features_version.react_native_features_version_0_67
-    t: "0.67"
-  - key: options.react_native_features_version.react_native_features_version_0_68
-    t: "0.68"
-  - key: options.react_native_features_version.react_native_features_version_0_69
-    t: "0.69"
-  - key: options.react_native_features_version.react_native_features_version_0_70
-    t: "0.70"
-  - key: options.react_native_features_version.react_native_features_version_0_71
-    t: "0.71"
-  - key: options.react_native_features_version.react_native_features_version_0_72
-    t: "0.72"
-  - key: options.react_native_features_version.react_native_features_version_0_73
-    t: "0.73"
-  - key: options.react_native_features_version.react_native_features_version_0_74
-    t: "0.74"
-  - key: options.react_native_features_version.react_native_features_version_0_75
-    t: "0.75"
-  - key: options.react_native_features_version.react_native_features_version_next
-    t: next
-  - key: options.react_native_features_version.react_native_features_version_nightly
-    t: nightly
-
-  - key: react_native_features.strategies
-    t: React Native version upgrading strategy
-  - key: options.react_native_features_strategies.react_native_features_strategies_stay_latest
-    t: Stay on the latest version
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_occasionally
-    t: Upgrade occasionally
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_for_new_features
-    t: Upgrade for the new features
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_parallel_with_expo
-    t: Upgrade in parallel with Expo SDK releases
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_if_necessary
-    t: Don't upgrade until I have to
-  - key: options.react_native_features_strategies.react_native_features_strategies_other
-    t: Other React Native version upgrading strategy
-
-  - key: react_native_features.brownfield
-    t: Do you integrate React Native with applications written using other technology?
-  - key: react_native_features.ota_updates
-    t: OTA updates solutions
-  - key: react_native_features.mobile_web_code_sharing
-    t: Mobile-Web code sharing
-
-  - key: deployment.deployment_other
-    t: Other solutions
-  - key: deployment.deployment_other.question
-    t: Other ways to build app and release to the stores
-
-  - key: rn_tools.tools_js_ts
-    t: JavaScript/TypeScript Balance
-  - key: rn_tools.tools_package_managers
-    t: Package managers
-  - key: rn_tools.tools_starter_templates
-    t: Starter templates
-  - key: rn_tools.tools_custom_development_client
-    t: Custom Development Client
-  - key: options.rn_tools.tools_custom_development_client
-    t: Custom Development Client
-  - key: rn_tools.tools_upgrade_helper
-    t: Upgrade Helper
-  - key: options.rn_tools.tools_upgrade_helper
-    t: Upgrade Helper
-  - key: rn_tools.tools_config_plugins
-    t: Config plugins
-  - key: options.rn_tools.tools_config_plugins
-    t: Config plugins
-  - key: rn_tools.tools_other_tools
-    t: Other development tools
-
-  - key: react_native_alternatives.react_native_alternatives_other
-    t: Other React Native alternatives
-
-  ######################################################
-  #########             RESOURCES              #########
-  ######################################################
-
-  - key: resources.initially_learn_react_native
-    t: Learning methods
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_official_docs
-    t: Official React Native docs
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_expo_docs
-    t: Expo docs
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_react_native_directory
-    t: React Native Directory
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_books
-    t: Books
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_videos
-    t: Videos
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_x
-    t: X platform
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_free
-    t: Online courses (free)
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_paid
-    t: Online courses (paid)
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_school_higher_education
-    t: School / higher education
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_podcasts
-    t: Podcasts
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_coding_bootcamp
-    t: Coding bootcamp
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_on_the_job_training
-    t: On-the-job training
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_mentoring
-    t: Mentoring
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_self_directed_learning
-    t: Self-directed learning
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_other
-    t: Other learning methods
-
-  - key: resources.read_multiple
-    t: "Blogs, magazines & newsletters"
-
-  - key: resources.course_multiple
-    t: Sites, courses & books
-
-  - key: options.resources_course_multiple.resources_course_multiple_other_courses_sites
-    t: Other courses or sites
-
-  - key: resources.podcast_multiple
-    t: Podcasts
-  - key: options.resources_podcast_multiple.resources_podcast_multiple_other_podcasts
-    t: Other podcasts
-
-  - key: resources.read
-    t: Other blogs, magazines or newsletters
-  - key: resources.course
-    t: Other sites, courses & books
-  - key: resources.podcast
-    t: Other podcasts
-  - key: resources.video
-    t: Video creators
-  - key: resources.people
-    t: People
-  - key: resources.communities
-    t: Online communities
-  - key: resources.resources_video
-    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
-  - key: resources.resources_people
-    t: People you read, follow, or just want to highlight for their work.
-
-  - key: resources.surveys
-    t: Other surveys
-    description: Which other developer surveys do you participate in?
-
-  - key: options.resources_surveys.resources_communities
-    t: Communities (e.g. Slack, Discord, etc.)
-
-  - key: options.resources_surveys.resources_surveys_other
-    t: Other surveys not mentioned above
-
-  - key: opinions.right_direction
-    t: React Native is moving in the right direction
-
-  - key: opinions.complex
-    t: Building React Native apps is overly complex right now
-
-  - key: opinions.changing_too_fast
-    t: The React Native ecosystem is changing too fast
-
-  - key: opinions.pain_points
-    t: Other React Native pain points
-
-  - key: opinions.missing
-    t: Other missing features
-
-  - key: opinions.advantages
-    t: Other React Native advantages
-
-  - key: opinions.happy
-    t: How happy are you with the general state of React Native?
-
-  - key: opinions.pain_points_multiple
-    t: React Native pain points
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_deployment
-    t: App deployment
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_building
-    t: App building
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_dealing_with_native_code
-    t: Dealing with native code
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_debugging
-    t: Debugging
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_documentation
-    t: Documentation
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_unusable_error_messages
-    t: Unusable error messages
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_graphics_and_animations
-    t: Graphics and animations
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_keyboard_handling
-    t: Keyboard handling
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_navigation_solutions
-    t: Navigation solutions
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_new_architecture
-    t: New architecture
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_performance
-    t: Performance
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_platforms_inconsistencies
-    t: Platforms inconsistencies
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_project_setup
-    t: Project setup
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_reliance_on_third_party_modules
-    t: Reliance on third-party modules
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_stability
-    t: Stability
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_styling_limitations
-    t: Styling limitations
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_unmaintained_packages
-    t: Unmaintained packages
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_upgrades
-    t: Upgrades
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_managing_secrets
-    t: Managing secrets
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_setting_up_servers
-    t: Setting up servers
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_continuous_deployment
-    t: Continuous deployment
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_code_sharing_with_web
-    t: Sharing Code with Web
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_bundle_size
-    t: Bundle size
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_build_times
-    t: Build times
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_pain_monorepos
-    t: Monorepos
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_end_to_end_testing
-    t: E2E testing
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_other_pain_points
-    t: Other pain points
-
-  - key: opinions.missing_multiple
-    t: Missing features
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_android_shadows
-    t: Android shadows
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_animations_gestures
-    t: Better animations/gestures
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_debugging
-    t: Better debugging
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_profiling
-    t: Better profiling
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_documentation
-    t: Better documentation
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_flatlist
-    t: Better FlatList
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_keyboard_handling
-    t: Better keyboard handling
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_performance
-    t: Better performance
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_testing
-    t: Better testing
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_web_compatibility
-    t: Better web compatibility
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_css_features
-    t: CSS features
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_first_party_libraries
-    t: First-party libraries
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_multithreading
-    t: Multithreading
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_swiftui_jetpack_compose_integration
-    t: SwiftUI/Jetpack Compose integration
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_fetch_stream_support
-    t: Fetch API stream support (GPT-like apps)
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_other_missing_features
-    t: Other missing features
-
-  - key: opinions.advantages_multiple
-    t: React Native advantages
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_code_sharing
-    t: Code sharing
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_community
-    t: Community
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_cost_effective
-    t: Cost-effective
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_cross_platform
-    t: Cross-platform
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_developer_experience
-    t: Developer experience
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_documentation
-    t: Documentation
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_easy_to_learn
-    t: Easy to learn
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_ecosystem
-    t: Ecosystem
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_expo
-    t: Expo
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_fast_iteration
-    t: Fast iteration
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_hot_reloading
-    t: Hot reloading
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_native_feel_of_app
-    t: Native feel of app
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_over_the_air_updates
-    t: Over-the-air updates
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_performance
-    t: Performance
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_single_codebase
-    t: Single codebase
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_stable
-    t: Stable
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_time_to_market
-    t: Time to market
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_web_technologies
-    t: Web technologies
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_other_advantages
-    t: Other advantages
 
   ########################################
   ########## Other #######################
