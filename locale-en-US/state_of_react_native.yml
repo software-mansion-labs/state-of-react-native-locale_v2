@@ -555,55 +555,188 @@ translations:
   - key: testing_and_monitoring.testing_and_monitoring_pain_points.description
     t: What pain points have you encountered with testing and monitoring your React Native projects? If applicable, point out the specific solution and its problems.
 
-  #############################################################################################
-  #############################################################################################
-  #############################################################################################
-  # YET TO BE REVIEWED
-  #############################################################################################
-  #############################################################################################
-  #############################################################################################
+  ######################################################
+  #########        REACT NATIVE API            #########
+  ######################################################
 
-  # React Native Features section
-  - key: sections.react_native_specific_features.title
-    t: React Native Features
-  - key: sections.react_native_specific_features.question
-    t: What is your knowledge of the features specific to React Native development?
-  - key: react_native_specific_features.react_native_features_version
+  - key: sections.react_native_api.title
+    t: React Native API
+  - key: sections.react_native_api.question
+    t: What is your knowledge of the APIs specific to React Native?
+
+  - key: react_native_api.react_native_api_version
+    t: React Native version
+  - key: react_native_api.react_native_api_version.question
     t: Which React Native version do you use mainly?
-  - key: react_native_specific_features.react_native_features_strategies
+  - key: options.react_native_api_version.react_native_api_version_0_63_or_lower
+    t: 0.63 or lower
+  - key: options.react_native_api_version.react_native_api_version_0_64
+    t: "0.64"
+  - key: options.react_native_api_version.react_native_api_version_0_65
+    t: "0.65"
+  - key: options.react_native_api_version.react_native_api_version_0_66
+    t: "0.66"
+  - key: options.react_native_api_version.react_native_api_version_0_67
+    t: "0.67"
+  - key: options.react_native_api_version.react_native_api_version_0_68
+    t: "0.68"
+  - key: options.react_native_api_version.react_native_api_version_0_69
+    t: "0.69"
+  - key: options.react_native_api_version.react_native_api_version_0_70
+    t: "0.70"
+  - key: options.react_native_api_version.react_native_api_version_0_71
+    t: "0.71"
+  - key: options.react_native_api_version.react_native_api_version_0_72
+    t: "0.72"
+  - key: options.react_native_api_version.react_native_api_version_0_73
+    t: "0.73"
+  - key: options.react_native_api_version.react_native_api_version_0_74
+    t: "0.74"
+  - key: options.react_native_api_version.react_native_api_version_0_75
+    t: "0.75"
+  - key: options.react_native_api_version.react_native_api_version_0_76
+    t: "0.76"
+  - key: options.react_native_api_version.react_native_api_version_next
+    t: next
+  - key: options.react_native_api_version.react_native_api_version_nightly
+    t: nightly
+
+  - key: react_native_api.react_native_api_strategies
     t: Upgrade strategy
-  - key: react_native_specific_features.react_native_features_strategies.question
+  - key: react_native_api.react_native_api_strategies.question
+    t: React Native version upgrading strategy
+  - key: react_native_api.react_native_api_strategies.description
     t: What is your main strategy for upgrading React Native to a new versions?
-  - key: react_native_specific_features.react_native_bridgeless_mode
-    t: Bridgeless mode
-  - key: react_native_specific_features.react_native_bridgeless_mode.question
-    t: Bridgeless mode
-  - key: react_native_specific_features.react_native_features_brownfield
-    t: Brownfield
-  - key: react_native_specific_features.react_native_features_brownfield.question
-    t: What type of React Native project are you working on?
-  - key: react_native_specific_features.react_native_features_ota_updates
-    t: Over-The-Air updates
-  - key: react_native_specific_features.react_native_features_ota_updates.question
-    t: What Over-The-Air updates solutions do you use? Check all that apply
-  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing
+  - key: options.react_native_api_strategies.react_native_api_strategies_stay_latest
+    t: Stay on the latest version
+  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_occasionally
+    t: Upgrade occasionally
+  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_for_new_features
+    t: Upgrade for the new features
+  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_parallel_with_expo
+    t: Upgrade in parallel with Expo SDK releases
+  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_if_necessary
+    t: Don't upgrade until I have to
+  - key: options.react_native_api_strategies.react_native_api_strategies_other
+    t: Other React Native version upgrading strategy
+
+  - key: react_native_features.brownfield
+    t: Do you integrate React Native with applications written using other technology?
+  - key: react_native_features.ota_updates
+    t: OTA updates solutions
+  - key: react_native_features.mobile_web_code_sharing
     t: Mobile-Web code sharing
-  - key: react_native_specific_features.react_native_features_mobile_web_code_sharing.question
-    t: What methods do you employ for sharing code between mobile and web platforms in your project, if any? Check all that apply
-  - key: react_native_specific_features.react_native_features_experience
-    t: React Native Features Experience & Sentiment
 
-  # Deployment section
-  - key: sections.deployment.title
-    t: Deployment
-  - key: sections.deployment.description
-    t: How do you build and submit your app for the App Store or Google Play?
-  - key: deployment.deployment_ratios
-    t: Animations Ratios Over Time
-  - key: deployment.deployment_experience
-    t: Animations Experience & Sentiment
+  - key: react_native_api.react_native_api_brownfield
+    t: Brownfield
+  - key: react_native_api.react_native_api_brownfield.question
+    t: What type of React Native project are you working on?
+  - key: options.react_native_api_brownfield.react_native_api_brownfield_green
+    t: I mainly work on standalone React Native apps (greenfield)
+  - key: options.react_native_api_brownfield.react_native_api_brownfield_green.short
+    t: Standalone apps (greenfield)
+  - key: options.react_native_api_brownfield.react_native_api_brownfield_brown
+    t: I mainly work on integrated React Native apps (brownfield)
+  - key: options.react_native_api_brownfield.react_native_api_brownfield_brown.short
+    t: Integrated apps (brownfield)
+  - key: options.react_native_api_brownfield.react_native_api_brownfield_both
+    t: I work on both standalone and brownfield apps
+  - key: options.react_native_api_brownfield.react_native_api_brownfield_both.short
+    t: Both
 
-  # React Native Alternatives section
+  - key: react_native_api.react_native_api_ota_updates
+    t: Over-The-Air updates
+  - key: react_native_api.react_native_api_ota_updates.question
+    t: What Over-The-Air updates solutions do you use?
+
+  - key: react_native_api.react_native_api_mobile_web_code_sharing
+    t: Mobile-Web code sharing
+  - key: react_native_api.react_native_api_mobile_web_code_sharing.question
+    t: What methods do you employ for sharing code between mobile and web platforms in your project, if any?
+
+  ######################################################
+  #########        BUILD AND PUBLISH           #########
+  ######################################################
+
+  - key: sections.build_and_publish.title
+    t: Build and publish
+  - key: sections.build_and_publish.description
+    t: How do you build and submit your app for the App Store, Google Play or other stores?
+
+  - key: build_and_publish.build_and_publish_others
+    t: Other solutions
+  - key: build_and_publish.build_and_publish_others.question
+    t: Other ways to build app and publish to the stores
+  - key: build_and_publish.build_and_publish_others.description
+    t: What other solutions not mentioned above have you used for your React Native apps?
+
+  - key: build_and_publish.build_and_publish_pain_points
+    t: Building and publishing pain points
+  - key: build_and_publish.build_and_publish_pain_points.question
+    t: Building and publishing pain points
+  - key: build_and_publish.build_and_publish_pain_points.description
+    t: What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  ######################################################
+  #########        DEV TOOLS                   #########
+  ######################################################
+
+  - key: sections.dev_tools.title
+    t: Dev tools
+  - key: sections.dev_tools.description
+    t: The tools you use to scaffold and develop React Native projects.
+
+  - key: dev_tools.dev_tools_js_ts
+    t: JavaScript/TypeScript balance
+  - key: dev_tools.dev_tools_js_ts.question
+    t: JavaScript/TypeScript balance
+  - key: dev_tools.dev_tools_js_ts.description
+    t: How do you divide your time between writing JavaScript and TypeScript code?
+  - key: options.dev_tools_js_ts.0
+    t: "100% JS"
+  - key: options.dev_tools_js_ts.1
+    t: "90% / 10%"
+  - key: options.dev_tools_js_ts.2
+    t: "75% / 25%"
+  - key: options.dev_tools_js_ts.3
+    t: "60% / 40%"
+  - key: options.dev_tools_js_ts.4
+    t: "50% / 50%"
+  - key: options.dev_tools_js_ts.5
+    t: "40% / 60%"
+  - key: options.dev_tools_js_ts.6
+    t: "25% / 75%"
+  - key: options.dev_tools_js_ts.7
+    t: "10% / 90%"
+  - key: options.dev_tools_js_ts.8
+    t: "100% TS"
+
+  - key: dev_tools.dev_tools_package_managers
+    t: Package managers
+  - key: dev_tools.dev_tools_package_managers.question
+    t: Package managers
+  - key: dev_tools.dev_tools_package_managers.description
+    t: Which package managers do you use?
+
+  - key: dev_tools.dev_tools_starter_templates
+    t: Starter templates
+  - key: dev_tools.dev_tools_starter_templates.question
+    t: Starter templates
+  - key: dev_tools.dev_tools_starter_templates.description
+    t: Which starter templates or boilerplates do you use?
+
+  - key: dev_tools.dev_tools_other_tools.question
+    t: Other development tools
+  - key: dev_tools.dev_tools_other_tools.description
+    t: What other dev tools not mentioned above have you used for your React Native projects?
+
+  # - key: dev_tools.rn_tools_experience
+  #   t: React Native Tools Experience & Sentiment
+
+  ######################################################
+  #########   React Native Alternatives      #########
+  ######################################################
+
   - key: sections.react_native_alternatives.title
     t: React Native Alternatives
   - key: sections.react_native_alternatives.description
@@ -611,73 +744,88 @@ translations:
   - key: react_native_alternatives.react_native_alternatives_experience
     t: React Native Alternatives Experience & Sentiment
 
-  # Resources section
+  - key: react_native_alternatives.react_native_alternatives_other
+    t: Other React Native alternatives
+
+  ######################################################
+  #                    Resources                       #
+  ######################################################
+
   - key: sections.resources.title
     t: Resources
   - key: sections.resources.description
     t: What React Native resources do you consult?
+
   - key: resources.resources_initially_learn_react_native
     t: Learning methods
   - key: resources.resources_initially_learn_react_native.question
     t: What methods do you use to learn React Native?
-  - key: resources.resources_initially_learn_react_native.description
-    t: Check all that apply
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_books
+    t: Books
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_coding_bootcamp
+    t: Coding bootcamp
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_expo_docs
+    t: Expo docs
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_mentoring
+    t: Mentoring
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_official_docs
+    t: Official React Native docs
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_on_the_job_training
+    t: On-the-job training
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_free
+    t: Online courses (free)
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_paid
+    t: Online courses (paid)0
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_podcasts
+    t: Podcasts
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_react_native_directory
+    t: React Native Directory
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_school_higher_education
+    t: School / higher education
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_self_directed_learning
+    t: Self-directed learning
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_videos
+    t: Videos
+  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_x
+    t: X platform
+
   - key: resources.resources_read_multiple
     t: Blogs, magazines & newsletters
   - key: resources.resources_read_multiple.question
     t: What blogs, magazines or newsletters do you consult to keep up with React Native news?
-  - key: resources.resources_read_multiple.description
-    t: Check all that apply
+
   - key: resources.resources_course_multiple
     t: Sites, courses & books
   - key: resources.resources_course_multiple.question
     t: What sites, courses or books do you consult to learn React Native?
-  - key: resources.resources_course_multiple.description
-    t: Check all that apply
+
   - key: resources.resources_podcast_multiple
     t: Podcasts
   - key: resources.resources_podcast_multiple.question
     t: What React Native or general programming-related podcasts do you listen to?
-  - key: resources.resources_podcast_multiple.description
-    t: Check all that apply
+
   - key: resources.video_creators_rn
     t: Video Creators
   - key: resources.video_creators_rn.question
     t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
-  - key: resources.video_creators_rn.description
-    t: Write all that apply
+
   - key: resources.people_rn
     t: People
   - key: resources.people_rn.question
     t: People you read, follow, or just want to highlight for their work.
-  - key: resources.people_rn.description
-    t: Write all that apply
+
   - key: resources.resources_surveys
     t: Other developer surveys
   - key: resources.resources_surveys.question
     t: What other developer surveys do you participate in?
-  - key: resources.resources_surveys.description
-    t: Check all that apply
 
-  # React Native Tools section
-  - key: sections.rn_tools.title
-    t: React Native Tools
-  - key: sections.rn_tools.description
-    t: The tools you use to develop React Native apps.
-  - key: rn_tools.rn_tools_js_ts.question
-    t: JavaScript/TypeScript Balance
-  - key: rn_tools.rn_tools_js_ts.description
-    t: How do you divide your time between writing JavaScript and TypeScript code?
-  - key: rn_tools.rn_tools_package_managers.question
-    t: Package Managers
-  - key: rn_tools.rn_tools_package_managers.description
-    t: Which package managers do you use? Check all that apply
-  - key: rn_tools.rn_tools_starter_templates.question
-    t: Starter Templates
-  - key: rn_tools.rn_tools_starter_templates.description
-    t: Which starter templates or boilerplates do you use? Check all that apply
-  - key: rn_tools.rn_tools_experience
-    t: React Native Tools Experience & Sentiment
+  #############################################################################################
+  #############################################################################################
+  #############################################################################################
+  # YET TO BE REVIEWED
+  #############################################################################################
+  #############################################################################################
+  #############################################################################################
 
   # Opinions section
   - key: sections.opinions.title
@@ -696,22 +844,16 @@ translations:
     t: React Native pain points
   - key: opinions.opinions_pain_points_multiple.question
     t: What are the things that makes you feel annoyed while developing React Native apps?
-  - key: opinions.opinions_pain_points_multiple.description
-    t: Check all that apply
 
   - key: opinions.opinions_missing_multiple
     t: Missing features
   - key: opinions.opinions_missing_multiple.question
     t: What do you feel currently is missing from React Native?
-  - key: opinions.opinions_missing_multiple.description
-    t: Check all that apply
 
   - key: opinions.opinions_advantages_multiple
     t: React Native advantages
   - key: opinions.opinions_advantages_multiple.question
     t: What are advantages of React Native over other solutions?
-  - key: opinions.opinions_advantages_multiple.description
-    t: Check all that apply
 
   # About You section
   - key: sections.about_you.title
@@ -766,14 +908,6 @@ translations:
   - key: sections.developer_background.description
     t: What's your background as a developer?
 
-  # deployment
-  - key: deployment.deployment_pain_points
-    t: Deployment pain points
-  - key: deployment.deployment_pain_points.question
-    t: Deployment pain points
-  - key: deployment.deployment_pain_points.description
-    t: What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
-
   ###########################################################################
   # FAQ/About
   ###########################################################################
@@ -809,129 +943,8 @@ translations:
     t: The survey was designed based on our expertise and the community feedback gathered on <a href="https://github.com/software-mansion/state-of-react-native/discussions/6">this GitHub discussion</a>.
 
   ######################################################
-  #########             FEATURES               #########
-  ######################################################
-
-  - key: react_native_features.version
-    t: React Native version
-  - key: options.react_native_features_version.react_native_features_version_0_63_or_lower
-    t: 0.63 or lower
-  - key: options.react_native_features_version.react_native_features_version_0_64
-    t: "0.64"
-  - key: options.react_native_features_version.react_native_features_version_0_65
-    t: "0.65"
-  - key: options.react_native_features_version.react_native_features_version_0_66
-    t: "0.66"
-  - key: options.react_native_features_version.react_native_features_version_0_67
-    t: "0.67"
-  - key: options.react_native_features_version.react_native_features_version_0_68
-    t: "0.68"
-  - key: options.react_native_features_version.react_native_features_version_0_69
-    t: "0.69"
-  - key: options.react_native_features_version.react_native_features_version_0_70
-    t: "0.70"
-  - key: options.react_native_features_version.react_native_features_version_0_71
-    t: "0.71"
-  - key: options.react_native_features_version.react_native_features_version_0_72
-    t: "0.72"
-  - key: options.react_native_features_version.react_native_features_version_0_73
-    t: "0.73"
-  - key: options.react_native_features_version.react_native_features_version_0_74
-    t: "0.74"
-  - key: options.react_native_features_version.react_native_features_version_0_75
-    t: "0.75"
-  - key: options.react_native_features_version.react_native_features_version_next
-    t: next
-  - key: options.react_native_features_version.react_native_features_version_nightly
-    t: nightly
-
-  - key: react_native_features.strategies
-    t: React Native version upgrading strategy
-  - key: options.react_native_features_strategies.react_native_features_strategies_stay_latest
-    t: Stay on the latest version
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_occasionally
-    t: Upgrade occasionally
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_for_new_features
-    t: Upgrade for the new features
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_parallel_with_expo
-    t: Upgrade in parallel with Expo SDK releases
-  - key: options.react_native_features_strategies.react_native_features_strategies_upgrade_if_necessary
-    t: Don't upgrade until I have to
-  - key: options.react_native_features_strategies.react_native_features_strategies_other
-    t: Other React Native version upgrading strategy
-
-  - key: react_native_features.brownfield
-    t: Do you integrate React Native with applications written using other technology?
-  - key: react_native_features.ota_updates
-    t: OTA updates solutions
-  - key: react_native_features.mobile_web_code_sharing
-    t: Mobile-Web code sharing
-
-  - key: deployment.deployment_other
-    t: Other solutions
-  - key: deployment.deployment_other.question
-    t: Other ways to build app and release to the stores
-
-  - key: rn_tools.tools_js_ts
-    t: JavaScript/TypeScript Balance
-  - key: rn_tools.tools_package_managers
-    t: Package managers
-  - key: rn_tools.tools_starter_templates
-    t: Starter templates
-  - key: rn_tools.tools_custom_development_client
-    t: Custom Development Client
-  - key: options.rn_tools.tools_custom_development_client
-    t: Custom Development Client
-  - key: rn_tools.tools_upgrade_helper
-    t: Upgrade Helper
-  - key: options.rn_tools.tools_upgrade_helper
-    t: Upgrade Helper
-  - key: rn_tools.tools_config_plugins
-    t: Config plugins
-  - key: options.rn_tools.tools_config_plugins
-    t: Config plugins
-  - key: rn_tools.tools_other_tools
-    t: Other development tools
-
-  - key: react_native_alternatives.react_native_alternatives_other
-    t: Other React Native alternatives
-
-  ######################################################
   #########             RESOURCES              #########
   ######################################################
-
-  - key: resources.initially_learn_react_native
-    t: Learning methods
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_official_docs
-    t: Official React Native docs
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_expo_docs
-    t: Expo docs
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_react_native_directory
-    t: React Native Directory
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_books
-    t: Books
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_videos
-    t: Videos
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_x
-    t: X platform
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_free
-    t: Online courses (free)
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_paid
-    t: Online courses (paid)
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_school_higher_education
-    t: School / higher education
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_podcasts
-    t: Podcasts
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_coding_bootcamp
-    t: Coding bootcamp
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_on_the_job_training
-    t: On-the-job training
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_mentoring
-    t: Mentoring
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_self_directed_learning
-    t: Self-directed learning
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_other
-    t: Other learning methods
 
   - key: resources.read_multiple
     t: "Blogs, magazines & newsletters"
@@ -1456,19 +1469,6 @@ translations:
   - key: options.tools_starter_templates.tools_starter_templates_create_t3_turbo
     t: create-t3-turbo
 
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_green
-    t: I mainly work on standalone React Native apps (greenfield)
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_green.short
-    t: Standalone apps (greenfield)
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_brown
-    t: I mainly work on integrated React Native apps (brownfield)
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_brown.short
-    t: Integrated apps (brownfield)
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_both
-    t: I work on both standalone and brownfield apps
-  - key: options.react_native_features_brownfield.react_native_features_brownfield_both.short
-    t: Both
-
   - key: options.developer_background_contribution_to_lib.yes
     t: Yes
   - key: options.developer_background_contribution_to_lib.no
@@ -1500,25 +1500,6 @@ translations:
     t: "Ukrainian"
   - key: options.about_you_locale.zh-CN
     t: "Chinese"
-
-  - key: options.tools_js_ts.0
-    t: "100% JS"
-  - key: options.tools_js_ts.1
-    t: "90% / 10%"
-  - key: options.tools_js_ts.2
-    t: "75% / 25%"
-  - key: options.tools_js_ts.3
-    t: "60% / 40%"
-  - key: options.tools_js_ts.4
-    t: "50% / 50%"
-  - key: options.tools_js_ts.5
-    t: "40% / 60%"
-  - key: options.tools_js_ts.6
-    t: "25% / 75%"
-  - key: options.tools_js_ts.7
-    t: "10% / 90%"
-  - key: options.tools_js_ts.8
-    t: "100% TS"
 
   - key: options.opinions_changing_too_fast.0
     t: "Disagree Strongly"
