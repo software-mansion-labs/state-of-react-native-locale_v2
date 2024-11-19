@@ -164,9 +164,9 @@ translations:
   - key: developer_background.developer_background_releases_count
     t: Released React Native Apps Count
   - key: developer_background.developer_background_releases_count.question
-    t: How many React Native apps have you published?
+    t: How many React Native apps have you released publicly?
   - key: developer_background.developer_background_releases_count.description
-    t: Published to the app stores
+    t: What is the number of publicly available apps (released to the app stores) you've worked on in 2024?
 
   - key: options.developer_background_releases_count.developer_background_releases_count_none
     t: None
@@ -340,6 +340,10 @@ translations:
     t: State management pain points
   - key: state_management.state_management_pain_points.question
     t: State management pain points
+  - key: state_management.state_management_storage
+    t: On-device storage
+  - key: state_management.state_management_storage.question
+    t: What on-device storage solutions do you regularly use in your React Native apps?
   - key: state_management.state_management_pain_points.description
     t:
       What pain points have you encountered with state management in your React Native projects?
@@ -349,6 +353,14 @@ translations:
   - key: state_management.state_management_experience
     t: State Management Experience & Sentiment
 
+  - key: state_management.state_management_pattern_architecture_local_first
+    t: Local-first app architecture
+  - key: state_management.state_management_pattern_architecture_local_first.question
+    t: Are you familiar with local-first app architecture pattern?
+  - key: state_management.state_management_pattern_architecture_local_first.description
+    t: Prioritize local data storage and processing.
+      Data stored on the device is the primary source of truth, with the server acting as a secondary source of truth.
+
   ######################################################
   #########           DATA FETCHING            #########
   ######################################################
@@ -357,7 +369,9 @@ translations:
   - key: sections.data_fetching.description
     t: What data fetching solutions do you regularly use in your React Native apps?
   - key: data_fetching.data_fetching_others.question
-    t: Other data fetching solutions not mentioned above
+    t: Other data fetching solutions
+  - key: data_fetching.data_fetching_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
   - key: data_fetching.data_fetching_others
     t: Other solutions
   - key: data_fetching.data_fetching_pain_points
@@ -379,7 +393,9 @@ translations:
   - key: sections.navigation.description
     t: What navigation solutions do you regularly use in your React Native apps?
   - key: navigation.navigation_others.question
-    t: Other navigation solutions not mentioned above
+    t: Other navigation solutions
+  - key: navigation.navigation_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
   - key: navigation.navigation_others
     t: Other solutions
   - key: navigation.navigation_pain_points
@@ -401,7 +417,9 @@ translations:
   - key: sections.styling.description
     t: What styling techniques do you regularly use in your React Native apps?
   - key: styling.styling_techniques_other.question
-    t: Other styling solutions not mentioned above
+    t: Other styling solutions
+  - key: styling.styling_techniques_other.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
   - key: styling.styling_techniques_other
     t: Other solutions
   - key: styling.styling_pain_points
@@ -422,36 +440,16 @@ translations:
     t: Styling Experience & Sentiment
 
   ######################################################
-  #########        COMPONENT LIBRARIES         #########
-  ######################################################
-  - key: sections.component_libraries.title
-    t: Components Libraries
-  - key: sections.component_libraries.description
-    t: What UI components libraries do you regularly use in your React Native apps?
-  - key: component_libraries.component_libraries_others.question
-    t: Other component libraries solutions not mentioned above
-  - key: component_libraries.component_libraries_others
-    t: Other solutions
-  - key: component_libraries.component_libraries_pain_points
-    t: Components libraries pain points
-  - key: component_libraries.component_libraries_pain_points.question
-    t: Components libraries pain points
-  - key: component_libraries.component_libraries_pain_points.description
-    t: What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: component_libraries.component_libraries_ratios
-    t: Component Libraries Ratios Over Time
-  - key: component_libraries.component_libraries_experience
-    t: Components Libraries Experience & Sentiment
-
-  ######################################################
   #########        ANIMATIONS                  #########
   ######################################################
   - key: sections.animations.title
-    t: Animations
+    t: Graphics and animations
   - key: sections.animations.description
     t: What graphics and animations solutions do you use in your React Native apps?
   - key: animations.animations_other.question
-    t: Other animations solutions not mentioned above
+    t: Other animations solutions
+  - key: animations.animations_other.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
   - key: animations.animations_other
     t: Other solutions
   - key: animations.animations_pain_points
@@ -466,25 +464,96 @@ translations:
     t: Animations Experience & Sentiment
 
   ######################################################
+  #########        COMPONENT LIBRARIES         #########
+  ######################################################
+  - key: sections.component_libraries.title
+    t: Components libraries
+  - key: sections.component_libraries.description
+    t: What UI components libraries do you regularly use in your React Native apps?
+  - key: component_libraries.component_libraries_others.question
+    t: Other component libraries solutions
+  - key: component_libraries.component_libraries_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: component_libraries.component_libraries_others
+    t: Other solutions
+  - key: component_libraries.component_libraries_pain_points
+    t: Components libraries pain points
+  - key: component_libraries.component_libraries_pain_points.question
+    t: Components libraries pain points
+  - key: component_libraries.component_libraries_pain_points.description
+    t: What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: component_libraries.component_libraries_ratios
+    t: Component Libraries Ratios Over Time
+  - key: component_libraries.component_libraries_experience
+    t: Components Libraries Experience & Sentiment
+
+  - key: component_libraries.component_libraries_data_visualisation
+    t: Data visualisation
+  - key: component_libraries.component_libraries_data_visualisation.question
+    t: What data visualisation solutions do you use in your React Native apps?
+
+  - key: component_libraries.component_libraries_other_libraries
+    t: Other popular component(s) libraries
+  - key: component_libraries.component_libraries_other_libraries.question
+    t: What other popular component(s) libraries do you use in your React Native apps?
+  - key: component_libraries.component_libraries_other_libraries.description
+    t: Other popular libraries that offer ready-made components for various APIs and mechanisms not yet covered in the survey.
+
+  ######################################################
   #########        DEBUGGING AND PROFILING     #########
   ######################################################
 
   - key: sections.debugging_and_profiling.title
-    t: Debugging And Profiling
+    t: Debugging and profiling
   - key: sections.debugging_and_profiling.description
-    t: What tools do you use to debug your React Native apps?
+    t: What tools do you use to debug and profile your React Native apps?
+
   - key: debugging_and_profiling.debugging_profiling_others.question
-    t: Other debugging and profiling solutions not mentioned above
+    t: Other debugging and profiling solutions
+  - key: debugging_and_profiling.debugging_profiling_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
   - key: debugging_and_profiling.debugging_profiling_others
     t: Other solutions
+
   - key: debugging_and_profiling.debugging_profiling_pain_points
     t: Debugging and profiling pain points
   - key: debugging_and_profiling.debugging_profiling_pain_points.question
     t: Debugging and profiling pain points
   - key: debugging_and_profiling.debugging_profiling_pain_points.description
-    t: What pain points have you encountered with debugging and profiling in your React Native projects? If applicable, point out the specific solution and its problems.
+    t: What pain points have you encountered with debugging and profiling your React Native projects? If applicable, point out the specific solution and its problems.
   - key: debugging_and_profiling.debugging_and_profiling_experience
     t: Debugging And Profiling Experience & Sentiment
+
+  ######################################################
+  #########        TESTING AND MONITORING      #########
+  ######################################################
+
+  - key: sections.testing_and_monitoring.title
+    t: Testing and monitoring
+  - key: sections.testing_and_monitoring.description
+    t: What tools do you use to test and monitor your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_testing_others.question
+    t: Other testing solutions
+  - key: testing_and_monitoring.testing_and_monitoring_testing_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_analytics
+    t: Analytics
+  - key: testing_and_monitoring.testing_and_monitoring_analytics.question
+    t: What analytics solutions do you use in your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_crash_reporting
+    t: Crash reporting
+  - key: testing_and_monitoring.testing_and_monitoring_crash_reporting.question
+    t: What crash reporting solutions do you use in your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_pain_points
+    t: Testing pain points
+  - key: testing_and_monitoring.testing_and_monitoring_pain_points.question
+    t: Testing pain points
+  - key: testing_and_monitoring.testing_and_monitoring_pain_points.description
+    t: What pain points have you encountered with testing and monitoring your React Native projects? If applicable, point out the specific solution and its problems.
 
   #############################################################################################
   #############################################################################################
@@ -493,86 +562,6 @@ translations:
   #############################################################################################
   #############################################################################################
   #############################################################################################
-
-  # App Aspects section
-  - key: sections.react_native_app_aspects.title
-    t: App Aspects
-  - key: sections.react_native_app_aspects.description
-    t: What solutions to other well-defined problems do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_analytics
-    t: Analytics
-  - key: react_native_app_aspects.react_native_app_aspects_analytics.question
-    t: What analytics solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_analytics.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points
-    t: Analytics pain points
-  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points.question
-    t: Analytics pain points
-  - key: react_native_app_aspects.react_native_app_aspects_analytics_pain_points.description
-    t: What pain points have you encountered with analytics in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting
-    t: Crash reporting
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.question
-    t: What crash reporting solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points
-    t: Crash reporting pain points
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points.question
-    t: Crash reporting pain points
-  - key: react_native_app_aspects.react_native_app_aspects_crash_reporting_pain_points.description
-    t: What pain points have you encountered with crash reporting in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation
-    t: Data visualisation
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.question
-    t: What data visualisation solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points
-    t: Data visualisation pain points
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points.question
-    t: Data visualisation pain points
-  - key: react_native_app_aspects.react_native_app_aspects_data_visualisation_pain_points.description
-    t: What pain points have you encountered with data visualisation in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_storage
-    t: Storage
-  - key: react_native_app_aspects.react_native_app_aspects_storage.question
-    t: What storage solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_storage.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points
-    t: Storage pain points
-  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points.question
-    t: Storage pain points
-  - key: react_native_app_aspects.react_native_app_aspects_storage_pain_points.description
-    t: What pain points have you encountered with storage in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_testing
-    t: Testing
-  - key: react_native_app_aspects.react_native_app_aspects_testing.question
-    t: What testing solutions do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_testing.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points
-    t: Testing pain points
-  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points.question
-    t: Testing pain points
-  - key: react_native_app_aspects.react_native_app_aspects_testing_pain_points.description
-    t: What pain points have you encountered with testing in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries
-    t: Other popular libraries
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.question
-    t: What other popular libraries do you regularly use in your React Native apps?
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries.description
-    t: Check all that apply
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points
-    t: Other libraries pain points
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points.question
-    t: Other libraries pain points
-  - key: react_native_app_aspects.react_native_app_aspects_other_libraries_pain_points.description
-    t: What pain points have you encountered with other libraries in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: react_native_app_aspects.react_native_app_aspects_architecture_local_first
-    t: Local-first app architecture
 
   # React Native Features section
   - key: sections.react_native_specific_features.title
