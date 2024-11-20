@@ -1086,7 +1086,7 @@ translations:
   - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_free
     t: Online courses (free)
   - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_paid
-    t: Online courses (paid)0
+    t: Online courses (paid)
   - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_podcasts
     t: Podcasts
   - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_react_native_directory
