@@ -1,10 +1,287 @@
 #########################################################################
-#                 TRANSLATIONS FOR SURVEYFORM & RESULTS                 #
+#                 TRANSLATIONS FOR SURVEYFORM & RESULTS
+# - some of the translations are taken from `common`, `account`           #
+# - some translation are shared between surveyform and results            #
 #########################################################################
 
 locale: en-US
 namespace: js
 translations:
+  ##############################################################################
+  ##############################################################################
+  ########################        COMMON / GENERAL        ######################
+  ##############################################################################
+  ##############################################################################
+
+  - key: general.survey_preview
+    t: >-
+      This survey is in **preview mode**. Its questions are subject to change,
+      and any data you input now **will be deleted** when the survey actually
+      starts.
+
+  - key: general.pick_up_to
+    t: Pick up to {limit} items.
+
+  - key: textlist.placeholder
+    t: Item {index}…
+
+  - key: feature.unimplemented
+    t: No browser implementation yet
+
+  - key: general.skip_question
+    t: Skip question
+  - key: general.skip_question.description
+    t: Skip question and mark it as completed
+
+  - key: general.unskip_question
+    t: Answer question
+  - key: general.unskip_question.description
+    t: Unskip question and answer it
+
+  - key: years.years
+    t: years
+  - key: years.less_than_one_year
+    t: Less than one year
+
+  - key: general.join_discord
+    t: Join us on <a href="{link}">Discord</a>.
+  - key: general.translator_mode
+    t: Press option/alt to enable translator mode.
+  - key: general.view_code_example
+    t: View Code Example
+  - key: general.code_example
+    t: Code Example
+
+  ###########################################################################
+  # Error messages
+  ###########################################################################
+
+  - key: general.numeric_input.invalid_input
+    t: Please make sure you enter a valid number.
+
+  - key: error.duplicate_response
+    t: Sorry, you already have a session in progress for this survey.
+
+  - key: error.report_issue
+    t: Report issue
+
+  - key: success.data_saved
+    t: Data saved
+  - key: success.data_saved.description
+    t: Your data has been saved.
+
+  ###########################################################################
+  # Accounts
+  ###########################################################################
+
+  - key: accounts.create_account
+    t: Continue with Account
+  - key: accounts.create_account.description
+    t: Having an account lets you **access your own data in the future** and be notified when survey results are published.
+  - key: accounts.create_account.note
+    t: If you **already have an account** we will send you a magic log-in link by email.
+  - key: accounts.create_account.action
+    t: Continue with Account
+  - key: accounts.your_email
+    t: Your Email
+
+  - key: accounts.upgrade_account.action
+    t: Upgrade your account
+  - key: accounts.upgrade_account.description
+    t: Upgrading your account with an email address will let you access your survey response after you end your session.
+
+  - key: accounts.continue_as_guest
+    t: Continue as Guest
+  - key: accounts.continue_as_guest.description
+    t: Taking the survey anonymously means you **won't be able to access your data again** after you end your session.
+  - key: accounts.continue_as_guest.action
+    t: Continue as Guest
+
+  - key: accounts.magic_link.no_email
+    t: Please enter your email
+  - key: accounts.magic_link.success
+    t: Check your inbox! We sent you a magic link, just click it to confirm your account and log in.
+  - key: accounts.magic_link.browser
+    t: <a href="{link}">Click to open your inbox.</a>
+
+  - key: accounts.sign_in
+    t: Log in
+
+  - key: accounts.sign_out
+    t: Sign out
+
+  - key: accounts.logged_in_as
+    t: Logged in using your email address
+  - key: accounts.logged_in_as_guest
+    t: Logged in as Guest
+  - key: accounts.token_verified
+    t: Token verification successful, redirecting…
+  - key: accounts.your_surveys
+    t: Your Surveys
+
+  ###########################################################################
+  # Form Controls
+  ###########################################################################
+
+  - key: bracket.vs
+    t: VS
+  - key: bracket.start_over
+    t: Start Over
+  - key: bracket.winner
+    t: >
+    Winner:
+  - key: bracket.round
+    t: Round
+  - key: bracket.empty_bracket
+    t: Pending result (complete the previous round first)
+  - key: bracket.result
+    t: Result
+  - key: bracket.cancel
+    t: Cancel
+
+  - key: experience.leave_comment
+    t: Add a comment
+  - key: experience.leave_comment_short
+    t: Add a comment
+  - key: experience.tell_us_more
+    t: "You answered “{response}”. Tell us more about your choice:"
+  - key: experience.tell_us_more_generic
+    t: "Tell us more about your answer:"
+  - key: experience.tell_us_more_no_value
+    t: "You didn't pick any response. Tell us why:"
+
+  - key: forms.select_option
+    t: Select option
+  - key: forms.more_options
+    t: Show more…
+  - key: forms.less_options
+    t: Show less
+
+  ###########################################################################
+  # Response
+  ###########################################################################
+  - key: response.completion
+    t: "{completion}% completed"
+
+  ###########################################################################
+  # Reading List
+  ###########################################################################
+
+  - key: readinglist.prompt
+    t: >
+      You picked “{option}”. If you'd like to learn more about this feature at the end of the survey, you can click the "+" icon in the corner above to add it to your **reading list**.
+
+  - key: readinglist.add_to_list
+    t: Add to Your Reading List
+
+  - key: readinglist.remove_from_list
+    t: Remove from Reading List
+
+  - key: readinglist.added_to_list
+    t: Added “{label}” to your reading list.
+
+  - key: readinglist.title
+    t: Reading List
+
+  - key: readinglist.description
+    t: >
+      Save items here using the "+" button, and you'll get a list of links to learn more about them at the end of the survey.
+
+  - key: readinglist.empty
+    t: >
+      You don't have any items in your reading list.
+      Try going back to the survey and adding features or libraries you'd like
+      to learn more about using the "+" button.
+
+  - key: readinglist.results
+    t: >
+      Here are some resources to learn more about the items in your reading list:
+
+  - key: readinglist.homepage_link
+    t: Homepage
+
+  - key: readinglist.receive_copy
+    t: >
+      Enter your email to get a copy of your reading list straight in your inbox:
+  - key: readinglist.send_by_email
+    t: Send
+  - key: readinglist.email_sent
+    t: Thanks! Your reading list is on its way to your inbox.
+
+  ###########################################################################
+  # Navigation
+  ###########################################################################
+
+  - key: general.close_nav
+    t: Close menu
+  - key: general.open_nav
+    t: Open menu
+  - key: general.skip_to_content
+    t: Skip to content
+
+  - key: nav.account
+    t: Account
+
+  - key: general.back_to_survey
+    t: Back to survey
+
+  ###########################################################################
+  # Thanks
+  ###########################################################################
+
+  - key: general.thanks0
+    t: >
+      Thanks for filling out the survey!
+  - key: general.thanks1
+    t: >
+      Your data was saved.
+  - key: general.thanks2
+    t: >
+      Help us get the word out by sharing this survey!
+  - key: general.thanks3
+    t: >
+      Every bit counts, and it'll help make our data even
+      more representative.
+
+  ###########################################################################
+  # Share
+  ###########################################################################
+  - key: general.share_subject
+    t: >
+      {surveyName} survey
+  - key: general.share_text
+    t: >
+      This year's {surveyName} survey is now open! {link}
+
+  ##############################################################################
+  ##############################################################################
+  ########################           SURVEYFORM           ######################
+  ##############################################################################
+  ##############################################################################
+
+  - key: general.start_survey
+    t: Start Survey
+  - key: general.continue_survey
+    t: Continue Survey
+  - key: general.completion
+    t: "{completion}% completed"
+  - key: general.started_on
+    t: Started on {createdAt}
+  - key: general.last_modified_on
+    t: Last modified on {updatedAt}
+  - key: general.review_survey
+    t: Review Survey
+  - key: general.review_answers
+    t: Review Answers
+  - key: general.finish_survey
+    t: Finish Survey
+  - key: general.privacy_policy
+    t: Privacy policy
+  - key: general.take_survey
+    t: Participate in the State of React Native survey to share your insights.
+  - key: general.newly_added
+    t: Added in 2024
+
   ##########################################
   #                  FAQ/About             #
   ##########################################
@@ -32,20 +309,21 @@ translations:
   - key: faq.this_survey_looks_familiar
     t: This survey looks very familiar!
   - key: faq.this_survey_looks_familiar.description
-    t: It's because it's using the same infrastructure as State of JavaScript and State of CSS surveys made by Devographics.
+    t: It's because it's using the same infrastructure as State of React and State of JavaScript surveys made by Devographics.
 
   - key: faq.how_was_survey_design
     t: How was this survey designed?
   - key: faq.how_was_survey_design.description
-    t: The survey was designed based on our expertise and the community feedback gathered on <a href="https://github.com/software-mansion/state-of-react-native/discussions/6">this GitHub discussion</a>.
-
-  ######################################################
-  ##########           SURVEYFORM           ############
-  ######################################################
+    t: The survey was designed based on our expertise and the community feedback gathered on <a href="https://github.com/software-mansion/state-of-react-native/discussions/9">this GitHub discussion</a>.
 
   ######################################################
   #########        DEVELOPER BACKGROUND        #########
   ######################################################
+
+  - key: sections.developer_background.title
+    t: Developer Background
+  - key: sections.developer_background.description
+    t: What's your background as a developer?
 
   - key: developer_background.intro_message
     t: |
@@ -852,117 +1130,59 @@ translations:
   - key: resources.resources_surveys.question
     t: What other developer surveys do you participate in?
 
-  #############################################################################################
-  #############################################################################################
-  #############################################################################################
-  # YET TO BE REVIEWED
-  #############################################################################################
-  #############################################################################################
-  #############################################################################################
+  ######################################################
+  #                    Opinions                        #
+  ######################################################
 
-  # Opinions section
   - key: sections.opinions.title
     t: Opinions
   - key: sections.opinions.description
     t: How do you feel about the state of React Native?
+
   - key: opinions.opinions_right_direction
     t: React Native direction
   - key: opinions.opinions_right_direction.question
     t: Is React Native moving in the right direction?
+
   - key: opinions.opinions_complex.question
     t: Building React Native apps is overly complex right now
+
   - key: opinions.opinions_changing_too_fast.question
     t: The React Native ecosystem is changing too fast
+
   - key: opinions.opinions_pain_points_multiple
     t: React Native pain points
   - key: opinions.opinions_pain_points_multiple.question
     t: What are the things that makes you feel annoyed while developing React Native apps?
 
-  - key: opinions.opinions_missing_multiple
-    t: Missing features
-  - key: opinions.opinions_missing_multiple.question
-    t: What do you feel currently is missing from React Native?
-
-  - key: opinions.opinions_advantages_multiple
-    t: React Native advantages
-  - key: opinions.opinions_advantages_multiple.question
-    t: What are advantages of React Native over other solutions?
-
-  # About You section
-  - key: sections.about_you.title
-    t: About You
-  - key: sections.about_you.description
-    t: Let's get to know you a little better.
-  - key: about_you.about_you_country.question
-    t: Your country or region
-  - key: about_you.about_you_country.description
-    t: Where do you currently reside?
-  - key: about_you.about_you_age.question
-    t: Your age
-  - key: about_you.about_you_age.description
-    t: How old are you, in years?
-  - key: about_you.about_you_experience.question
-    t: Years of experience
-  - key: about_you.about_you_experience.description
-    t: How long have you been working as a programmer or studying programming?
-  - key: about_you.about_you_experience_in_rn.question
-    t: Years of experience in React Native
-  - key: about_you.about_you_experience_in_rn.description
-    t: How long have you been working with or studying React Native, in years?
-  - key: about_you.about_you_company_size.question
-    t: Company size
-  - key: about_you.about_you_company_size.description
-    t: How big is your company, in the number of employees?
-  - key: about_you.about_you_education_degree.question
-    t: Higher education degree
-  - key: about_you.about_you_education_degree.description
-    t: Do you have a higher education degree?
-  - key: about_you.about_you_salary.question
-    t: Yearly salary
-  - key: about_you.about_you_salary.description
-    t: Your yearly salary in U.S. dollars.
-  - key: about_you.about_you_gender.question
-    t: Your gender
-  - key: about_you.about_you_gender.description
-    t: Which of the following options describes you, if any?
-  - key: about_you.about_you_gender.note
-    t: >
-      While we know collecting and publishing diversity data can be a sensitive issue,
-      we do think it's important to obtain this data to help measure and improve
-      the survey's efforts in terms of inclusivity and representativeness.
-  - key: about_you.about_you_how_you_know.question
-    t: How did you find out about this survey?
-  - key: about_you.about_you_what_to_improve.question
-    t: How could we improve this survey?
-
-  # Developer Background section
-  - key: sections.developer_background.title
-    t: Developer Background
-  - key: sections.developer_background.description
-    t: What's your background as a developer?
-
-  ######################################################
-  #########             RESOURCES              #########
-  ######################################################
-
-  - key: opinions.pain_points_multiple
-    t: React Native pain points
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_deployment
-    t: App deployment
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_building
     t: App building
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_deployment
+    t: App deployment
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_bundle_size
+    t: Bundle size
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_build_times
+    t: Build times
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_continuous_deployment
+    t: Continuous deployment
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_dealing_with_native_code
     t: Dealing with native code
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_debugging
     t: Debugging
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_documentation
     t: Documentation
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_end_to_end_testing
+    t: E2E testing
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_unusable_error_messages
     t: Unusable error messages
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_graphics_and_animations
     t: Graphics and animations
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_keyboard_handling
     t: Keyboard handling
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_managing_secrets
+    t: Managing secrets
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_pain_monorepos
+    t: Monorepos
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_navigation_solutions
     t: Navigation solutions
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_new_architecture
@@ -983,27 +1203,16 @@ translations:
     t: Unmaintained packages
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_upgrades
     t: Upgrades
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_managing_secrets
-    t: Managing secrets
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_setting_up_servers
     t: Setting up servers
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_continuous_deployment
-    t: Continuous deployment
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_code_sharing_with_web
     t: Sharing Code with Web
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_bundle_size
-    t: Bundle size
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_build_times
-    t: Build times
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_pain_monorepos
-    t: Monorepos
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_end_to_end_testing
-    t: E2E testing
-  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_other_pain_points
-    t: Other pain points
 
-  - key: opinions.missing_multiple
+  - key: opinions.opinions_missing_multiple
     t: Missing features
+  - key: opinions.opinions_missing_multiple.question
+    t: What do you feel currently is missing from React Native?
+
   - key: options.opinions_missing_multiple.opinions_missing_multiple_android_shadows
     t: Android shadows
   - key: options.opinions_missing_multiple.opinions_missing_multiple_better_animations_gestures
@@ -1034,11 +1243,12 @@ translations:
     t: SwiftUI/Jetpack Compose integration
   - key: options.opinions_missing_multiple.opinions_missing_multiple_fetch_stream_support
     t: Fetch API stream support (GPT-like apps)
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_other_missing_features
-    t: Other missing features
 
-  - key: opinions.advantages_multiple
+  - key: opinions.opinions_advantages_multiple
     t: React Native advantages
+  - key: opinions.opinions_advantages_multiple.question
+    t: What are advantages of React Native over other solutions?
+
   - key: options.opinions_advantages_multiple.opinions_advantages_multiple_code_sharing
     t: Code sharing
   - key: options.opinions_advantages_multiple.opinions_advantages_multiple_community
@@ -1075,116 +1285,125 @@ translations:
     t: Time to market
   - key: options.opinions_advantages_multiple.opinions_advantages_multiple_web_technologies
     t: Web technologies
-  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_other_advantages
-    t: Other advantages
 
-  - key: introduction.rn2022.bartlomiej_bukowski.bio
-    t: Software Engineer at Software Mansion
+  ######################################################
+  #                    ABOUT YOU                       #
+  ######################################################
 
-  - key: introduction.rn2022.bartlomiej_bukowski
-    t: |
-      Once in a while a React Native developer is challenged with making a project-wide decision about what solution to use in the project. A few months ago, I found myself in this situation, trying to decide on the best styling technique for my React Native app. I did an extensive research, gathering information about all available options, reading opinions and articles, but I still wasn't sure what to choose. I realised I was missing a single, centralized comparison of all these options, similar to what's available in the [State of JS](https://stateofjs.com/en-us/), but tailored specifically for the React Native ecosystem.
+  # This sections is registered under `user_info` id/key
 
-      This led to the creation of [State of React Native](https://stateofreactnative.com/). I consulted the idea with [Sacha Greif](https://sachagreif.com) from the [Devographics team](https://www.devographics.com) (creator of State of JS), assembled a team of talented colleagues, and after many work hours and gathering almost 2000 responses from the community, we are proud to present the results of the first State of React Native survey.
+  - key: sections.user_info.title
+    t: About You
+  - key: sections.user_info.description
+    t: Let's get to know the real you.
 
-      I hope that this first edition sets the tone for an annual tradition and that the results provide you with a comprehensive overview of the current state of React Native, helping you make informed decisions for your current and future React Native projects.
+  - key: user_info.age
+    t: Age
+  - key: user_info.age.question
+    t: How old are you, in years?
 
-  - key: introduction.rn2022.sebastien_lorber.bio
-    t: This Week In React founder and Docusaurus maintainer
+  - key: user_info.country
+    t: Country or region
+  - key: user_info.country.question
+    t: Where do you currently reside?
 
-  - key: introduction.rn2022.sebastien_lorber
-    t: |
-      The State of React Native is an awesome initiative! Thanks to everyone who took the survey, and to Software Mansion for putting it together!
+  - key: user_info.years_of_experience
+    t: Years of Experience
+  - key: user_info.years_of_experience.question
+    t: How long have you been working as a programmer or studying programming?
 
-      For this very first year, the sentiment breakdown (“would use again” vs “would not use again”) is a quite interesting tool to help you make better technical decisions.
+  - key: user_info.years_of_experience_rn
+    t: RN Experience
+  - key: user_info.years_of_experience_rn.question
+    t: How long have you been working with or studying React Native, in years?
 
-      Making this an annual tradition is even better: next year we will be able to see how this sentiment evolves over time.
+  - key: user_info.company_size
+    t: Company Size
+  - key: user_info.company_size.question
+    t: How big is your company, in the number of employees?
 
-  - key: conclusion.rn2022.bartlomiej_bukowski.bio
-    t: Software Engineer at Software Mansion
+  - key: user_info.higher_education_degree
+    t: Higher education degree
+  - key: user_info.higher_education_degree.question
+    t: Do you have a higher education degree?
 
-  - key: conclusion.rn2022.bartlomiej_bukowski
-    t: |
-      The React Native ecosystem is thriving and becoming better with each new version released. The community is very active and innovative solutions to various challenges faced by programmers are emerging.
+  - key: user_info.yearly_salary
+    t: Yearly income
+  - key: user_info.yearly_salary.question
+    t: Your yearly salary in U.S. dollars.
 
-      This survey showcases the diversity and versatility of the React Native by covering various aspects of app development and solutions. My own styling problem was solved by the wonderful [NativeWind](https://www.nativewind.dev) library, which provides great control over styles and a great developer experience. This is just one example of how React Native is benefiting from the web React and JavaScript ecosystems to increase its quality and popularity.
-
-      Despite this, there are still some challenges that need to be addressed in the React Native framework. However, the core team members and open source contributors are working tirelessly to fix these issues, making the future of React Native even brighter.
-
-      In 2023, we can expect to see even more performant React Native apps that are indistinguishable from apps written using native technologies.
-
-      P.S. if you're still hungry for more React and JavaScript stats I highly recommend checking out the yearly [State of JS](https://stateofjs.com/en-us/) survey and [Rising Stars](https://risingstars.js.org/2022/en) ranking from [Best Of JS](https://bestofjs.org/).
-
-  - key: conclusion.rn2022.sebastien_lorber.bio
-    t: This Week In React founder and Docusaurus maintainer
-
-  - key: conclusion.rn2022.sebastien_lorber
-    t: |
-      If there is one thing that can be said about the React Native community, it is its ability to overcome one obstacle after another. Sometimes it's not as fast as we'd hoped, but nevertheless, we keep moving in the right direction.
-
-      This year, our ecosystem strengthened in many ways, in particular:
-      - The core of React Native improved, and the transition to the new architecture finally started
-      - [Expo](https://docs.expo.dev/) kept its awesome developer experience and became closer to a vanilla React Native app, making it much easier to adopt for any kind of app
-      - Cross-platform development continued to drive innovations spanning animations, styling, bundling, and routing
-
-      Over time, we continue to push the boundaries of what is possible with React Native. We are JavaScript developers, but we do not reject the native side. Instead, we embrace it. Just yesterday, an iOS developer friend of mine told me how impressed he was with what was possible today.
-
-      In 2023, I'm excited to see our community being empowered to leverage even more of the native side using modern languages like [Swift](https://developer.apple.com/swift/) and [Kotlin](https://kotlinlang.org/). There are also many innovations to come with [React 18](https://reactjs.org/blog/2022/03/29/react-v18.html) that we are not yet taking advantage of.
-
-      I'll be glad to keep you up to date on the latest React Native innovation for another year through my newsletter [This Week In React](https://thisweekinreact.com/?utm_source=state_of_rn)
-
-  - key: about.content
+  - key: user_info.gender
+    t: Gender
+  - key: user_info.gender.question
     t: >
-      The State of React Native survey was a grassroots initiative from developers at [Software Mansion](https://swmansion.com/). The survey started on 22nd December 2022 and run till 20th January 2023 gathering 1886 responses in total.
+      Which of the following options describes you, if any?
+  - key: user_info.gender.note
+    t: >
+      While we know collecting and publishing diversity data can be a sensitive issue,
+      we do think it's important to obtain this data to help measure and improve
+      the survey's efforts in terms of inclusivity and representativeness.
 
-      ### Goal
+  - key: user_info.how_did_user_find_out_about_the_survey
+    t: Source
+  - key: user_info.how_did_user_find_out_about_the_survey.question
+    t: Where did you hear about this survey?
 
-      The goal of the State of React Native survey was to create a resource to compare different aspects of React Native development for you to help you make better technical decisions. The survey can be used as a source for finding alternatives in different categories of app development.
-      <br/>
-      Keep in mind that this type of results always have to be treated with a pinch of salt as it's impossible to capture for the state of the entire ecosystem.
-      <br/>
-      We're thrived to see the upcoming trends in the following editions as with it's first edition we only have a single data point.
+  - key: user_info.how_can_we_improve
+    t: Survey improvements
+  - key: user_info.how_can_we_improve.question
+    t: How could we improve this survey?
 
-      ### Design
+  - key: user_info.receive_notifications
+    t: Want to stay up to date?
+  - key: user_info.receive_notifications.note
+    t: >
+      If you select this option, we will send you an email to subscribe to our newsletter.
 
-      The survey was modeled and built on the foundations of [Devographics'](https://www.devographics.com/) [State of JavaScript](https://stateofjs.com/) and [State of CSS](https://stateofcss.com/) survey.
-      <br/>
-      About a dozen of experienced React Native developers from Software Mansion and a couple more outside of walls of the company have shaped the questions. We've asked the community to contribute in [a GitHub discussion](https://github.com/software-mansion/state-of-react-native/discussions/1) which most of it was included in the final survey.
-      <br/>
-      The logo and the design of the interface was created by [Daniel Wodziczka](https://dribbble.com/wodziczka), one of our amazing UI/UX Designers at Software Mansion.
-      <br/>
-      All survey questions were optional.
+  ######################################################
+  #                    FINISHING / THANK YOU PAGE      #
+  ######################################################
 
-      ### Audience
+  - key: thanks.learn_more_about
+    t: "Some of the features you might want to learn more about:"
 
-      The survey was open for everyone to participate and the responders weren't filtered or selected in any way. We were thrilled to see the survey trending organically on Twitter, Slack and Discord communities. The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter.
+  - key: thanks.features_score
+    t: Features Score
 
-      ### Technical Overview
+  - key: thanks.score_statistics
+    t: >
+      Of the {total} features mentioned in the survey,
+      you have used {usage_count} and heard of {awareness_count} more,
+      which puts you in the top {knowledgeRankingFromTop} of all respondents.
+      Well done!
+  - key: thanks.score_statistics_noranking
+    t: >
+      Of the {total} features mentioned in the survey,
+      you have used {usage_count} and heard of {awareness_count} more.
+      Well done!
+  - key: thanks.points
+    t: >
+      points
+  - key: thanks.score_awareness_explanation
+    t: >
+      For fairness, this percentage is calculated over only the {awareness_total} features you could express you knew
+  - key: thanks.share_on_twitter
+    t: Share on Twitter
+  - key: thanks.share_score_message
+    t: >
+      I got a {score} points knowledge score on this year’s #{hashtag} survey!
+      I have used {usage_count} features, and knew {awareness_count} more,
+      placing me in the top {rank}% of all respondents.
+      Can you beat my score? {shareUrl}
 
-      To bootstrap this survey, we've asked for permission to use the battle-tested technological stack created by [Devographics](https://www.devographics.com/) which includes:
+  #############################################################################################
+  #############################################################################################
+  #############################################################################################
+  # YET TO BE REVIEWED
+  #############################################################################################
+  #############################################################################################
+  #############################################################################################
 
-      - **Data collection**: custom [Vulcan.js](http://vulcanjs.org/) app.
-
-      - **Data storage/processing**: MongoDB & MongoDB Aggregations.
-
-      - **Data API**: Node.js GraphQL API.
-
-      - **Results Site**: [Gatsby](https://www.gatsbyjs.com/) React app.
-
-      - **Data Visualizations**: [Nivo](https://nivo.rocks/) React dataviz library.
-
-
-      ### Lessons learned
-
-      We've gathered considerable amount of feedback to iterate and next year, we would like to focus on the brevity of the survey. With the data gathered, we're free to get rid of some of the freeform fields and make the overall survey shorter.
-      <br/>
-      Next point would be to make results more representative by reaching more diverse communities all over the world.
-
-  - key: general.survey_preview
-    t: >-
-      This survey is in **preview mode**. Its questions are subject to change,
-      and any data you input now **will be deleted** when the survey actually
-      starts.
+  # Developer Background section
 
   - key: options.about_you_age.about_you_age_18_or_youger
     t: 18 years old or under
@@ -1410,129 +1629,68 @@ translations:
   - key: options.about_you_locale.zh-CN
     t: "Chinese"
 
-
-
-  ########################################
-  ##       RESULTS                      ##
-  ########################################
-
-  - key: tools.all_tools_experience
-    t: Libraries Experience & Sentiment
+  ##############################################################################
+  ##############################################################################
+  ##########################       RESULTS          ############################
+  ##############################################################################
+  ##############################################################################
 
   - key: general.results.description
     t: A survey about everything React Native
 
-  - key: conclusion.rn2023.sebastien_lorber.bio
-    t: This Week In React founder and Docusaurus maintainer
-
-  - key: conclusion.rn2023.sebastien_lorber
-    t: |
-      If there is one thing that can be said about the React Native community, it is its ability to overcome one obstacle after another. Sometimes it's not as fast as we'd hoped, but nevertheless, we keep moving in the right direction.
-
-      This year, our ecosystem strengthened in many ways, in particular:
-      - The core of React Native improved, and the transition to the new architecture finally started
-      - [Expo](https://docs.expo.dev/) kept its awesome developer experience and became closer to a vanilla React Native app, making it much easier to adopt for any kind of app
-      - Cross-platform development continued to drive innovations spanning animations, styling, bundling, and routing
-
-      Over time, we continue to push the boundaries of what is possible with React Native. We are JavaScript developers, but we do not reject the native side. Instead, we embrace it. Just yesterday, an iOS developer friend of mine told me how impressed he was with what was possible today.
-
-      In 2023, I'm excited to see our community being empowered to leverage even more of the native side using modern languages like [Swift](https://developer.apple.com/swift/) and [Kotlin](https://kotlinlang.org/). There are also many innovations to come with [React 18](https://reactjs.org/blog/2022/03/29/react-v18.html) that we are not yet taking advantage of.
-
-      I'll be glad to keep you up to date on the latest React Native innovation for another year through my newsletter [This Week In React](https://thisweekinreact.com/?utm_source=state_of_rn)
-      also do our best to make the results more representative by reaching out to more diverse communities around the world.
-
-  - key: options.tools.developer_background_before.answer.a
-    t: React developer
-  - key: options.tools.developer_background_before.answer.b
-    t: iOS developer
-  - key: options.tools.developer_background_before.answer.c
-    t: Android developer
-  - key: options.tools.developer_background_before.answer.d
-    t: Frontend developer (other than React e.g. Vue, Angular, SolidJS, Svelte, etc.)
-  - key: options.tools.developer_background_before.answer.e
-    t: Backend developer (PHP, Node.js, JVM, Python, etc.)
-  - key: options.tools.developer_background_before.answer.f
-    t: Desktop developer (e.g. macOS, Windows, Linux)
-  - key: options.tools.developer_background_before.answer.g
-    t: QA engineer
-  - key: options.tools.developer_background_before.answer.h
-    t: DevOps
-  - key: options.tools.developer_background_before.answer.i
-    t: Embedded developer
-  - key: options.tools.developer_background_before.answer.j
-    t: Non-technical role
-  - key: options.tools.developer_background_before.answer.k
-    t: Started with React Native
-  - key: options.tools.developer_background_before_other
-    t: Other background
-
-
-  - key: opinions.opinions_changing_too_fast
-    t: "The React Native ecosystem is changing too fast"
-  - key: options.opinions_changing_too_fast.0
-    t: "Disagree Strongly"
-  - key: options.opinions_changing_too_fast.1
-    t: "Disagree"
-  - key: options.opinions_changing_too_fast.2
-    t: "Neutral"
-  - key: options.opinions_changing_too_fast.3
-    t: "Agree"
-  - key: options.opinions_changing_too_fast.4
-    t: "Agree Strongly"
-
-  - key: options.opinions_complex.0
-    t: "Disagree Strongly"
-  - key: options.opinions_complex.1
-    t: "Disagree"
-  - key: options.opinions_complex.2
-    t: "Neutral"
-  - key: options.opinions_complex.3
-    t: "Agree"
-  - key: options.opinions_complex.4
-    t: "Agree Strongly"
-
-  - key: options.opinions_right_direction.0
-    t: "Disagree Strongly"
-  - key: options.opinions_right_direction.1
-    t: "Disagree"
-  - key: options.opinions_right_direction.2
-    t: "Neutral"
-  - key: options.opinions_right_direction.3
-    t: "Agree"
-  - key: options.opinions_right_direction.4
-    t: "Agree Strongly"
-
-  - key: opinions.opinions_complex
-    t: "Building React Native apps is overly complex right now"
-
-
-
-  # newsletter
-  - key: blocks.newsletter.title
-    t: Stay Tuned
-  - key: blocks.newsletter.description
-    t: |
-      If you'd like to know when we release additional results or announce next year's edition,
-      just leave us your email below:
   - key: blocks.newsletter.email
     t: Your Email
-  - key: blocks.newsletter.submit
-    t: Notify Me
 
-  # comments
   - key: picks.intro
     t: We asked members of the React Native community to share their opinions about the results
 
-  - key: introduction.rn2023.bartlomiej_bukowski.bio
-    t: Software Engineer at Software Mansion, Creator of the State of React Native survey
-  - key: introduction.rn2023.bartlomiej_bukowski
-    t: |
-      React Native is not a single company initiative, and its modularity allows many to step up and provide a solution for each aspect. Some libraries are gaining popularity, some solutions are fading from the scene, and some limitations are becoming more apparent.
+  ######################################################
+  #########             ABOUT                  #########
+  ######################################################
 
-      All of this can make it difficult for developers to choose the right tools and libraries for their projects and be confident in their decisions.
+  - key: about.content
+    t: >
+      The State of React Native survey was a grassroots initiative from developers at [Software Mansion](https://swmansion.com/). The survey started on 22nd December 2022 and run till 20th January 2023 gathering 1886 responses in total.
 
-      The second edition of the survey presents the trends and outlines the new initiatives happening in the React Native ecosystem. Starting with this edition, we can examine the popularity and usability of specific solutions year over year. Some of the trends were expected, while others are complete surprises. We find that some aspects are getting more attention from contributors than ever before - take a look at the styling or debugging sections (and others!).
-      The first edition of the survey was very successful. Major players in the ecosystem are reading and responding to the data. We've also grown by more than 500 new respondents year over year, reaching nearly 2400 unique respondents. By reaching more and more developers each year, we become a torch that guides people into the depths of the React Native ecosystem.
+      ### Goal
 
-      Enter the second edition of the State of React Native survey. Designed to consolidate opinions and provide meaningful insight into a variety of aspects that React Native developers deal with on a daily basis. I'm confident that the data you'll find here will serve you well the next time you need to choose the right state management solution for your project, or make any other React Native-related decision.
+      The goal of the State of React Native survey was to create a resource to compare different aspects of React Native development for you to help you make better technical decisions. The survey can be used as a source for finding alternatives in different categories of app development.
+      <br/>
+      Keep in mind that this type of results always have to be treated with a pinch of salt as it's impossible to capture for the state of the entire ecosystem.
+      <br/>
+      We're thrived to see the upcoming trends in the following editions as with it's first edition we only have a single data point.
 
+      ### Design
+
+      The survey was modeled and built on the foundations of [Devographics'](https://www.devographics.com/) [State of JavaScript](https://stateofjs.com/) and [State of CSS](https://stateofcss.com/) survey.
+      <br/>
+      About a dozen of experienced React Native developers from Software Mansion and a couple more outside of walls of the company have shaped the questions. We've asked the community to contribute in [a GitHub discussion](https://github.com/software-mansion/state-of-react-native/discussions/1) which most of it was included in the final survey.
+      <br/>
+      The logo and the design of the interface was created by [Daniel Wodziczka](https://dribbble.com/wodziczka), one of our amazing UI/UX Designers at Software Mansion.
+      <br/>
+      All survey questions were optional.
+
+      ### Audience
+
+      The survey was open for everyone to participate and the responders weren't filtered or selected in any way. We were thrilled to see the survey trending organically on Twitter, Slack and Discord communities. The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter.
+
+      ### Technical Overview
+
+      To bootstrap this survey, we've asked for permission to use the battle-tested technological stack created by [Devographics](https://www.devographics.com/) which includes:
+
+      - **Data collection**: custom [Vulcan.js](http://vulcanjs.org/) app.
+
+      - **Data storage/processing**: MongoDB & MongoDB Aggregations.
+
+      - **Data API**: Node.js GraphQL API.
+
+      - **Results Site**: [Gatsby](https://www.gatsbyjs.com/) React app.
+
+      - **Data Visualizations**: [Nivo](https://nivo.rocks/) React dataviz library.
+
+
+      ### Lessons learned
+
+      We've gathered considerable amount of feedback to iterate and next year, we would like to focus on the brevity of the survey. With the data gathered, we're free to get rid of some of the freeform fields and make the overall survey shorter.
+      <br/>
+      Next point would be to make results more representative by reaching more diverse communities all over the world.

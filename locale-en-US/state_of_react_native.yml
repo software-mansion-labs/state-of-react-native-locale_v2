@@ -2,6 +2,4 @@
 
 locale: en-US
 namespace: js
-translations:
-  - key: "noop"
-    t: Noop
+translations: []
