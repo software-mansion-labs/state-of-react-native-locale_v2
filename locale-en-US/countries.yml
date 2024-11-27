@@ -1,7 +1,0 @@
-# this list includes only the top ~50 countries in the world ranked by population,
-# we can add more countries if they appear in the survey. See full list below
-locale: en-US
-translations:
-  - key: options.country.AFG
-    t: Afghanistan
- 
