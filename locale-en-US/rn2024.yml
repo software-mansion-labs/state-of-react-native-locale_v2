@@ -860,9 +860,9 @@ translations:
     t: What crash reporting solutions do you use in your React Native apps?
 
   - key: testing_and_monitoring.testing_and_monitoring_pain_points
-    t: Testing pain points
+    t: Testing and monitoring pain points
   - key: testing_and_monitoring.testing_and_monitoring_pain_points.question
-    t: Testing pain points
+    t: Testing and monitoring pain points
   - key: testing_and_monitoring.testing_and_monitoring_pain_points.description
     t: What pain points have you encountered with testing and monitoring your React Native projects? If applicable, point out the specific solution and its problems.
 
@@ -870,65 +870,53 @@ translations:
   #########        REACT NATIVE API            #########
   ######################################################
 
-  - key: sections.react_native_api.title
-    t: React Native API
-  - key: sections.react_native_api.question
-    t: What is your knowledge of the APIs specific to React Native?
+  - key: sections.react_native_architecture.title
+    t: React Native Architecture
+  - key: sections.react_native_architecture.description
+    t: What is your knowledge of the architectural APIs specific to React Native?
 
-  - key: react_native_api.react_native_api_version
+  - key: react_native_architecture.react_native_architecture_version
     t: React Native version
-  - key: react_native_api.react_native_api_version.question
+  - key: react_native_architecture.react_native_architecture_version.question
     t: Which React Native version do you use mainly?
-  - key: options.react_native_api_version.react_native_api_version_0_63_or_lower
-    t: 0.63 or lower
-  - key: options.react_native_api_version.react_native_api_version_0_64
-    t: "0.64"
-  - key: options.react_native_api_version.react_native_api_version_0_65
-    t: "0.65"
-  - key: options.react_native_api_version.react_native_api_version_0_66
-    t: "0.66"
-  - key: options.react_native_api_version.react_native_api_version_0_67
-    t: "0.67"
-  - key: options.react_native_api_version.react_native_api_version_0_68
-    t: "0.68"
-  - key: options.react_native_api_version.react_native_api_version_0_69
-    t: "0.69"
-  - key: options.react_native_api_version.react_native_api_version_0_70
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_69_or_lower
+    t: "0.69 or lower"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_70
     t: "0.70"
-  - key: options.react_native_api_version.react_native_api_version_0_71
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_71
     t: "0.71"
-  - key: options.react_native_api_version.react_native_api_version_0_72
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_72
     t: "0.72"
-  - key: options.react_native_api_version.react_native_api_version_0_73
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_73
     t: "0.73"
-  - key: options.react_native_api_version.react_native_api_version_0_74
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_74
     t: "0.74"
-  - key: options.react_native_api_version.react_native_api_version_0_75
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_75
     t: "0.75"
-  - key: options.react_native_api_version.react_native_api_version_0_76
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_76
     t: "0.76"
-  - key: options.react_native_api_version.react_native_api_version_next
-    t: next
-  - key: options.react_native_api_version.react_native_api_version_nightly
+  - key: options.react_native_architecture_version.react_native_architecture_version_next
+    t: next / rc (release candidate)
+  - key: options.react_native_architecture_version.react_native_architecture_version_nightly
     t: nightly
 
-  - key: react_native_api.react_native_api_strategies
+  - key: react_native_architecture.react_native_architecture_strategies
     t: Upgrade strategy
-  - key: react_native_api.react_native_api_strategies.question
+  - key: react_native_architecture.react_native_architecture_strategies.question
     t: React Native version upgrading strategy
-  - key: react_native_api.react_native_api_strategies.description
+  - key: react_native_architecture.react_native_architecture_strategies.description
     t: What is your main strategy for upgrading React Native to a new versions?
-  - key: options.react_native_api_strategies.react_native_api_strategies_stay_latest
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_stay_latest
     t: Stay on the latest version
-  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_occasionally
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_occasionally
     t: Upgrade occasionally
-  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_for_new_features
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_for_new_features
     t: Upgrade for the new features
-  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_parallel_with_expo
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_parallel_with_expo
     t: Upgrade in parallel with Expo SDK releases
-  - key: options.react_native_api_strategies.react_native_api_strategies_upgrade_if_necessary
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_if_necessary
     t: Don't upgrade until I have to
-  - key: options.react_native_api_strategies.react_native_api_strategies_other
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_other
     t: Other React Native version upgrading strategy
 
   - key: react_native_features.brownfield
@@ -938,32 +926,42 @@ translations:
   - key: react_native_features.mobile_web_code_sharing
     t: Mobile-Web code sharing
 
-  - key: react_native_api.react_native_api_brownfield
+  - key: react_native_architecture.react_native_architecture_brownfield
     t: Brownfield
-  - key: react_native_api.react_native_api_brownfield.question
+  - key: react_native_architecture.react_native_architecture_brownfield.question
     t: What type of React Native project are you working on?
-  - key: options.react_native_api_brownfield.react_native_api_brownfield_green
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green
     t: I mainly work on standalone React Native apps (greenfield)
-  - key: options.react_native_api_brownfield.react_native_api_brownfield_green.short
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green.short
     t: Standalone apps (greenfield)
-  - key: options.react_native_api_brownfield.react_native_api_brownfield_brown
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_brown
     t: I mainly work on integrated React Native apps (brownfield)
-  - key: options.react_native_api_brownfield.react_native_api_brownfield_brown.short
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_brown.short
     t: Integrated apps (brownfield)
-  - key: options.react_native_api_brownfield.react_native_api_brownfield_both
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_both
     t: I work on both standalone and brownfield apps
-  - key: options.react_native_api_brownfield.react_native_api_brownfield_both.short
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_both.short
     t: Both
 
-  - key: react_native_api.react_native_api_ota_updates
-    t: Over-The-Air updates
-  - key: react_native_api.react_native_api_ota_updates.question
-    t: What Over-The-Air updates solutions do you use?
+  - key: react_native_architecture.react_native_architecture_ota_updates
+    t: Over-the-air updates
+  - key: react_native_architecture.react_native_architecture_ota_updates.question
+    t: What Over-the-air (OTA) updates solutions do you use?
 
-  - key: react_native_api.react_native_api_mobile_web_code_sharing
+  - key: options.react_native_architecture_ota_updates.react_native_architecture_ota_updates_self_hosted
+    t: Self-hosted
+
+  - key: react_native_architecture.react_native_architecture_mobile_web_code_sharing
     t: Mobile-Web code sharing
-  - key: react_native_api.react_native_api_mobile_web_code_sharing.question
+  - key: react_native_architecture.react_native_architecture_mobile_web_code_sharing.question
     t: What methods do you employ for sharing code between mobile and web platforms in your project, if any?
+
+  - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_webview
+    t: WebView running mobile version of a website.
+  - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_common_logic_independent_ui
+    t: Common business logic, independent UI components.
+  - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_independent_projects
+    t: No code sharing. Independent project for the web counterpart of my application.
 
   ######################################################
   #########        BUILD AND PUBLISH           #########
