@@ -304,7 +304,7 @@ translations:
   - key: faq.who_runs_the_survey
     t: Who runs this survey?
   - key: faq.who_runs_the_survey.description
-    t: This survey is run by Software Mansion. We are a software development company based in Poland, with a strong focus on React Native app development and multimedia streaming.
+    t: This survey is run by <a target="_blank" href="https://swmansion.com">Software Mansion</a>. We are a software development company based in Poland, with a strong focus on React Native app development and multimedia streaming.
 
   - key: faq.this_survey_looks_familiar
     t: This survey looks very familiar!
@@ -314,16 +314,16 @@ translations:
   - key: faq.how_was_survey_design
     t: How was this survey designed?
   - key: faq.how_was_survey_design.description
-    t: The survey was designed based on our expertise and the community feedback gathered on <a href="https://github.com/software-mansion/state-of-react-native/discussions/9">this GitHub discussion</a>.
+    t: The survey has been designed based on our expertise and community feedback from <a target="_blank" href="https://github.com/software-mansion/state-of-react-native">this GitHub repository</a>.
 
   ######################################################
   #########        DEVELOPER BACKGROUND        #########
   ######################################################
 
   - key: sections.developer_background.title
-    t: Developer Background
+    t: Developer background
   - key: sections.developer_background.description
-    t: What's your background as a developer?
+    t: What's your background as a software developer?
 
   - key: developer_background.intro_message
     t: |
@@ -360,7 +360,7 @@ translations:
 
   # Usage Type
   - key: developer_background.developer_background_usage_type
-    t: Usage Type
+    t: Usage type
   - key: developer_background.developer_background_usage_type.question
     t: How do you use React Native?
 
@@ -386,9 +386,11 @@ translations:
 
   # Top React Native App User Count
   - key: developer_background.developer_background_users_count
-    t: Top React Native App User Count
+    t: Top React Native app user count
   - key: developer_background.developer_background_users_count.question
     t: What is the user count of your top React Native app?
+  - key: developer_background.developer_background_users_count.description
+    t: What is the user base size of the React Native app you've worked on the most in the last year?
 
   - key: options.developer_background_users_count.developer_background_users_count_only_me
     t: Only me
@@ -407,9 +409,11 @@ translations:
 
   # Mobile App Team Size
   - key: developer_background.developer_background_team_size
-    t: Mobile App Team Size
+    t: Mobile app team size
   - key: developer_background.developer_background_team_size.question
     t: What is your mobile app team size?
+  - key: developer_background.developer_background_team_size.description
+    t: What was the average size of your mobile team last year?
 
   - key: options.developer_background_team_size.developer_background_team_size_solo
     t: Solo developer
@@ -424,7 +428,7 @@ translations:
 
   # Platforms Used for React Native
   - key: developer_background.developer_background_platforms
-    t: Platforms Used for React Native
+    t: Platforms used for React Native
   - key: developer_background.developer_background_platforms.question
     t: What are the platforms that you use React Native for?
 
@@ -432,18 +436,7 @@ translations:
     t: iOS
   - key: options.developer_background_platforms.developer_background_platforms_android
     t: Android
-  - key: options.developer_background_platforms.developer_background_platforms_web
-    t: Web
-  - key: options.developer_background_platforms.developer_background_platforms_macos
-    t: macOS
-  - key: options.developer_background_platforms.developer_background_platforms_windows
-    t: Windows
-  - key: options.developer_background_platforms.developer_background_platforms_android_tv
-    t: Android TV
-  - key: options.developer_background_platforms.developer_background_platforms_tvos
-    t: tvOS
-  - key: options.developer_background_platforms.developer_background_platforms_skia
-    t: React Native Skia (Linux & macOS)
+  # other options are in entities
 
   # Contribution to React Native
   - key: developer_background.developer_background_contribution_to_rn
@@ -460,7 +453,7 @@ translations:
 
   # Open Source Contribution to React Native Libraries
   - key: developer_background.developer_background_contribution_to_lib
-    t: Open Source Contribution to React Native Libraries
+    t: Open source contribution to React Native libraries
   - key: developer_background.developer_background_contribution_to_lib.question
     t: Have you contributed to any React Native community library?
   - key: developer_background.developer_background_contribution_to_lib.description
@@ -473,7 +466,7 @@ translations:
 
   # Released React Native Apps Count
   - key: developer_background.developer_background_releases_count
-    t: Released React Native Apps Count
+    t: Released React Native apps count
   - key: developer_background.developer_background_releases_count.question
     t: How many React Native apps have you released publicly?
   - key: developer_background.developer_background_releases_count.description
@@ -507,7 +500,7 @@ translations:
 
   # Industry Sectors Using React Native
   - key: developer_background.developer_background_industry_sector
-    t: Industry Sectors Using React Native
+    t: Industry sectors
   - key: developer_background.developer_background_industry_sector.question
     t: Which industry sector(s) are you using React Native in?
 
@@ -605,10 +598,10 @@ translations:
 
       Tell us what is your experience using them in your React Native apps.
       Is it very hard to achieve what you want to, or "<i>it just works</i>"?
-      Be sure to express your feelings by clicking the <b>Positive experience</b> or <b>Negative experience</b> buttons!
+      Be sure to express your feelings by clicking the <strong>Positive experience</strong> or <strong>Negative experience</strong> buttons!
       You can even express your pain points observations if you want to 😉
 
-      By the way, if you want to learn more about specific piece of technology, please make sure to press <b>"+" button</b> and add it to your <b>reading list</b>!
+      By the way, if you want to learn more about specific piece of technology, please make sure to press <strong>"+" button</strong> and add it to your <strong>reading list</strong>!
 
   - key: sections.platform_apis.title
     t: Platform APIs
@@ -635,10 +628,10 @@ translations:
       - **Heard of it**: you've read or heard about it, but haven't actually used it yet.
       - **Used it**: you've used it at least once, even just to play around with..
 
-      Also, if you want to tell us more about any of your choices, just click the <b>"Add a comment"</b> button!
+      Also, if you want to tell us more about any of your choices, just click the <strong>Add a comment</strong> button!
 
   - key: sections.state_management.title
-    t: State Management
+    t: State management
   - key: sections.state_management.description
     t: What state management solutions do you regularly use in your React Native apps?
   - key: state_management.state_management_others.question
@@ -664,13 +657,10 @@ translations:
   - key: state_management.state_management_experience
     t: State Management Experience & Sentiment
 
-  - key: state_management.state_management_pattern_architecture_local_first
+  - key: state_management.state_management_app_architecture_pattern_local_first
     t: Local-first app architecture
-  - key: state_management.state_management_pattern_architecture_local_first.question
+  - key: state_management.state_management_app_architecture_pattern_local_first.question
     t: Are you familiar with local-first app architecture pattern?
-  - key: state_management.state_management_pattern_architecture_local_first.description
-    t: Prioritize local data storage and processing.
-      Data stored on the device is the primary source of truth, with the server acting as a secondary source of truth.
 
   ######################################################
   #########           DATA FETCHING            #########
@@ -678,7 +668,7 @@ translations:
   - key: sections.data_fetching.title
     t: Data fetching
   - key: sections.data_fetching.description
-    t: What data fetching solutions do you regularly use in your React Native apps?
+    t: What data fetching solutions (accessing remote data) do you regularly use in your React Native apps?
   - key: data_fetching.data_fetching_others.question
     t: Other data fetching solutions
   - key: data_fetching.data_fetching_others.description
@@ -751,7 +741,7 @@ translations:
     t: Styling Experience & Sentiment
 
   ######################################################
-  #########        ANIMATIONS                  #########
+  #########       GRAPHICS & ANIMATIONS        #########
   ######################################################
   - key: sections.animations.title
     t: Graphics and animations
@@ -871,7 +861,7 @@ translations:
   ######################################################
 
   - key: sections.react_native_architecture.title
-    t: React Native Architecture
+    t: React Native architecture
   - key: sections.react_native_architecture.description
     t: What is your knowledge of the architectural APIs specific to React Native?
 
@@ -927,7 +917,7 @@ translations:
     t: Mobile-Web code sharing
 
   - key: react_native_architecture.react_native_architecture_brownfield
-    t: Brownfield
+    t: Greenfield vs brownfield
   - key: react_native_architecture.react_native_architecture_brownfield.question
     t: What type of React Native project are you working on?
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green
@@ -1047,7 +1037,7 @@ translations:
   ######################################################
 
   - key: sections.react_native_alternatives.title
-    t: React Native Alternatives
+    t: React Native alternatives
   - key: sections.react_native_alternatives.description
     t: What other cross-platform app development solutions are you familiar with?
   - key: react_native_alternatives.react_native_alternatives_experience
@@ -1065,62 +1055,66 @@ translations:
   - key: sections.resources.description
     t: What React Native resources do you consult?
 
-  - key: resources.resources_initially_learn_react_native
-    t: Learning methods
-  - key: resources.resources_initially_learn_react_native.question
-    t: What methods do you use to learn React Native?
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_books
+  - key: resources.resources_learn_initially
+    t: Initial learning methods
+  - key: resources.resources_learn_initially.question
+    t: Which resource types have you used to initially learn React Native?
+
+  - key: options.resources_learn_initially.resources_learn_initially_ai_tools
+    t: AI tools (ChatGPT, Copilot, etc.)
+  - key: options.resources_learn_initially.resources_learn_initially_books
     t: Books
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_coding_bootcamp
+  - key: options.resources_learn_initially.resources_learn_initially_coding_bootcamp
     t: Coding bootcamp
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_expo_docs
+  - key: options.resources_learn_initially.resources_learn_initially_expo_docs
     t: Expo docs
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_mentoring
+  - key: options.resources_learn_initially.resources_learn_initially_mentoring
     t: Mentoring
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_official_docs
-    t: Official React Native docs
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_on_the_job_training
+  - key: options.resources_learn_initially.resources_learn_initially_official_docs
+    t: React Native docs
+  - key: options.resources_learn_initially.resources_learn_initially_on_the_job_training
     t: On-the-job training
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_free
+  - key: options.resources_learn_initially.resources_learn_initially_online_courses_free
     t: Online courses (free)
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_online_courses_paid
+  - key: options.resources_learn_initially.resources_learn_initially_online_courses_paid
     t: Online courses (paid)
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_podcasts
+  - key: options.resources_learn_initially.resources_learn_initially_podcasts
     t: Podcasts
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_react_native_directory
-    t: React Native Directory
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_school_higher_education
+  - key: options.resources_learn_initially.resources_learn_initially_school_higher_education
     t: School / higher education
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_self_directed_learning
+  - key: options.resources_learn_initially.resources_learn_initially_self_directed_learning
     t: Self-directed learning
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_videos
+  - key: options.resources_learn_initially.resources_learn_initially_videos
     t: Videos
-  - key: options.resources_initially_learn_react_native.resources_initially_learn_react_native_x
-    t: X platform
 
-  - key: resources.resources_read_multiple
-    t: Blogs, magazines & newsletters
-  - key: resources.resources_read_multiple.question
-    t: What blogs, magazines or newsletters do you consult to keep up with React Native news?
+  - key: resources.resources_learn_more
+    t: Learning more
+  - key: resources.resources_learn_more.question
+    t: Which resources do you consult to deepen your React Native knowledge and learn new patterns?
 
-  - key: resources.resources_course_multiple
-    t: Sites, courses & books
-  - key: resources.resources_course_multiple.question
-    t: What sites, courses or books do you consult to learn React Native?
+  - key: options.resources_learn_more.resources_learn_more_ai_tools
+    t: AI tools
+  - key: options.resources_learn_more.resources_learn_more_ai_tools.description
+    t: Suggestions and explanations coming from AI assistant service (ChatGPT, Copilot, Claude, etc.).
 
-  - key: resources.resources_podcast_multiple
+  - key: resources.resources_stay_up_to_date
+    t: Newsletters & news platforms
+  - key: resources.resources_stay_up_to_date.question
+    t: What newsletters and news platforms do you consult to keep up with React Native news?
+
+  - key: resources.resources_podcasts
     t: Podcasts
-  - key: resources.resources_podcast_multiple.question
+  - key: resources.resources_podcasts.question
     t: What React Native or general programming-related podcasts do you listen to?
 
-  - key: resources.video_creators_rn
-    t: Video Creators
-  - key: resources.video_creators_rn.question
+  - key: resources.resources_video_creators
+    t: Video creators
+  - key: resources.resources_video_creators.question
     t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
 
-  - key: resources.people_rn
+  - key: resources.resources_people
     t: People
-  - key: resources.people_rn.question
+  - key: resources.resources_people.question
     t: People you read, follow, or just want to highlight for their work.
 
   - key: resources.resources_surveys
@@ -1204,15 +1198,13 @@ translations:
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_setting_up_servers
     t: Setting up servers
   - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_code_sharing_with_web
-    t: Sharing Code with Web
+    t: Sharing code with Web
 
   - key: opinions.opinions_missing_multiple
     t: Missing features
   - key: opinions.opinions_missing_multiple.question
     t: What do you feel currently is missing from React Native?
 
-  - key: options.opinions_missing_multiple.opinions_missing_multiple_android_shadows
-    t: Android shadows
   - key: options.opinions_missing_multiple.opinions_missing_multiple_better_animations_gestures
     t: Better animations/gestures
   - key: options.opinions_missing_multiple.opinions_missing_multiple_better_debugging
@@ -1269,6 +1261,8 @@ translations:
     t: Fast iteration
   - key: options.opinions_advantages_multiple.opinions_advantages_multiple_hot_reloading
     t: Hot reloading
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_learn_once
+    t: Learn once, write anywhere
   - key: options.opinions_advantages_multiple.opinions_advantages_multiple_native_feel_of_app
     t: Native feel of app
   - key: options.opinions_advantages_multiple.opinions_advantages_multiple_over_the_air_updates
