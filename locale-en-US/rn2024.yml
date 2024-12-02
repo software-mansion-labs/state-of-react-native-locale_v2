@@ -619,6 +619,12 @@ translations:
   ######################################################
   #########        STATE MANAGEMENT            #########
   ######################################################
+
+  - key: sections.state_management.title
+    t: State management
+  - key: sections.state_management.description
+    t: What state management solutions do you use in your React Native apps?
+
   - key: state_management.intro_message
     t: |
       This next part of the survey is about sharing your experiences with various libraries that address the most fundamental challenges of React Native apps.
@@ -630,10 +636,8 @@ translations:
 
       Also, if you want to tell us more about any of your choices, just click the <strong>Add a comment</strong> button!
 
-  - key: sections.state_management.title
-    t: State management
-  - key: sections.state_management.description
-    t: What state management solutions do you regularly use in your React Native apps?
+      To provide additional context and facilitate understanding, each state management solution is accompanied by a code sample demonstrating a basic counter implementation, including state access and increment functionality.
+
   - key: state_management.state_management_others.question
     t: Other state management solutions
   - key: state_management.state_management_others.description
@@ -647,7 +651,7 @@ translations:
   - key: state_management.state_management_storage
     t: On-device storage
   - key: state_management.state_management_storage.question
-    t: What on-device storage solutions do you regularly use in your React Native apps?
+    t: What on-device storage solutions do you use in your React Native apps?
   - key: state_management.state_management_pain_points.description
     t:
       What pain points have you encountered with state management in your React Native projects?
@@ -668,7 +672,12 @@ translations:
   - key: sections.data_fetching.title
     t: Data fetching
   - key: sections.data_fetching.description
-    t: What data fetching solutions (accessing remote data) do you regularly use in your React Native apps?
+    t: What data fetching solutions (accessing remote data) do you use in your React Native apps?
+
+  - key: data_fetching.intro_message
+    t: |
+      To provide additional context and facilitate understanding, each data fetching solution is accompanied by a code sample demonstrating a basic usage.
+
   - key: data_fetching.data_fetching_others.question
     t: Other data fetching solutions
   - key: data_fetching.data_fetching_others.description
@@ -692,7 +701,7 @@ translations:
   - key: sections.navigation.title
     t: Navigation
   - key: sections.navigation.description
-    t: What navigation solutions do you regularly use in your React Native apps?
+    t: What navigation solutions do you use in your React Native apps?
   - key: navigation.navigation_others.question
     t: Other navigation solutions
   - key: navigation.navigation_others.description
@@ -710,13 +719,23 @@ translations:
   - key: navigation.navigation_experience
     t: Navigation Experience & Sentiment
 
+  - key: navigation.navigation_app_architecture_pattern_file_based_routing
+    t: Filed-based routing pattern
+  - key: navigation.navigation_app_architecture_pattern_file_based_routing.question
+    t: Are you familiar with file-based routing architecture pattern?
+
   ######################################################
   #########              STYLING               #########
   ######################################################
   - key: sections.styling.title
     t: Styling
   - key: sections.styling.description
-    t: What styling techniques do you regularly use in your React Native apps?
+    t: What styling techniques do you use in your React Native apps?
+
+  - key: styling.intro_message
+    t: |
+      To provide additional context and facilitate understanding, each styling technique is accompanied by a code sample demonstrating a basic usage.
+
   - key: styling.styling_techniques_other.question
     t: Other styling solutions
   - key: styling.styling_techniques_other.description
@@ -770,7 +789,7 @@ translations:
   - key: sections.component_libraries.title
     t: Components libraries
   - key: sections.component_libraries.description
-    t: What UI components libraries do you regularly use in your React Native apps?
+    t: What UI components libraries do you use in your React Native apps?
   - key: component_libraries.component_libraries_others.question
     t: Other component libraries solutions
   - key: component_libraries.component_libraries_others.description
@@ -1009,6 +1028,33 @@ translations:
     t: "10% / 90%"
   - key: options.dev_tools_js_ts.8
     t: "100% TS"
+
+  - key: dev_tools.dev_tools_ai_generated_code_balance
+    t: AI code generation
+  - key: dev_tools.dev_tools_ai_generated_code_balance.question
+    t: What proportion of the code you produce is AI-generated?
+  - key: dev_tools.dev_tools_ai_generated_code_balance.prompt
+    t: What percentage of your code comes from AI suggestions or copy-pasting AI-generated code (ChatGPT, Copilot, etc)?
+
+  # slider
+  - key: options.dev_tools_ai_generated_code_balance.0
+    t: 0% AI
+  - key: options.dev_tools_ai_generated_code_balance.1
+    t: "|"
+  - key: options.dev_tools_ai_generated_code_balance.2
+    t: "|"
+  - key: options.dev_tools_ai_generated_code_balance.3
+    t: "|"
+  - key: options.dev_tools_ai_generated_code_balance.4
+    t: "50%"
+  - key: options.dev_tools_ai_generated_code_balance.5
+    t: "|"
+  - key: options.dev_tools_ai_generated_code_balance.6
+    t: "|"
+  - key: options.dev_tools_ai_generated_code_balance.7
+    t: "|"
+  - key: options.dev_tools_ai_generated_code_balance.8
+    t: 100% AI
 
   - key: dev_tools.dev_tools_package_managers
     t: Package managers
