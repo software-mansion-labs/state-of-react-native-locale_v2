@@ -828,12 +828,51 @@ translations:
   - key: sections.debugging_and_profiling.description
     t: What tools do you use to debug and profile your React Native apps?
 
+  - key: debugging_and_profiling.debugging_and_profiling_subheading_clients_and_tools
+    t: Debugging clients and tools
+
+  - key: debugging_and_profiling.debugging_and_profiling_subheading_features
+    t: Debugging features
+
+  - key: debugging_and_profiling.debugging_profiling_others
+    t: Other solutions
   - key: debugging_and_profiling.debugging_profiling_others.question
     t: Other debugging and profiling solutions
   - key: debugging_and_profiling.debugging_profiling_others.description
     t: What other solutions not mentioned above have you used in your React Native apps?
-  - key: debugging_and_profiling.debugging_profiling_others
-    t: Other solutions
+
+  - key: debugging_and_profiling.debugging_profiling_intent
+    t: Debugging intent
+  - key: debugging_and_profiling.debugging_profiling_intent.question
+    t: Debugging intent
+  - key: debugging_and_profiling.debugging_profiling_intent.description
+    t: What do you want to do when debugging your app?
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_view_app_logs
+    t: View app logs
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_view_app_logs.description
+    t: Viewing and inspecting app logs
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_layout_and_styles
+    t: Inspect layout and styles
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_layout_and_styles.description
+    t: Inspecting the element tree, highlighting elements in the UI, changing styles in realtime
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_code_behavior
+    t: Inspect code behaviour
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_code_behavior.description
+    t: Step-through breakpoint debugging, evaluating expressions in the JavaScript console
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_react_behavior
+    t: Understand React behaviour
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_react_behavior.description
+    t: Inspecting React state, analyzing performance issues - e.g. re-renders
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_network_requests
+    t: Inspect network requests
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_profile_the_app
+    t: Profile your app
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_profile_the_app.description
+    t: Monitoring resource usage (Memory, CPU), analyzing execution time of functions
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_3rd_party_libraries
+    t: Understand the behaviour of third party JS libraries
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_3rd_party_libraries.description
+    t: Use specific dev plugins for third party libraries or use cases (e.g. Redux DevTools). Available today via Expo DevTools Plugins.
 
   - key: debugging_and_profiling.debugging_profiling_pain_points
     t: Debugging and profiling pain points
@@ -1476,7 +1515,7 @@ translations:
 
       ### Audience
 
-      The survey was open for everyone to participate and the responders weren't filtered or selected in any way. We were thrilled to see the survey trending organically on Twitter, Slack and Discord communities. The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter.
+      The survey was open for everyone to participate and the responders weren't filtered or selected in any way. We were thrilled to see the survey trending organically on X, Slack and Discord communities. The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter.
 
       ### Technical Overview
 
