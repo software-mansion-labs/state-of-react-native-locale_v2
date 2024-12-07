@@ -426,17 +426,37 @@ translations:
   - key: options.developer_background_team_size.developer_background_team_size_more_than_10
     t: more than 10
 
-  # Platforms Used for React Native
-  - key: developer_background.developer_background_platforms
-    t: Platforms used for React Native
-  - key: developer_background.developer_background_platforms.question
-    t: What are the platforms that you use React Native for?
+  # Target platforms
+  - key: developer_background.developer_background_target_platforms
+    t: Target platforms
+  - key: developer_background.developer_background_target_platforms.question
+    t: Which platforms do you target with React Native?
 
-  - key: options.developer_background_platforms.developer_background_platforms_ios
+  - key: options.developer_background_target_platforms.developer_background_target_platforms_ios
     t: iOS
-  - key: options.developer_background_platforms.developer_background_platforms_android
+  - key: options.developer_background_target_platforms.developer_background_target_platforms_android
     t: Android
   # other options are in entities
+
+  # Main development platforms
+
+  - key: developer_background.developer_background_main_daily_platforms
+    t: Main daily platforms
+  - key: developer_background.developer_background_main_daily_platforms.question
+    t: Main daily platforms
+  - key: developer_background.developer_background_main_daily_platforms.description
+    t: Which platforms do you primarily use for previewing and developing your React Native app on a daily basis?
+
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_ios_device
+    t: iOS physical device
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_android_device
+    t: Android physical device
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_ios_simulator
+    t: iOS Simulator
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_android_emulator
+    t: Android Emulator
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_web_browser
+    t: Web Browser
 
   # Contribution to React Native
   - key: developer_background.developer_background_contribution_to_rn
