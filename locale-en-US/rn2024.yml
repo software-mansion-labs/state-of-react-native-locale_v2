@@ -609,6 +609,13 @@ translations:
   - key: options.developer_background_industry_sector.developer_background_industry_sector_video
     t: Video
 
+######################################################
+#########                EXTRA               #########
+######################################################
+
+  - key: tools.all_tools_experience
+    t: Libraries Experience & Sentiment
+
   ######################################################
   #########        PLATFORM APIS               #########
   ######################################################
@@ -933,6 +940,8 @@ translations:
     t: Testing and monitoring pain points
   - key: testing_and_monitoring.testing_and_monitoring_pain_points.description
     t: What pain points have you encountered with testing and monitoring your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: testing_and_monitoring.testing_and_monitoring_experience
+    t: Testing And Monitoring Experience & Sentiment
 
   ######################################################
   #########        REACT NATIVE API            #########
@@ -1031,6 +1040,8 @@ translations:
   - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_independent_projects
     t: No code sharing. Independent project for the web counterpart of my application.
 
+  - key: react_native_architecture.react_native_architecture_experience
+    t: Architecture Experience & Sentiment
   ######################################################
   #########        BUILD AND PUBLISH           #########
   ######################################################
@@ -1053,7 +1064,8 @@ translations:
     t: Building and publishing pain points
   - key: build_and_publish.build_and_publish_pain_points.description
     t: What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
-
+  - key: build_and_publish.build_and_publish_experience
+    t: Build And Publish Experience & Sentiment
   ######################################################
   #########        DEV TOOLS                   #########
   ######################################################
@@ -1128,7 +1140,8 @@ translations:
     t: Starter templates
   - key: dev_tools.dev_tools_starter_templates.description
     t: Which starter templates or boilerplates do you use?
-
+  - key: dev_tools.dev_tools_other_tools
+    t: Other solutions
   - key: dev_tools.dev_tools_other_tools.question
     t: Other development tools
   - key: dev_tools.dev_tools_other_tools.description
@@ -1152,7 +1165,8 @@ translations:
     t: Other cross-platform frameworks
   - key: react_native_alternatives.react_native_alternatives_other.description
     t: What cross-platform frameworks not mentioned above (besides React Native) are you familiar with?
-
+  - key: react_native_alternatives.react_native_alternatives_experience
+    t: Cross-platform Frameworks Experience & Sentiment
   ######################################################
   #                    Resources                       #
   ######################################################
