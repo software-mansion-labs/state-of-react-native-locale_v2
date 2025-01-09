@@ -19,6 +19,9 @@ translations:
       and any data you input now **will be deleted** when the survey actually
       starts.
 
+  - key: general.survey_closed_on
+    t: This survey closed on {endedAt}.
+
   - key: general.pick_up_to
     t: Pick up to {limit} items.
 
