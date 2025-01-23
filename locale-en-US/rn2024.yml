@@ -1260,9 +1260,13 @@ translations:
   - key: opinions.opinions_right_direction.question
     t: Is React Native moving in the right direction?
 
+  - key: opinions.opinions_complex
+    t: Building React Native apps is overly complex right now
   - key: opinions.opinions_complex.question
     t: Building React Native apps is overly complex right now
 
+  - key: opinions.opinions_changing_too_fast
+    t: The React Native ecosystem is changing too fast
   - key: opinions.opinions_changing_too_fast.question
     t: The React Native ecosystem is changing too fast
 
