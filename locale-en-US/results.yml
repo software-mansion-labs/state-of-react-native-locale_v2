@@ -194,10 +194,10 @@ translations:
     t: Other sources
 
   - key: user_info.source_by_gender
-    t: Source by Gender
+    t: Source by gender
 
   - key: user_info.source_by_race_ethnicity
-    t: Source by Race & Ethnicity
+    t: Source by race & ethnicity
 
   - key: user_info.gender_by_country
     t: Gender By Country
@@ -205,7 +205,7 @@ translations:
     t: Gender distribution by country with at least 100 respondents, sorted by "mean gender" (each gender key being assigned an integer value in ascending order) descending.
 
   - key: user_info.years_of_experience_by_salary
-    t: Years of Experience by Salary Range
+    t: Years of experience by salary range
   - key: user_info.years_of_experience_by_salary.description
     t: Years of experience by salary range.
 
@@ -272,7 +272,7 @@ translations:
   ###########################################################################
 
   - key: tools.all_items.experience
-    t: Libraries Experience & Sentiment
+    t: Libraries experience & sentiment
 
   - key: tools.all_items.experience.short
     aliasFor: tools.experience
@@ -323,7 +323,7 @@ translations:
   - key: blocks.entity.github_link
     t: GitHub
   - key: blocks.entity.twitter_link
-    t: Twitter
+    t: X
   - key: blocks.entity.mastodon_link
     t: Mastodon
   - key: blocks.entity.blog_link
@@ -340,6 +340,8 @@ translations:
     t: MDN
   - key: blocks.entity.caniuse_link
     t: CanIUse
+  - key: blocks.entity.bluesky_link
+    t: Bluesky
 
   # people
   - key: blocks.people.name
@@ -354,7 +356,7 @@ translations:
     t: Technology Usage Cardinality
   - key: blocks.all_sections_tools_cardinality_by_user.description
     t: >
-      For each section, which percentage of respondents **use** 
+      For each section, which percentage of respondents **use**
       (defined as having answered “would use again”) one, two, three, etc. technologies.
       The bottom-most bar represents the sum of all other bars.
 
@@ -363,7 +365,7 @@ translations:
 
   # tools arrows
   - key: blocks.tools_arrows
-    t: Changes Over Time
+    t: Changes over time
   - key: blocks.tools_arrows.description
     t: |
       Each line goes from the earliest to the latest available year of data. A higher point means a technology has been used by more people,
@@ -371,7 +373,7 @@ translations:
   - key: blocks.tools_arrows.note
     t: |
       - Some lines skip years.
-      - Technologies with only one year of data are not shown. 
+      - Technologies with only one year of data are not shown.
       - Velocity formula = (most recent opinion - oldest opinion) + (most recent usage) - (oldest usage)
       - A positive velocity means the usage and/or positive opinions have increased over time.
 
@@ -422,7 +424,7 @@ translations:
   - key: blocks.tools_tier_list.note
     t: |
       This chart ranks libraries based on their retention ratio (percentage of users
-      who would use a library again). Note that libraries used by less than 10% of survey 
+      who would use a library again). Note that libraries used by less than 10% of survey
       respondents are not included.
   - key: blocks.tools_tier_list.bounds
     t: >
@@ -850,7 +852,7 @@ translations:
     t: Comments for “{name}”
   - key: comments.description
     t: |
-      These comments were submitted as part of the survey 
+      These comments were submitted as part of the survey
       through an optional freeform text field next to the main question.
   - key: comments.report_abuse
     t: Report this comment
@@ -1065,23 +1067,23 @@ translations:
 
   - key: hints.units_switcher_hint
     t: >
-      You can use the segmented control at the bottom of each block to switch 
+      You can use the segmented control at the bottom of each block to switch
       between different units to get an alternate view of the same data.
 
   - key: hints.export_hint
     t: >
-      The <span class="hint-icon hint-export-button">Data</span> tab lets you view the raw 
-      data for any chart, view it as JSON, or get a GraphQL query you can 
+      The <span class="hint-icon hint-export-button">Data</span> tab lets you view the raw
+      data for any chart, view it as JSON, or get a GraphQL query you can
       run against our public API.
 
   - key: hints.completion_hint
     t: >
-      Since all questions are optional, some of them got fewer responses than others. 
+      Since all questions are optional, some of them got fewer responses than others.
       The completion indicator (<span class="hint-completion-indicator">◕</span>) tells you exactly how many people answered any given question.
 
   - key: hints.tool_modal_hint
     t: >
-      You can click on any technology name to get extra details and 
+      You can click on any technology name to get extra details and
       a more in-depth look at its related data.
 
   - key: hints.rankings_modes_hint
@@ -1091,12 +1093,12 @@ translations:
 
   - key: hints.sharing_hint
     t: >
-      Sharing this survey on Twitter, Facebook, or by email is scientifically proven to 
+      Sharing this survey on Twitter, Facebook, or by email is scientifically proven to
       improve your coding performance by up to 15%.
 
   - key: hints.tshirt_hint
     t: >
-      Another guaranteed scientific finding: buying our t-shirt will 
+      Another guaranteed scientific finding: buying our t-shirt will
       increase your programming skills by over 9000!
 
   - key: hints.variants_hint
@@ -1106,7 +1108,7 @@ translations:
 
   - key: hints.share_hint
     t: >
-      The <span class="hint-icon hint-share-button">Share</span> tab makes it easy to share any chart, 
+      The <span class="hint-icon hint-share-button">Share</span> tab makes it easy to share any chart,
       or even download it as an image.
 
   - key: hints.bracket_hint
@@ -1156,16 +1158,16 @@ translations:
 
   - key: sponsor.how_it_works.description
     t: >
-      1. When you **click the "Sponsor This Chart" button**, you will be redirected to our partner [SendOwl](https://www.sendowl.com/)'s checkout page. 
+      1. When you **click the "Sponsor This Chart" button**, you will be redirected to our partner [SendOwl](https://www.sendowl.com/)'s checkout page.
 
 
-      2. You can then **adjust the amount** you'd like to sponsor the survey for, starting at USD10.  
+      2. You can then **adjust the amount** you'd like to sponsor the survey for, starting at USD10.
 
 
-      3. Once you checkout, you will be able to **provide your Twitter username**. 
+      3. Once you checkout, you will be able to **provide your Twitter username**.
 
 
-      4. You will see a **File Download** page, but you can safely ignore it. 
+      4. You will see a **File Download** page, but you can safely ignore it.
 
 
       5. The site will rebuild in the background and your username and donation will **appear next to the chart within the next hour**.
@@ -1336,7 +1338,7 @@ translations:
 
   - key: explorer.count_details.3
     t: |
-      Applying that percentage to the previous **{xAxisTotal}** respondents figure 
+      Applying that percentage to the previous **{xAxisTotal}** respondents figure
       gives us an expected baseline of **{normalizedCount}** respondents in this intersection.
 
   - key: explorer.count_details.4_extra
@@ -1390,14 +1392,14 @@ translations:
     t: |
       ### Extra & Missing Respondents
 
-      The chart above aims to identify areas showing higher-than-expected 
-      or lower-than-expected values compared to a calculated baseline. 
+      The chart above aims to identify areas showing higher-than-expected
+      or lower-than-expected values compared to a calculated baseline.
 
-      For example, assuming there are 1000 CSS Grid users, and that 50% of survey respondents work in a large company, 
-      you'd expect to find 500 CSS Grid users working in large companies. 
+      For example, assuming there are 1000 CSS Grid users, and that 50% of survey respondents work in a large company,
+      you'd expect to find 500 CSS Grid users working in large companies.
 
       Any deviation above or below that expected total could potentially indicate an interesting
-      correlation between both variables, and is highlighted on the chart with either colored 
+      correlation between both variables, and is highlighted on the chart with either colored
       dots (for extra respondents above the baseline) or empty dots (for missing respondents).
 
   ###########################################################################

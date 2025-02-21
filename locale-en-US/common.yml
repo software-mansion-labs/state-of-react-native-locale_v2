@@ -1036,7 +1036,7 @@ translations:
 
   # completion
   - key: user_info.completion_stats
-    t: Survey Completion
+    t: Survey completion
   - key: user_info.completion_stats.description
     t: The proportion of the survey filled out by respondents.
 

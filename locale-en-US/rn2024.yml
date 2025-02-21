@@ -613,11 +613,11 @@ translations:
     t: Video
 
 ######################################################
-#########                EXTRA               #########
+#########                Results               #########
 ######################################################
 
   - key: tools.all_tools_experience
-    t: Libraries Experience & Sentiment
+    t: Libraries experience & sentiment
 
   ######################################################
   #########        PLATFORM APIS               #########
@@ -678,23 +678,28 @@ translations:
     t: State management pain points
   - key: state_management.state_management_pain_points.question
     t: State management pain points
+
   - key: state_management.state_management_storage
     t: On-device storage
   - key: state_management.state_management_storage.question
     t: What on-device storage solutions do you use in your React Native apps?
+
   - key: state_management.state_management_pain_points.description
     t:
       What pain points have you encountered with state management in your React Native projects?
       If applicable, point out the specific solution and its problems.
-  - key: state_management.state_management_ratios
-    t: State Management Ratios Over Time
-  - key: state_management.state_management_experience
-    t: State Management Experience & Sentiment
-
   - key: state_management.state_management_app_architecture_pattern_local_first
     t: Local-first app architecture
   - key: state_management.state_management_app_architecture_pattern_local_first.question
     t: Are you familiar with local-first app architecture pattern?
+
+  # results
+
+  - key: state_management.state_management_ratios
+    t: State management ratios over time
+  - key: state_management.state_management_experience
+    t: State management experience & sentiment
+
 
   ######################################################
   #########           DATA FETCHING            #########
@@ -720,10 +725,13 @@ translations:
     t: Data fetching pain points
   - key: data_fetching.data_fetching_pain_points.description
     t: What pain points have you encountered with data fetching in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # results
+
   - key: data_fetching.data_fetching_ratios
-    t: Navigation Ratios Over Time
+    t: Data fetching ratios over time
   - key: data_fetching.data_fetching_experience
-    t: Navigation Experience & Sentiment
+    t: Data fetching experience & sentiment
 
   ######################################################
   #########             NAVIGATION             #########
@@ -744,15 +752,17 @@ translations:
     t: Navigation pain points
   - key: navigation.navigation_pain_points.description
     t: What pain points have you encountered with navigation in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: navigation.navigation_ratios
-    t: Navigation Ratios Over Time
-  - key: navigation.navigation_experience
-    t: Navigation Experience & Sentiment
-
   - key: navigation.navigation_app_architecture_pattern_file_based_routing
     t: Filed-based routing pattern
   - key: navigation.navigation_app_architecture_pattern_file_based_routing.question
     t: Are you familiar with file-based routing architecture pattern?
+
+  # results
+
+  - key: navigation.navigation_ratios
+    t: Navigation ratios over time
+  - key: navigation.navigation_experience
+    t: Navigation experience & sentiment
 
   ######################################################
   #########              STYLING               #########
@@ -784,10 +794,12 @@ translations:
     t: Styling pain points
   - key: styling.styling_techniques_pain_points.description
     t: What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # Results
   - key: styling.styling_ratios
-    t: Styling Ratios Over Time
+    t: Styling ratios over time
   - key: styling.styling_experience
-    t: Styling Experience & Sentiment
+    t: Styling experience & sentiment
 
   ######################################################
   #########       GRAPHICS & ANIMATIONS        #########
@@ -808,15 +820,17 @@ translations:
     t: Graphics and animations pain points
   - key: animations.animations_pain_points.description
     t: What pain points have you encountered with graphics and animations in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # Results
   - key: animations.animations_ratios
-    t: Animations Ratios Over Time
+    t: Animations ratios over time
   - key: animations.animations_ratios.note
     t: |
       The beta version of Reanimated 4 has been released. It brings long-awaited support for CSS Animations and Transitions, making it easier to create high-performance animations.
       The new features build on the existing worklet-based APIs, offering an intuitive approach while staying compatible with Reanimated 3. If your app uses the New Architecture, you can explore the beta version and see how it streamlines your animation workflow.
       For a deeper dive into what’s new, check out the <a href="https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40">announcement blog post</a>.
   - key: animations.animations_experience
-    t: Animations Experience & Sentiment
+    t: Animations experience & sentiment
 
   ######################################################
   #########        COMPONENT LIBRARIES         #########
@@ -837,11 +851,6 @@ translations:
     t: Components libraries pain points
   - key: component_libraries.component_libraries_pain_points.description
     t: What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: component_libraries.component_libraries_ratios
-    t: Component Libraries Ratios Over Time
-  - key: component_libraries.component_libraries_experience
-    t: Components Libraries Experience & Sentiment
-
   - key: component_libraries.component_libraries_data_visualisation
     t: Data visualisation
   - key: component_libraries.component_libraries_data_visualisation.question
@@ -853,6 +862,12 @@ translations:
     t: What other popular component(s) libraries do you use in your React Native apps?
   - key: component_libraries.component_libraries_other_libraries.description
     t: Other popular libraries that offer ready-made components for various APIs and mechanisms not yet covered in the survey.
+
+  # results
+  - key: component_libraries.component_libraries_ratios
+    t: Component libraries ratios over time
+  - key: component_libraries.component_libraries_experience
+    t: Components libraries experience & sentiment
 
   ######################################################
   #########        DEBUGGING AND PROFILING     #########
@@ -915,9 +930,11 @@ translations:
     t: Debugging and profiling pain points
   - key: debugging_and_profiling.debugging_profiling_pain_points.description
     t: What pain points have you encountered with debugging and profiling your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: debugging_and_profiling.debugging_and_profiling_experience
-    t: Debugging And Profiling Experience & Sentiment
 
+  # results
+
+  - key: debugging_and_profiling.debugging_and_profiling_experience
+    t: Debugging and profiling experience & sentiment
   - key: debugging_and_profiling.debugging_and_profiling_experience.note
     t: |
       <a href="https://ide.swmansion.com/">Radon IDE</a> is a new VSCode and Cursor extension that simplifies debugging and streamlines React Native development. It turns your editor into a fully-fledged IDE, eliminating context switching and automatically pausing runtime errors.
@@ -933,6 +950,8 @@ translations:
   - key: sections.testing_and_monitoring.description
     t: What tools do you use to test and monitor your React Native apps?
 
+  - key: testing_and_monitoring.testing_and_monitoring_testing_others
+    t: Other testing solutions
   - key: testing_and_monitoring.testing_and_monitoring_testing_others.question
     t: Other testing solutions
   - key: testing_and_monitoring.testing_and_monitoring_testing_others.description
@@ -954,8 +973,11 @@ translations:
     t: Testing and monitoring pain points
   - key: testing_and_monitoring.testing_and_monitoring_pain_points.description
     t: What pain points have you encountered with testing and monitoring your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # results
+
   - key: testing_and_monitoring.testing_and_monitoring_experience
-    t: Testing And Monitoring Experience & Sentiment
+    t: Testing and monitoring experience & sentiment
 
   ######################################################
   #########        REACT NATIVE API            #########
@@ -1002,7 +1024,7 @@ translations:
       React Native 0.76 and the New Architecture are enabled by default, but navigating them can be challenging. On the Software Mansion blog, you can find insights on handling common New Architecture challenges like view flattening, view recycling, custom shadow nodes, and more.
       Read <a href="https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-1-2-bb0c16950f2d">part 1</a>
       Read <a href="https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-2-2-ac5f2adf22ec">part 2</a>
-      P.S. If you need help adopting the new architecture in your app, <a href="https://swmansion.com/contact/projects">contact us</a>. We have already ported 25+ libraries, migrated several apps for clients, and contributed 30+ fixes to React Native core for issues related to the new arch. 
+      P.S. If you need help adopting the new architecture in your app, <a href="https://swmansion.com/contact/projects">contact us</a>. We have already ported 25+ libraries, migrated several apps for clients, and contributed 30+ fixes to React Native core for issues related to the new arch.
   - key: options.react_native_architecture_strategies.react_native_architecture_strategies_stay_latest
     t: Stay on the latest version
   - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_occasionally
@@ -1066,8 +1088,11 @@ translations:
   - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_independent_projects
     t: No code sharing. Independent project for the web counterpart of my application.
 
+  # results
+
   - key: react_native_architecture.react_native_architecture_experience
-    t: Architecture Experience & Sentiment
+    t: Architecture experience & sentiment
+
   ######################################################
   #########        BUILD AND PUBLISH           #########
   ######################################################
@@ -1090,8 +1115,12 @@ translations:
     t: Building and publishing pain points
   - key: build_and_publish.build_and_publish_pain_points.description
     t: What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # results
+
   - key: build_and_publish.build_and_publish_experience
-    t: Build And Publish Experience & Sentiment
+    t: Build and publish experience & sentiment
+
   ######################################################
   #########        DEV TOOLS                   #########
   ######################################################
@@ -1173,8 +1202,12 @@ translations:
   - key: dev_tools.dev_tools_other_tools.description
     t: What other dev tools not mentioned above have you used for your React Native projects?
 
-  # - key: dev_tools.rn_tools_experience
-  #   t: React Native Tools Experience & Sentiment
+  # results
+
+  - key: dev_tools.dev_tools_ratios
+    t: Dev tools ratios over time
+  - key: dev_tools.dev_tools_experience
+    t: Dev tools experience & sentiment
 
   ######################################################
   #########   React Native Alternatives      #########
@@ -1184,15 +1217,20 @@ translations:
     t: Other cross-platform frameworks
   - key: sections.react_native_alternatives.description
     t: What other cross-platform app development solutions besides React Native are you familiar with?
-  # - key: react_native_alternatives.react_native_alternatives_experience
-  #   t: React Native Alternatives Experience & Sentiment
 
   - key: react_native_alternatives.react_native_alternatives_other
     t: Other cross-platform frameworks
   - key: react_native_alternatives.react_native_alternatives_other.description
     t: What cross-platform frameworks not mentioned above (besides React Native) are you familiar with?
+
+  # results
+
+  - key: react_native_alternatives.react_native_alternatives_ratios
+    t: Cross-platform frameworks ratios over time
   - key: react_native_alternatives.react_native_alternatives_experience
-    t: Cross-platform Frameworks Experience & Sentiment
+    t: Cross-platform frameworks experience & sentiment
+
+
   ######################################################
   #                    Resources                       #
   ######################################################
@@ -1457,7 +1495,7 @@ translations:
   - key: user_info.years_of_experience.note
     t: |
       App.js Conf is the biggest React Native and Expo-focused conference, where you can meet the creators and contributors to React Native and Expo, share ideas, connect with the community, and shape the future of app development.
-      This year’s edition will take place on 28-30 May in Kraków, Poland. It’s the perfect opportunity to level up your React Native skills through hands-on workshops on Reanimated, brownfield integrations, 3d graphics, performance optimization, and more. 
+      This year’s edition will take place on 28-30 May in Kraków, Poland. It’s the perfect opportunity to level up your React Native skills through hands-on workshops on Reanimated, brownfield integrations, 3d graphics, performance optimization, and more.
       <a href="https://appjs.co/">Visit the website</a> to learn the details and grab your tickets!
 
   - key: user_info.years_of_experience_rn
@@ -1558,53 +1596,67 @@ translations:
   - key: picks.intro
     t: We asked members of the React Native community to share their opinions about the results
 
+  - key: sections.conclusion.title
+    t: Conclusion
+
+  - key: sections.about.title
+    t: About
+
   ######################################################
   #########             ABOUT                  #########
   ######################################################
 
   - key: about.content
     t: >
-      The State of React Native survey was a grassroots initiative from developers at [Software Mansion](https://swmansion.com/). The survey started on 22nd December 2022 and run till 20th January 2023 gathering 1886 responses in total.
+      The State of React Native survey is a grassroots initiative from [Bartłomiej Bukowski](https://x.com/bbarthec)
+      software engineer working at [Software Mansion](https://swmansion.com/).
+      The survey started on 9th December 2024 and run till 8th January 2025 gathering 3501 responses in total.
 
       ### Goal
 
-      The goal of the State of React Native survey was to create a resource to compare different aspects of React Native development for you to help you make better technical decisions. The survey can be used as a source for finding alternatives in different categories of app development.
-      <br/>
-      Keep in mind that this type of results always have to be treated with a pinch of salt as it's impossible to capture for the state of the entire ecosystem.
-      <br/>
-      We're thrived to see the upcoming trends in the following editions as with it's first edition we only have a single data point.
+      The goal of the State of React Native survey is to provide you with a resource
+      for comparing different aspects of React Native development to help you make better technical decisions.
+      The survey can be used as a resource to find alternatives in different categories of application development.
+      Keep in mind that these types of results should always be taken with a grain of salt,
+      as it's impossible to capture the state of the entire ecosystem.
 
       ### Design
 
-      The survey was modeled and built on the foundations of [Devographics'](https://www.devographics.com/) [State of JavaScript](https://stateofjs.com/) and [State of CSS](https://stateofcss.com/) survey.
-      <br/>
-      About a dozen of experienced React Native developers from Software Mansion and a couple more outside of walls of the company have shaped the questions. We've asked the community to contribute in [a GitHub discussion](https://github.com/software-mansion/state-of-react-native/discussions/1) which most of it was included in the final survey.
-      <br/>
-      The logo and the design of the interface was created by [Daniel Wodziczka](https://dribbble.com/wodziczka), one of our amazing UI/UX Designers at Software Mansion.
-      <br/>
-      All survey questions were optional.
+      The survey was modelled and built on the foundations of [Devographics'](https://www.devographics.com/) [State of JavaScript](https://stateofjs.com/), [State of CSS](https://stateofcss.com/) and [State of React](https://stateofreact.com/) surveys.
+      Unlike the 1st and 2nd editions, where we used the same codebase, for the 3rd edition we've done a proper update
+      of the base framework to take advantage of the improvements the [Devographics team](https://www.devographics.com/)
+      has made over the years. A team of developers and a designer at [Software Mansion](https://swmansion.com/),
+      led by [Bartłomiej Bukowski](https://x.com/bbarthec), redesigned and adapted the survey framework to achieve
+      custom visuals and behaviours. The question set was designed based on [Software Mansion](https://swmansion.com/)'s
+      experience with the React Native ecosystem, with some help from external contributors.
+      We asked the community for input in a GitHub discussion, most of which was incorporated into the final survey.
+      All questions in the survey were optional.
 
       ### Audience
 
-      The survey was open for everyone to participate and the responders weren't filtered or selected in any way. We were thrilled to see the survey trending organically on X, Slack and Discord communities. The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter.
+      The survey was open for everyone to participate and the responders weren't filtered or selected in any way.
+      We were thrilled to see the survey trending organically on X, Slack and Discord communities.
+      The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter.
 
-      ### Technical Overview
+      ### Technical overview
 
-      To bootstrap this survey, we've asked for permission to use the battle-tested technological stack created by [Devographics](https://www.devographics.com/) which includes:
+      This edition was built by forking the [framework code](https://github.com/Devographics/Monorepo)
+      from the [Devographics team](https://www.devographics.com/) in mid-2024.
+      From there, we've redesigned the visuals and made some minor changes to the behaviour
+      to give you software that's still very similar to the original surveys,
+      but with our own twist.
 
-      - **Data collection**: custom [Vulcan.js](http://vulcanjs.org/) app.
-
-      - **Data storage/processing**: MongoDB & MongoDB Aggregations.
-
-      - **Data API**: Node.js GraphQL API.
-
-      - **Results Site**: [Gatsby](https://www.gatsbyjs.com/) React app.
-
-      - **Data Visualizations**: [Nivo](https://nivo.rocks/) React dataviz library.
-
-
-      ### Lessons learned
-
-      We've gathered considerable amount of feedback to iterate and next year, we would like to focus on the brevity of the survey. With the data gathered, we're free to get rid of some of the freeform fields and make the overall survey shorter.
       <br/>
-      Next point would be to make results more representative by reaching more diverse communities all over the world.
+      <br/>
+
+      _Note: This is not an official React Native survey, and the survey team is not affiliated with Meta or the React Native team._
+
+  ######################################################
+  #########             COMMENTS               #########
+  ######################################################
+
+  - key: conclusion.rn2024.bartlomiej_bukowski.bio
+    t: Software Engineer at Software Mansion, Creator of the State of React Native survey
+  - key: conclusion.rn2024.bartlomiej_bukowski
+    t: |
+      TBD
