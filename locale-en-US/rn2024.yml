@@ -693,6 +693,7 @@ translations:
   - key: state_management.state_management_app_architecture_pattern_local_first.question
     t: Are you familiar with local-first app architecture pattern?
 
+
   # results
 
   - key: state_management.state_management_ratios
@@ -700,6 +701,13 @@ translations:
   - key: state_management.state_management_experience
     t: State management experience & sentiment
 
+  - key: state_management.state_management_app_architecture_patterns_experience
+    t: Local-first app architecture
+  - key: state_management.state_management_app_architecture_patterns_experience.question
+    t: Are you familiar with local-first app architecture pattern?
+
+  - key: state_management.state_management_app_architecture_patterns_ratios
+    t: Local-first app architecture
 
   ######################################################
   #########           DATA FETCHING            #########
@@ -763,6 +771,14 @@ translations:
     t: Navigation ratios over time
   - key: navigation.navigation_experience
     t: Navigation experience & sentiment
+
+  - key: navigation.navigation_app_architecture_patterns_experience
+    t: Filed-based routing pattern
+  - key: navigation.navigation_app_architecture_patterns_experience.question
+    t: Are you familiar with file-based routing architecture pattern?
+
+  - key: navigation.navigation_app_architecture_patterns_ratios
+    t: Filed-based routing pattern
 
   ######################################################
   #########              STYLING               #########
@@ -1090,8 +1106,10 @@ translations:
 
   # results
 
+  - key: react_native_architecture.react_native_architecture_ratios
+    t: React Native architecture ratios over time
   - key: react_native_architecture.react_native_architecture_experience
-    t: Architecture experience & sentiment
+    t: React Native architecture experience & sentiment
 
   ######################################################
   #########        BUILD AND PUBLISH           #########
@@ -1118,6 +1136,8 @@ translations:
 
   # results
 
+  - key: build_and_publish.build_and_publish_ratios
+    t: Build and publish ratios over time
   - key: build_and_publish.build_and_publish_experience
     t: Build and publish experience & sentiment
 
@@ -1306,6 +1326,14 @@ translations:
     t: Other developer surveys
   - key: resources.resources_surveys.question
     t: What other developer surveys do you participate in?
+
+  # results
+
+  - key: resources.resources_experience
+    t: React Native Directory
+
+  - key: resources.resources_ratios
+    t: React Native Directory
 
   ######################################################
   #                    Opinions                        #
