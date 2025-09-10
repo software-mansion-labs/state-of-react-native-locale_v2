@@ -41,8 +41,8 @@ translations:
   - key: general.unskip_question.description
     t: Unskip question and answer it
 
-  - key: general.numeric_input.unit.  # // TODO(p-malecki):
-    t: years old
+  - key: general.numeric_input.unit.years_old
+    t: years
 
   - key: years.years
     t: years
@@ -265,8 +265,8 @@ translations:
   ##############################################################################
   ##############################################################################
 
-  - key: general.rn2025.survey_intro # // TODO(p-malecki):
-    t: 
+  - key: general.rn2025.survey_intro
+    t: TODO add survey_intro text # TODO: add survey_intro text
   - key: general.start_survey
     t: Start Survey
   - key: general.continue_survey
