@@ -1,0 +1,1728 @@
+#########################################################################
+#                 TRANSLATIONS FOR SURVEYFORM & RESULTS
+# - some of the translations are taken from `common`, `account`           #
+# - some translation are shared between surveyform and results            #
+#########################################################################
+
+locale: en-US
+namespace: js
+translations:
+  ##############################################################################
+  ##############################################################################
+  ########################        COMMON / GENERAL        ######################
+  ##############################################################################
+  ##############################################################################
+
+  - key: general.survey_preview
+    t: >-
+      This survey is in **preview mode**. Its questions are subject to change,
+      and any data you input now **will be deleted** when the survey actually
+      starts.
+
+  - key: general.survey_closed_on
+    t: This survey closed on {endedAt}.
+
+  - key: general.pick_up_to
+    t: Pick up to {limit} items.
+
+  - key: textlist.placeholder
+    t: Item {index}…
+
+  - key: feature.unimplemented
+    t: No browser implementation yet
+
+  - key: general.skip_question
+    t: Skip question
+  - key: general.skip_question.description
+    t: Skip question and mark it as completed
+
+  - key: general.unskip_question
+    t: Answer question
+  - key: general.unskip_question.description
+    t: Unskip question and answer it
+
+  - key: general.numeric_input.unit.  # // TODO(p-malecki):
+    t: years old
+
+  - key: years.years
+    t: years
+  - key: years.less_than_one_year
+    t: Less than one year
+
+  - key: general.join_discord
+    t: Join us on <a href="{link}">Discord</a>.
+  - key: general.translator_mode
+    t: Press option/alt to enable translator mode.
+  - key: general.view_code_example
+    t: View Code Example
+  - key: general.code_example
+    t: Code Example
+
+  ###########################################################################
+  # Error messages
+  ###########################################################################
+
+  - key: general.numeric_input.invalid_input
+    t: Please make sure you enter a valid number.
+
+  - key: error.duplicate_response
+    t: Sorry, you already have a session in progress for this survey.
+
+  - key: error.report_issue
+    t: Report issue
+
+  - key: success.data_saved
+    t: Data saved
+  - key: success.data_saved.description
+    t: Your data has been saved.
+
+  ###########################################################################
+  # Accounts
+  ###########################################################################
+
+  - key: accounts.create_account
+    t: Continue with Account
+  - key: accounts.create_account.description
+    t: Having an account lets you **access your own data in the future** and be notified when survey results are published.
+  - key: accounts.create_account.note
+    t: If you **already have an account** we will send you a magic log-in link by email.
+  - key: accounts.create_account.action
+    t: Continue with Account
+  - key: accounts.your_email
+    t: Your Email
+
+  - key: accounts.upgrade_account.action
+    t: Upgrade your account
+  - key: accounts.upgrade_account.description
+    t: Upgrading your account with an email address will let you access your survey response after you end your session.
+
+  - key: accounts.continue_as_guest
+    t: Continue as Guest
+  - key: accounts.continue_as_guest.description
+    t: Taking the survey anonymously means you **won't be able to access your data again** after you end your session.
+  - key: accounts.continue_as_guest.action
+    t: Continue as Guest
+
+  - key: accounts.magic_link.no_email
+    t: Please enter your email
+  - key: accounts.magic_link.success
+    t: Check your inbox! We sent you a magic link, just click it to confirm your account and log in.
+  - key: accounts.magic_link.browser
+    t: <a href="{link}">Click to open your inbox.</a>
+
+  - key: accounts.sign_in
+    t: Log in
+
+  - key: accounts.sign_out
+    t: Sign out
+
+  - key: accounts.logged_in_as
+    t: Logged in using your email address
+  - key: accounts.logged_in_as_guest
+    t: Logged in as Guest
+  - key: accounts.token_verified
+    t: Token verification successful, redirecting…
+  - key: accounts.your_surveys
+    t: Your Surveys
+
+  ###########################################################################
+  # Form Controls
+  ###########################################################################
+
+  - key: bracket.vs
+    t: VS
+  - key: bracket.start_over
+    t: Start Over
+  - key: bracket.winner
+    t: >
+    Winner:
+  - key: bracket.round
+    t: Round
+  - key: bracket.empty_bracket
+    t: Pending result (complete the previous round first)
+  - key: bracket.result
+    t: Result
+  - key: bracket.cancel
+    t: Cancel
+
+  - key: experience.leave_comment
+    t: Add a comment
+  - key: experience.leave_comment_short
+    t: Add a comment
+  - key: experience.tell_us_more
+    t: "You answered “{response}”. Tell us more about your choice:"
+  - key: experience.tell_us_more_generic
+    t: "Tell us more about your answer:"
+  - key: experience.tell_us_more_no_value
+    t: "You didn't pick any response. Tell us why:"
+
+  - key: forms.select_option
+    t: Select option
+  - key: forms.more_options
+    t: Show more…
+  - key: forms.less_options
+    t: Show less
+
+  ###########################################################################
+  # Response
+  ###########################################################################
+  - key: response.completion
+    t: "{completion}% completed"
+
+  ###########################################################################
+  # Reading List
+  ###########################################################################
+
+  - key: readinglist.prompt
+    t: >
+      You picked “{option}”. If you'd like to learn more about this feature at the end of the survey, you can click the "+" icon in the corner above to add it to your **reading list**.
+
+  - key: readinglist.add_to_list
+    t: Add to Your Reading List
+
+  - key: readinglist.remove_from_list
+    t: Remove from Reading List
+
+  - key: readinglist.added_to_list
+    t: Added “{label}” to your reading list.
+
+  - key: readinglist.title
+    t: Reading List
+
+  - key: readinglist.description
+    t: >
+      Save items here using the "+" button, and you'll get a list of links to learn more about them at the end of the survey.
+
+  - key: readinglist.empty
+    t: >
+      You don't have any items in your reading list.
+      Try going back to the survey and adding features or libraries you'd like
+      to learn more about using the "+" button.
+
+  - key: readinglist.results
+    t: >
+      Here are some resources to learn more about the items in your reading list:
+
+  - key: readinglist.homepage_link
+    t: Homepage
+
+  - key: readinglist.receive_copy
+    t: >
+      Enter your email to get a copy of your reading list straight in your inbox:
+  - key: readinglist.send_by_email
+    t: Send
+  - key: readinglist.email_sent
+    t: Thanks! Your reading list is on its way to your inbox.
+
+  ###########################################################################
+  # Navigation
+  ###########################################################################
+
+  - key: general.close_nav
+    t: Close menu
+  - key: general.open_nav
+    t: Open menu
+  - key: general.skip_to_content
+    t: Skip to content
+
+  - key: nav.account
+    t: Account
+
+  - key: general.back_to_survey
+    t: Back to survey
+
+  ###########################################################################
+  # Thanks
+  ###########################################################################
+
+  - key: general.thanks0
+    t: >
+      Thanks for filling out the survey!
+  - key: general.thanks1
+    t: >
+      Your data was saved.
+  - key: general.thanks2
+    t: >
+      Help us get the word out by sharing this survey!
+  - key: general.thanks3
+    t: >
+      Every bit counts, and it'll help make our data even
+      more representative.
+
+  ###########################################################################
+  # Share
+  ###########################################################################
+  - key: general.share_subject
+    t: >
+      {surveyName} survey
+  - key: general.share_text
+    t: >
+      This year's {surveyName} survey is now open! {link}
+
+  ##############################################################################
+  ##############################################################################
+  ########################           SURVEYFORM           ######################
+  ##############################################################################
+  ##############################################################################
+
+  - key: general.rn2025.survey_intro # // TODO(p-malecki):
+    t: 
+  - key: general.start_survey
+    t: Start Survey
+  - key: general.continue_survey
+    t: Continue Survey
+  - key: general.completion
+    t: "{completion}% completed"
+  - key: general.started_on
+    t: Started on {createdAt}
+  - key: general.last_modified_on
+    t: Last modified on {updatedAt}
+  - key: general.review_survey
+    t: Review Survey
+  - key: general.review_answers
+    t: Review Answers
+  - key: general.finish_survey
+    t: Finish Survey
+  - key: general.privacy_policy
+    t: Privacy policy
+  - key: general.take_survey
+    t: Participate in the State of React Native survey to share your insights.
+  - key: general.newly_added
+    t: Added in 2025
+
+  ##########################################
+  #                  FAQ/About             #
+  ##########################################
+
+  - key: faq.is_answering_every_question_mandatory
+    t: Is answering every question mandatory?
+  - key: faq.is_answering_every_question_mandatory.description
+    t: No, every question of the survey is optional and can freely be skipped.
+
+  - key: faq.will_my_data_be_public
+    t: Will my data be made public?
+  - key: faq.will_my_data_be_public.description
+    t: The data will be made public in a form of readable charts and graphs. We will not publish any identifiable information.
+
+  - key: faq.when_will_results_be_released
+    t: When will the results be made available?
+  - key: faq.when_will_results_be_released.description
+    t: The results are going to be released a few weeks after the survey closes.
+
+  - key: faq.who_runs_the_survey
+    t: Who runs this survey?
+  - key: faq.who_runs_the_survey.description
+    t: This survey is run by <a target="_blank" href="https://swmansion.com">Software Mansion</a>. We are a software development company based in Poland, with a strong focus on React Native app development and multimedia streaming.
+
+  - key: faq.this_survey_looks_familiar
+    t: This survey looks very familiar!
+  - key: faq.this_survey_looks_familiar.description
+    t: It's because it's using the same infrastructure as State of React and State of JavaScript surveys made by Devographics.
+
+  - key: faq.how_was_survey_design
+    t: How was this survey designed?
+  - key: faq.how_was_survey_design.description
+    t: The survey has been designed based on our expertise and community feedback from <a target="_blank" href="https://github.com/software-mansion/state-of-react-native">this GitHub repository</a>.
+
+  ######################################################
+  #########        DEVELOPER BACKGROUND        #########
+  ######################################################
+
+  - key: sections.developer_background.title
+    t: Developer background
+  - key: sections.developer_background.description
+    t: What's your background as a software developer?
+
+  - key: developer_background.intro_message
+    t: |
+      Welcome to the survey! This first part is all about sharing your background as a developer. Let's get to know each other as a fellow React Native developers 😊
+
+  # Before React Native
+  - key: developer_background.developer_background_before
+    t: Before React Native
+  - key: developer_background.developer_background_before.question
+    t: What was your background before you started using React Native?
+
+  - key: options.developer_background_before.developer_background_before_react
+    t: React developer
+  - key: options.developer_background_before.developer_background_before_ios
+    t: iOS developer
+  - key: options.developer_background_before.developer_background_before_android
+    t: Android developer
+  - key: options.developer_background_before.developer_background_before_frontend
+    t: Frontend developer (other than React e.g. Vue, Angular, SolidJS, Svelte, etc.)
+  - key: options.developer_background_before.developer_background_before_backend
+    t: Backend developer (PHP, Node.js, JVM, Python, etc.)
+  - key: options.developer_background_before.developer_background_before_desktop
+    t: Desktop developer (e.g. macOS, Windows, Linux)
+  - key: options.developer_background_before.developer_background_before_qa
+    t: QA engineer
+  - key: options.developer_background_before.developer_background_before_devops
+    t: DevOps
+  - key: options.developer_background_before.developer_background_before_embedded
+    t: Embedded developer
+  - key: options.developer_background_before.developer_background_before_non_technical
+    t: Non-technical role
+  - key: options.developer_background_before.developer_background_before_started_with_rn
+    t: Started with React Native
+
+  # Usage Type
+  - key: developer_background.developer_background_usage_type
+    t: Usage type
+  - key: developer_background.developer_background_usage_type.question
+    t: How do you use React Native?
+
+  - key: options.developer_background_usage_type.developer_background_usage_type_professional
+    t: Professionally
+  - key: options.developer_background_usage_type.developer_background_usage_type_student
+    t: As a student
+  - key: options.developer_background_usage_type.developer_background_usage_type_hobby
+    t: As a hobby
+
+  # Desktop OS
+  - key: developer_background.developer_background_primarily_system
+    t: Desktop OS
+  - key: developer_background.developer_background_primarily_system.question
+    t: What desktop OS do you primarily use?
+
+  - key: options.developer_background_primarily_system.developer_background_primarily_system_macos
+    t: macOS
+  - key: options.developer_background_primarily_system.developer_background_primarily_system_linux
+    t: Linux
+  - key: options.developer_background_primarily_system.developer_background_primarily_system_windows
+    t: Windows
+
+  # Top React Native App User Count
+  - key: developer_background.developer_background_users_count
+    t: Top React Native app user count
+  - key: developer_background.developer_background_users_count.question
+    t: What is the user count of your top React Native app?
+  - key: developer_background.developer_background_users_count.description
+    t: What is the user base size of the React Native app you've worked on the most in the last year?
+
+  - key: options.developer_background_users_count.developer_background_users_count_only_me
+    t: Only me
+  - key: options.developer_background_users_count.developer_background_users_count_2_100
+    t: 2-100
+  - key: options.developer_background_users_count.developer_background_users_count_101_1k
+    t: 101-1k
+  - key: options.developer_background_users_count.developer_background_users_count_1k_10k
+    t: 1k-10k
+  - key: options.developer_background_users_count.developer_background_users_count_10k_100k
+    t: 10k-100k
+  - key: options.developer_background_users_count.developer_background_users_count_100k_1m
+    t: 100k-1M
+  - key: options.developer_background_users_count.developer_background_users_count_1m_plus
+    t: 1M and more
+
+  # Mobile App Team Size
+  - key: developer_background.developer_background_team_size
+    t: Mobile app team size
+  - key: developer_background.developer_background_team_size.question
+    t: What is your mobile app team size?
+  - key: developer_background.developer_background_team_size.description
+    t: What was the average size of your mobile team last year?
+
+  - key: options.developer_background_team_size.developer_background_team_size_solo
+    t: Solo developer
+  - key: options.developer_background_team_size.developer_background_team_size_two
+    t: "2"
+  - key: options.developer_background_team_size.developer_background_team_size_3_5
+    t: 3-5
+  - key: options.developer_background_team_size.developer_background_team_size_6_10
+    t: 6-10
+  - key: options.developer_background_team_size.developer_background_team_size_more_than_10
+    t: more than 10
+
+  # Target platforms
+  - key: developer_background.developer_background_target_platforms
+    t: Target platforms
+  - key: developer_background.developer_background_target_platforms.question
+    t: Which platforms do you target with React Native?
+
+  - key: options.developer_background_target_platforms.developer_background_target_platforms_ios
+    t: iOS
+  - key: options.developer_background_target_platforms.developer_background_target_platforms_android
+    t: Android
+  # other options are in entities
+
+  # Main development platforms
+
+  - key: developer_background.developer_background_main_daily_platforms
+    t: Main daily platforms
+  - key: developer_background.developer_background_main_daily_platforms.question
+    t: Main daily platforms
+  - key: developer_background.developer_background_main_daily_platforms.description
+    t: Which platforms do you primarily use for previewing and developing your React Native app on a daily basis?
+
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_ios_device
+    t: iOS physical device
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_android_device
+    t: Android physical device
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_ios_simulator
+    t: iOS Simulator
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_android_emulator
+    t: Android Emulator
+  - key: options.developer_background_main_daily_platforms.developer_background_main_daily_platforms_web_browser
+    t: Web Browser
+
+  # Contribution to React Native
+  - key: developer_background.developer_background_contribution_to_rn
+    t: Contribution to React Native
+  - key: developer_background.developer_background_contribution_to_rn.question
+    t: Have you contributed to React Native?
+  - key: developer_background.developer_background_contribution_to_rn.description
+    t: Contributions in 2025 (commits/PRs)
+
+  - key: options.developer_background_contribution_to_rn.answer_yes
+    t: Yes
+  - key: options.developer_background_contribution_to_rn.answer_no
+    t: No
+
+  # Open Source Contribution to React Native Libraries
+  - key: developer_background.developer_background_contribution_to_lib
+    t: Open source contribution to React Native libraries
+  - key: developer_background.developer_background_contribution_to_lib.question
+    t: Have you contributed to any React Native community library?
+  - key: developer_background.developer_background_contribution_to_lib.description
+    t: Contributions in 2025 (commits/PRs)
+
+  - key: options.developer_background_contribution_to_lib.answer_yes
+    t: Yes
+  - key: options.developer_background_contribution_to_lib.answer_no
+    t: No
+
+  # Released React Native Apps Count
+  - key: developer_background.developer_background_releases_count
+    t: Released React Native apps count
+  - key: developer_background.developer_background_releases_count.question
+    t: How many React Native apps have you released publicly?
+  - key: developer_background.developer_background_releases_count.description
+    t: What is the number of publicly available apps (released to the app stores) you've worked on in 2025?
+
+  - key: options.developer_background_releases_count.developer_background_releases_count_none
+    t: None
+  - key: options.developer_background_releases_count.developer_background_releases_count_one
+    t: "1"
+  - key: options.developer_background_releases_count.developer_background_releases_count_2_5
+    t: 2-5
+  - key: options.developer_background_releases_count.developer_background_releases_count_5_10
+    t: 5-10
+  - key: options.developer_background_releases_count.developer_background_releases_count_more_than_10
+    t: More than 10
+
+  # Target OS
+  - key: developer_background.developer_background_os_target
+    t: Target mobile OS version
+  - key: developer_background.developer_background_os_target.question
+    t: What mobile OS versions do you target?
+
+  - key: options.developer_background_os_target.developer_background_os_target_most_recent
+    t: The most recent versions (iOS 18+, Android 15+)
+  - key: options.developer_background_os_target.developer_background_os_target_reasonably_current
+    t: Reasonably current (iOS 17+, Android 13+)
+  - key: options.developer_background_os_target.developer_background_os_target_old
+    t: Old (iOS 14+, Android 9+) <!-- https://github.com/react-native-community/discussions-and-proposals/discussions/812 -->
+  - key: options.developer_background_os_target.developer_background_os_target_as_old_as_possible
+    t: As old as possible (iOS 8+, Android 5+)
+
+  # Industry Sectors Using React Native
+  - key: developer_background.developer_background_industry_sector
+    t: Industry sectors
+  - key: developer_background.developer_background_industry_sector.question
+    t: Which industry sector(s) are you using React Native in?
+
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_art_design
+    t: Art & Design
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_agriculture
+    t: Agriculture
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_automotive
+    t: Automotive
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_beauty
+    t: Beauty
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_books_reference
+    t: Books & Reference
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_construction
+    t: Construction
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_communication
+    t: Communication
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_consulting
+    t: Consulting & Services
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_crypto
+    t: Crypto & Web3
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_cyber_security
+    t: Cyber Security
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_dating
+    t: Dating
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_education
+    t: Education
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_energy
+    t: Energy
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_entertainment
+    t: Entertainment
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_events
+    t: Events
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_finance
+    t: Finance
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_food_drink
+    t: Food & Drink
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_government
+    t: Government
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_games
+    t: Games
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_health_fitness
+    t: Health & Fitness
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_house_home
+    t: House & Home
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_insurance
+    t: Insurance
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_logistics
+    t: Logistics
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_lifestyle
+    t: Lifestyle
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_manufacturing
+    t: Manufacturing
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_marketing_tools
+    t: Marketing/Sales/Analytics Tools
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_medical
+    t: Medical
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_music_audio
+    t: Music & Audio
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_navigation
+    t: Navigation
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_news_media
+    t: News, Media, & Blogging
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_photo
+    t: Photo
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_productivity
+    t: Productivity
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_programming_tools
+    t: Programming & Technical Tools
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_real_estate
+    t: Real Estate
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_shopping
+    t: Shopping
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_social_media
+    t: Social Media
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_sports
+    t: Sports
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_student
+    t: Student
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_transport
+    t: Transport
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_travel
+    t: Travel
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_weather
+    t: Weather
+  - key: options.developer_background_industry_sector.developer_background_industry_sector_video
+    t: Video
+
+######################################################
+#########                Results               #########
+######################################################
+
+  - key: tools.all_tools_experience
+    t: Libraries experience & sentiment
+
+  ######################################################
+  #########        PLATFORM APIS               #########
+  ######################################################
+  - key: platform_apis.intro_message
+    t: |
+      This section of the survey is all about the variety of APIs you can use on the devices.
+
+      Tell us what is your experience using them in your React Native apps.
+      Is it very hard to achieve what you want to, or "<i>it just works</i>"?
+      Be sure to express your feelings by clicking the <strong>Positive experience</strong> or <strong>Negative experience</strong> buttons!
+      You can even express your pain points observations if you want to 😉
+
+      By the way, if you want to learn more about specific piece of technology, please make sure to press <strong>"+" button</strong> and add it to your <strong>reading list</strong>!
+
+  - key: sections.platform_apis.title
+    t: Platform APIs
+  - key: platform_apis.platform_apis_questions
+    t: Available platform APIs
+  - key: platform_apis.platform_apis_questions.question
+    t: What APIs do you use in your React Native apps?
+  - key: platform_apis.platform_apis_pain_points
+    t: Platform APIs pain points
+  - key: platform_apis.platform_apis_pain_points.question
+    t: Platform APIs pain points
+  - key: platform_apis.platform_apis_pain_points.description
+    t: What pain points have you encountered related to the APIs mentioned above? Specify the individual API if applicable.
+
+  ######################################################
+  #########        STATE MANAGEMENT            #########
+  ######################################################
+
+  - key: sections.state_management.title
+    t: State management
+  - key: sections.state_management.description
+    t: What state management solutions do you use in your React Native apps?
+
+  - key: state_management.intro_message
+    t: |
+      This next part of the survey is about sharing your experiences with various libraries that address the most fundamental challenges of React Native apps.
+
+      You can indicate your familiarity with each library by choosing one of the following options:
+      - **Never heard of it**: this is the first time you've seen it - or you've heard of it but have no idea what it does.
+      - **Heard of it**: you've read or heard about it, but haven't actually used it yet.
+      - **Used it**: you've used it at least once, even just to play around with..
+
+      Also, if you want to tell us more about any of your choices, just click the <strong>Add a comment</strong> button!
+
+      To provide additional context and facilitate understanding, each state management solution is accompanied by a code sample demonstrating a basic counter implementation, including state access and increment functionality.
+
+  - key: state_management.state_management_others.question
+    t: Other state management solutions
+  - key: state_management.state_management_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: state_management.state_management_others
+    t: Other solutions
+  - key: state_management.state_management_pain_points
+    t: State management pain points
+  - key: state_management.state_management_pain_points.question
+    t: State management pain points
+
+  - key: state_management.state_management_storage
+    t: On-device storage
+  - key: state_management.state_management_storage.question
+    t: What on-device storage solutions do you use in your React Native apps?
+
+  - key: state_management.state_management_pain_points.description
+    t:
+      What pain points have you encountered with state management in your React Native projects?
+      If applicable, point out the specific solution and its problems.
+  - key: state_management.state_management_app_architecture_pattern_local_first
+    t: Local-first app architecture
+  - key: state_management.state_management_app_architecture_pattern_local_first.question
+    t: Are you familiar with local-first app architecture pattern?
+
+
+  # results
+
+  - key: state_management.state_management_ratios
+    t: State management ratios over time
+  - key: state_management.state_management_experience
+    t: State management experience & sentiment
+
+  - key: state_management.state_management_app_architecture_patterns_experience
+    t: Local-first app architecture
+  - key: state_management.state_management_app_architecture_patterns_experience.question
+    t: Are you familiar with local-first app architecture pattern?
+
+  - key: state_management.state_management_app_architecture_patterns_ratios
+    t: Local-first app architecture
+
+  ######################################################
+  #########           DATA FETCHING            #########
+  ######################################################
+  - key: sections.data_fetching.title
+    t: Data fetching
+  - key: sections.data_fetching.description
+    t: What data fetching solutions (accessing remote data) do you use in your React Native apps?
+
+  - key: data_fetching.intro_message
+    t: |
+      To provide additional context and facilitate understanding, each data fetching solution is accompanied by a code sample demonstrating a basic usage.
+
+  - key: data_fetching.data_fetching_others.question
+    t: Other data fetching solutions
+  - key: data_fetching.data_fetching_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: data_fetching.data_fetching_others
+    t: Other solutions
+  - key: data_fetching.data_fetching_pain_points
+    t: Data fetching pain points
+  - key: data_fetching.data_fetching_pain_points.question
+    t: Data fetching pain points
+  - key: data_fetching.data_fetching_pain_points.description
+    t: What pain points have you encountered with data fetching in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # results
+
+  - key: data_fetching.data_fetching_ratios
+    t: Data fetching ratios over time
+  - key: data_fetching.data_fetching_experience
+    t: Data fetching experience & sentiment
+
+  ######################################################
+  #########             NAVIGATION             #########
+  ######################################################
+  - key: sections.navigation.title
+    t: Navigation
+  - key: sections.navigation.description
+    t: What navigation solutions do you use in your React Native apps?
+  - key: navigation.navigation_others.question
+    t: Other navigation solutions
+  - key: navigation.navigation_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: navigation.navigation_others
+    t: Other solutions
+  - key: navigation.navigation_pain_points
+    t: Navigation pain points
+  - key: navigation.navigation_pain_points.question
+    t: Navigation pain points
+  - key: navigation.navigation_pain_points.description
+    t: What pain points have you encountered with navigation in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: navigation.navigation_app_architecture_pattern_file_based_routing
+    t: Filed-based routing pattern
+  - key: navigation.navigation_app_architecture_pattern_file_based_routing.question
+    t: Are you familiar with file-based routing architecture pattern?
+
+  # results
+
+  - key: navigation.navigation_ratios
+    t: Navigation ratios over time
+  - key: navigation.navigation_experience
+    t: Navigation experience & sentiment
+
+  - key: navigation.navigation_app_architecture_patterns_experience
+    t: Filed-based routing pattern
+  - key: navigation.navigation_app_architecture_patterns_experience.question
+    t: Are you familiar with file-based routing architecture pattern?
+
+  - key: navigation.navigation_app_architecture_patterns_ratios
+    t: Filed-based routing pattern
+
+  ######################################################
+  #########              STYLING               #########
+  ######################################################
+  - key: sections.styling.title
+    t: Styling
+  - key: sections.styling.description
+    t: What styling techniques do you use in your React Native apps?
+
+  - key: styling.intro_message
+    t: |
+      To provide additional context and facilitate understanding, each styling technique is accompanied by a code sample demonstrating a basic usage.
+
+  - key: styling.styling_techniques_other.question
+    t: Other styling solutions
+  - key: styling.styling_techniques_other.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: styling.styling_techniques_other
+    t: Other solutions
+  - key: styling.styling_pain_points
+    t: Styling pain points
+  - key: styling.styling_pain_points.question
+    t: Styling pain points
+  - key: styling.styling_pain_points.description
+    t: What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: styling.styling_techniques_pain_points
+    t: Styling pain points
+  - key: styling.styling_techniques_pain_points.question
+    t: Styling pain points
+  - key: styling.styling_techniques_pain_points.description
+    t: What pain points have you encountered with styling in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # Results
+  - key: styling.styling_ratios
+    t: Styling ratios over time
+  - key: styling.styling_experience
+    t: Styling experience & sentiment
+
+  ######################################################
+  #########       GRAPHICS & ANIMATIONS        #########
+  ######################################################
+  - key: sections.animations.title
+    t: Graphics and animations
+  - key: sections.animations.description
+    t: What graphics and animations solutions do you use in your React Native apps?
+  - key: animations.animations_other.question
+    t: Other animations solutions
+  - key: animations.animations_other.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: animations.animations_other
+    t: Other solutions
+  - key: animations.animations_pain_points
+    t: Graphics and animations pain points
+  - key: animations.animations_pain_points.question
+    t: Graphics and animations pain points
+  - key: animations.animations_pain_points.description
+    t: What pain points have you encountered with graphics and animations in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # Results
+  - key: animations.animations_ratios
+    t: Animations ratios over time
+  - key: animations.animations_ratios.note
+    t: >
+      The beta version of Reanimated 4 has been released. It brings long-awaited support for CSS Animations and Transitions, making it easier to create high-performance animations.
+
+      The new features build on the existing worklet-based APIs, offering an intuitive approach while staying compatible with Reanimated 3. If your app uses the New Architecture, you can explore the beta version and see how it streamlines your animation workflow.
+
+      For a deeper dive into what’s new, check out the <a target="_blank" href="https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40">announcement blog post</a>.
+  - key: animations.animations_experience
+    t: Animations experience & sentiment
+
+  ######################################################
+  #########        COMPONENT LIBRARIES         #########
+  ######################################################
+  - key: sections.component_libraries.title
+    t: Components libraries
+  - key: sections.component_libraries.description
+    t: What UI components libraries do you use in your React Native apps?
+  - key: component_libraries.component_libraries_others.question
+    t: Other component libraries solutions
+  - key: component_libraries.component_libraries_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: component_libraries.component_libraries_others
+    t: Other solutions
+  - key: component_libraries.component_libraries_pain_points
+    t: Components libraries pain points
+  - key: component_libraries.component_libraries_pain_points.question
+    t: Components libraries pain points
+  - key: component_libraries.component_libraries_pain_points.description
+    t: What pain points have you encountered with UI components libraries in your React Native projects? If applicable, point out the specific solution and its problems.
+  - key: component_libraries.component_libraries_data_visualisation
+    t: Data visualisation
+  - key: component_libraries.component_libraries_data_visualisation.question
+    t: What data visualisation solutions do you use in your React Native apps?
+
+  - key: component_libraries.component_libraries_other_libraries
+    t: Other popular component(s) libraries
+  - key: component_libraries.component_libraries_other_libraries.question
+    t: What other popular component(s) libraries do you use in your React Native apps?
+  - key: component_libraries.component_libraries_other_libraries.description
+    t: Other popular libraries that offer ready-made components for various APIs and mechanisms not yet covered in the survey.
+
+  # results
+  - key: component_libraries.component_libraries_ratios
+    t: Component libraries ratios over time
+  - key: component_libraries.component_libraries_experience
+    t: Components libraries experience & sentiment
+
+  ######################################################
+  #########        DEBUGGING AND PROFILING     #########
+  ######################################################
+
+  - key: sections.debugging_and_profiling.title
+    t: Debugging and profiling
+  - key: sections.debugging_and_profiling.description
+    t: What tools do you use to debug and profile your React Native apps?
+
+  - key: debugging_and_profiling.debugging_and_profiling_subheading_clients_and_tools
+    t: Debugging clients and tools
+
+  - key: debugging_and_profiling.debugging_and_profiling_subheading_features
+    t: Debugging features
+
+  - key: debugging_and_profiling.debugging_profiling_others
+    t: Other solutions
+  - key: debugging_and_profiling.debugging_profiling_others.question
+    t: Other debugging and profiling solutions
+  - key: debugging_and_profiling.debugging_profiling_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+
+  - key: debugging_and_profiling.debugging_profiling_intent
+    t: Debugging intent
+  - key: debugging_and_profiling.debugging_profiling_intent.question
+    t: Debugging intent
+  - key: debugging_and_profiling.debugging_profiling_intent.description
+    t: What do you want to do when debugging your app?
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_view_app_logs
+    t: View app logs
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_view_app_logs.description
+    t: Viewing and inspecting app logs
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_layout_and_styles
+    t: Inspect layout and styles
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_layout_and_styles.description
+    t: Inspecting the element tree, highlighting elements in the UI, changing styles in realtime
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_code_behavior
+    t: Inspect code behaviour
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_code_behavior.description
+    t: Step-through breakpoint debugging, evaluating expressions in the JavaScript console
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_react_behavior
+    t: Understand React behaviour
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_react_behavior.description
+    t: Inspecting React state, analyzing performance issues - e.g. re-renders
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_inspect_network_requests
+    t: Inspect network requests
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_profile_the_app
+    t: Profile your app
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_profile_the_app.description
+    t: Monitoring resource usage (Memory, CPU), analyzing execution time of functions
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_3rd_party_libraries
+    t: Understand the behaviour of third party JS libraries
+  - key: options.debugging_profiling_intent.debugging_profiling_intent_understand_3rd_party_libraries.description
+    t: Use specific dev plugins for third party libraries or use cases (e.g. Redux DevTools). Available today via Expo DevTools Plugins.
+
+  - key: debugging_and_profiling.debugging_profiling_pain_points
+    t: Debugging and profiling pain points
+  - key: debugging_and_profiling.debugging_profiling_pain_points.question
+    t: Debugging and profiling pain points
+  - key: debugging_and_profiling.debugging_profiling_pain_points.description
+    t: What pain points have you encountered with debugging and profiling your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # results
+
+  - key: debugging_and_profiling.debugging_and_profiling_experience
+    t: Debugging and profiling experience & sentiment
+
+  - key: debugging_and_profiling.debugging_profiling_pain_points.note
+    t: |
+      <a href="https://ide.swmansion.com/" target="_blank">Radon IDE</a> is a new VSCode and Cursor extension that simplifies debugging and streamlines React Native development. It turns your editor into a fully-fledged IDE, eliminating context switching and automatically pausing runtime errors.
+      Radon IDE allows you to add breakpoints in VSCode to easily debug your React Native app. Its click-to-inspect feature makes it possible to quickly jump directly from preview to a file where your component is defined, while the integrated log panel helps to pinpoint issues effortlessly by showing logs directly in the VSCode console.
+      Try Radon IDE for free <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=swmansion.react-native-ide">here</a>.
+
+  ######################################################
+  #########        TESTING AND MONITORING      #########
+  ######################################################
+
+  - key: sections.testing_and_monitoring.title
+    t: Testing and monitoring
+  - key: sections.testing_and_monitoring.description
+    t: What tools do you use to test and monitor your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_testing_others
+    t: Other testing solutions
+  - key: testing_and_monitoring.testing_and_monitoring_testing_others.question
+    t: Other testing solutions
+  - key: testing_and_monitoring.testing_and_monitoring_testing_others.description
+    t: What other solutions not mentioned above have you used in your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_analytics
+    t: Analytics
+  - key: testing_and_monitoring.testing_and_monitoring_analytics.question
+    t: What analytics solutions do you use in your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_crash_reporting
+    t: Crash reporting
+  - key: testing_and_monitoring.testing_and_monitoring_crash_reporting.question
+    t: What crash reporting solutions do you use in your React Native apps?
+
+  - key: testing_and_monitoring.testing_and_monitoring_pain_points
+    t: Testing and monitoring pain points
+  - key: testing_and_monitoring.testing_and_monitoring_pain_points.question
+    t: Testing and monitoring pain points
+  - key: testing_and_monitoring.testing_and_monitoring_pain_points.description
+    t: What pain points have you encountered with testing and monitoring your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # results
+
+  - key: testing_and_monitoring.testing_and_monitoring_experience
+    t: Testing and monitoring experience & sentiment
+
+  ######################################################
+  #########        REACT NATIVE API            #########
+  ######################################################
+
+  - key: sections.react_native_architecture.title
+    t: React Native architecture
+  - key: sections.react_native_architecture.description
+    t: What is your knowledge of the architectural APIs specific to React Native?
+
+  - key: react_native_architecture.react_native_architecture_version
+    t: React Native version
+  - key: react_native_architecture.react_native_architecture_version.question
+    t: Which React Native version do you use mainly?
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_69_or_lower
+    t: "0.69 or lower"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_70
+    t: "0.70"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_71
+    t: "0.71"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_72
+    t: "0.72"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_73
+    t: "0.73"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_74
+    t: "0.74"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_75
+    t: "0.75"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_76
+    t: "0.76"
+  - key: options.react_native_architecture_version.react_native_architecture_version_next
+    t: next / rc (release candidate)
+  - key: options.react_native_architecture_version.react_native_architecture_version_nightly
+    t: nightly
+
+  - key: react_native_architecture.react_native_architecture_strategies
+    t: Upgrade strategy
+  - key: react_native_architecture.react_native_architecture_strategies.question
+    t: React Native version upgrading strategy
+  - key: react_native_architecture.react_native_architecture_strategies.description
+    t: What is your main strategy for upgrading React Native to a new versions?
+  - key: react_native_architecture.react_native_architecture_strategies.note
+    t: |
+      React Native 0.76 and the New Architecture are enabled by default, but navigating them can be challenging. On the Software Mansion blog, you can find insights on handling common New Architecture challenges like view flattening, view recycling, custom shadow nodes, and more.
+      Read <a target="_blank" href="https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-1-2-bb0c16950f2d">part 1</a>
+      Read <a target="_blank" href="https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-2-2-ac5f2adf22ec">part 2</a>
+      P.S. If you need help adopting the new architecture in your app, <a target="_blank" href="https://swmansion.com/contact/projects">contact us</a>. We have already ported 25+ libraries, migrated several apps for clients, and contributed 30+ fixes to React Native core for issues related to the new arch.
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_stay_latest
+    t: Stay on the latest version
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_occasionally
+    t: Upgrade occasionally
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_for_new_features
+    t: Upgrade for the new features
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_parallel_with_expo
+    t: Upgrade in parallel with Expo SDK releases
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_upgrade_if_necessary
+    t: Don't upgrade until I have to
+  - key: options.react_native_architecture_strategies.react_native_architecture_strategies_other
+    t: Other React Native version upgrading strategy
+
+  - key: react_native_features.brownfield
+    t: Do you integrate React Native with applications written using other technology?
+  - key: react_native_features.ota_updates
+    t: OTA updates solutions
+  - key: react_native_features.mobile_web_code_sharing
+    t: Mobile-Web code sharing
+
+  - key: react_native_architecture.react_native_architecture_brownfield
+    t: Greenfield vs brownfield
+  - key: react_native_architecture.react_native_architecture_brownfield.question
+    t: What type of React Native project are you working on?
+  - key: react_native_architecture.react_native_architecture_brownfield.note
+    t: |
+      Brownfield integration comes with its challenges. If you are looking for resources on how to successfully integrate React Native into an iOS or Android app, Software Mansion has put together a miniguide to walk you through the process:
+      Read <a target="_blank" href="https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-1-ios-ffb61819031e">part 1 (iOS)</a>
+      Read <a target="_blank" href="https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-2-android-803c1b726582">part 2 (Android)</a>
+      If you prefer a video format, you can also view <a target="_blank" href="https://www.youtube.com/watch?v=mOg29UnIMMA">the talk on brownfield integration</a> from App.js Conf 2024
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green
+    t: I mainly work on standalone React Native apps (greenfield)
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green.short
+    t: Standalone apps (greenfield)
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_brown
+    t: I mainly work on integrated React Native apps (brownfield)
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_brown.short
+    t: Integrated apps (brownfield)
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_both
+    t: I work on both standalone and brownfield apps
+  - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_both.short
+    t: Both
+
+  - key: react_native_architecture.react_native_architecture_ota_updates
+    t: Over-the-air updates
+  - key: react_native_architecture.react_native_architecture_ota_updates.question
+    t: What Over-the-air (OTA) updates solutions do you use?
+
+  - key: options.react_native_architecture_ota_updates.react_native_architecture_ota_updates_self_hosted
+    t: Self-hosted
+
+  - key: react_native_architecture.react_native_architecture_mobile_web_code_sharing
+    t: Mobile-Web code sharing
+  - key: react_native_architecture.react_native_architecture_mobile_web_code_sharing.question
+    t: What methods do you employ for sharing code between mobile and web platforms in your project, if any?
+
+  - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_webview
+    t: WebView running mobile version of a website.
+  - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_common_logic_independent_ui
+    t: Common business logic, independent UI components.
+  - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_independent_projects
+    t: No code sharing. Independent project for the web counterpart of my application.
+
+  # results
+
+  - key: react_native_architecture.react_native_architecture_ratios
+    t: React Native architecture ratios over time
+  - key: react_native_architecture.react_native_architecture_experience
+    t: React Native architecture experience & sentiment
+
+  ######################################################
+  #########        BUILD AND PUBLISH           #########
+  ######################################################
+
+  - key: sections.build_and_publish.title
+    t: Build and publish
+  - key: sections.build_and_publish.description
+    t: How do you build and submit your app for the App Store, Google Play or other stores?
+
+  - key: build_and_publish.build_and_publish_others
+    t: Other solutions
+  - key: build_and_publish.build_and_publish_others.question
+    t: Other ways to build app and publish to the stores
+  - key: build_and_publish.build_and_publish_others.description
+    t: What other solutions not mentioned above have you used for your React Native apps?
+
+  - key: build_and_publish.build_and_publish_pain_points
+    t: Building and publishing pain points
+  - key: build_and_publish.build_and_publish_pain_points.question
+    t: Building and publishing pain points
+  - key: build_and_publish.build_and_publish_pain_points.description
+    t: What pain points have you encountered with deployment in your React Native projects? If applicable, point out the specific solution and its problems.
+
+  # results
+
+  - key: build_and_publish.build_and_publish_ratios
+    t: Build and publish ratios over time
+  - key: build_and_publish.build_and_publish_experience
+    t: Build and publish experience & sentiment
+
+  ######################################################
+  #########        DEV TOOLS                   #########
+  ######################################################
+
+  - key: sections.dev_tools.title
+    t: Dev tools
+  - key: sections.dev_tools.description
+    t: The tools you use to scaffold and develop React Native projects.
+
+  - key: dev_tools.dev_tools_js_ts
+    t: JavaScript/TypeScript balance
+  - key: dev_tools.dev_tools_js_ts.question
+    t: JavaScript/TypeScript balance
+  - key: dev_tools.dev_tools_js_ts.description
+    t: How do you divide your time between writing JavaScript and TypeScript code?
+  - key: options.dev_tools_js_ts.0
+    t: "100% JS"
+  - key: options.dev_tools_js_ts.1
+    t: "90% / 10%"
+  - key: options.dev_tools_js_ts.2
+    t: "75% / 25%"
+  - key: options.dev_tools_js_ts.3
+    t: "60% / 40%"
+  - key: options.dev_tools_js_ts.4
+    t: "50% / 50%"
+  - key: options.dev_tools_js_ts.5
+    t: "40% / 60%"
+  - key: options.dev_tools_js_ts.6
+    t: "25% / 75%"
+  - key: options.dev_tools_js_ts.7
+    t: "10% / 90%"
+  - key: options.dev_tools_js_ts.8
+    t: "100% TS"
+
+  - key: dev_tools.dev_tools_ai_generated_code_balance
+    t: AI code generation
+  - key: dev_tools.dev_tools_ai_generated_code_balance.question
+    t: What proportion of the code you produce is AI-generated?
+  - key: dev_tools.dev_tools_ai_generated_code_balance.prompt
+    t: What percentage of your code comes from AI suggestions or copy-pasting AI-generated code (ChatGPT, Copilot, etc)?
+
+  # slider
+  - key: options.dev_tools_ai_generated_code_balance.0
+    t: 0% AI
+  - key: options.dev_tools_ai_generated_code_balance.1
+    t: "12.5% AI"
+  - key: options.dev_tools_ai_generated_code_balance.2
+    t: "25% AI"
+  - key: options.dev_tools_ai_generated_code_balance.3
+    t: "37.5% AI"
+  - key: options.dev_tools_ai_generated_code_balance.4
+    t: "50% AI"
+  - key: options.dev_tools_ai_generated_code_balance.5
+    t: "62.5% AI"
+  - key: options.dev_tools_ai_generated_code_balance.6
+    t: "75% AI"
+  - key: options.dev_tools_ai_generated_code_balance.7
+    t: "87.5% AI"
+  - key: options.dev_tools_ai_generated_code_balance.8
+    t: 100% AI
+
+  - key: dev_tools.dev_tools_package_managers
+    t: Package managers
+  - key: dev_tools.dev_tools_package_managers.question
+    t: Package managers
+  - key: dev_tools.dev_tools_package_managers.description
+    t: Which package managers do you use?
+
+  - key: dev_tools.dev_tools_starter_templates
+    t: Starter templates
+  - key: dev_tools.dev_tools_starter_templates.question
+    t: Starter templates
+  - key: dev_tools.dev_tools_starter_templates.description
+    t: Which starter templates or boilerplates do you use?
+  - key: dev_tools.dev_tools_other_tools
+    t: Other solutions
+  - key: dev_tools.dev_tools_other_tools.question
+    t: Other development tools
+  - key: dev_tools.dev_tools_other_tools.description
+    t: What other dev tools not mentioned above have you used for your React Native projects?
+
+  # results
+
+  - key: dev_tools.dev_tools_ratios
+    t: Dev tools ratios over time
+  - key: dev_tools.dev_tools_experience
+    t: Dev tools experience & sentiment
+
+  ######################################################
+  #########   React Native Alternatives      #########
+  ######################################################
+
+  - key: sections.react_native_alternatives.title
+    t: Other cross-platform frameworks
+  - key: sections.react_native_alternatives.description
+    t: What other cross-platform app development solutions besides React Native are you familiar with?
+
+  - key: react_native_alternatives.react_native_alternatives_other
+    t: Other cross-platform frameworks
+  - key: react_native_alternatives.react_native_alternatives_other.description
+    t: What cross-platform frameworks not mentioned above (besides React Native) are you familiar with?
+
+  # results
+
+  - key: react_native_alternatives.react_native_alternatives_ratios
+    t: Cross-platform frameworks ratios over time
+  - key: react_native_alternatives.react_native_alternatives_experience
+    t: Cross-platform frameworks experience & sentiment
+
+
+  ######################################################
+  #                    Resources                       #
+  ######################################################
+
+  - key: sections.resources.title
+    t: Resources
+  - key: sections.resources.description
+    t: What React Native resources do you consult?
+
+  - key: resources.resources_learn_initially
+    t: Initial learning methods
+  - key: resources.resources_learn_initially.question
+    t: Which resource types have you used to initially learn React Native?
+
+  - key: options.resources_learn_initially.resources_learn_initially_ai_tools
+    t: AI tools (ChatGPT, Copilot, etc.)
+  - key: options.resources_learn_initially.resources_learn_initially_books
+    t: Books
+  - key: options.resources_learn_initially.resources_learn_initially_coding_bootcamp
+    t: Coding bootcamp
+  - key: options.resources_learn_initially.resources_learn_initially_expo_docs
+    t: Expo docs
+  - key: options.resources_learn_initially.resources_learn_initially_mentoring
+    t: Mentoring
+  - key: options.resources_learn_initially.resources_learn_initially_official_docs
+    t: React Native docs
+  - key: options.resources_learn_initially.resources_learn_initially_on_the_job_training
+    t: On-the-job training
+  - key: options.resources_learn_initially.resources_learn_initially_online_courses_free
+    t: Online courses (free)
+  - key: options.resources_learn_initially.resources_learn_initially_online_courses_paid
+    t: Online courses (paid)
+  - key: options.resources_learn_initially.resources_learn_initially_podcasts
+    t: Podcasts
+  - key: options.resources_learn_initially.resources_learn_initially_school_higher_education
+    t: School / higher education
+  - key: options.resources_learn_initially.resources_learn_initially_self_directed_learning
+    t: Self-directed learning
+  - key: options.resources_learn_initially.resources_learn_initially_videos
+    t: Videos
+
+  - key: resources.resources_learn_more
+    t: Learning more
+  - key: resources.resources_learn_more.question
+    t: Which resources do you consult to deepen your React Native knowledge and learn new patterns?
+
+  - key: options.resources_learn_more.resources_learn_more_ai_tools
+    t: AI tools
+  - key: options.resources_learn_more.resources_learn_more_ai_tools.description
+    t: Suggestions and explanations coming from AI assistant service (ChatGPT, Copilot, Claude, etc.).
+
+  - key: resources.resources_stay_up_to_date
+    t: Newsletters & news platforms
+  - key: resources.resources_stay_up_to_date.question
+    t: What newsletters and news platforms do you consult to keep up with React Native news?
+
+  - key: resources.resources_podcasts
+    t: Podcasts
+  - key: resources.resources_podcasts.question
+    t: What React Native or general programming-related podcasts do you listen to?
+
+  - key: resources.resources_video_creators
+    t: Video creators
+  - key: resources.resources_video_creators.question
+    t: Video creators you follow on video-centric platforms such as YouTube, Twitch, TikTok, etc.
+
+  - key: resources.resources_people
+    t: People
+  - key: resources.resources_people.question
+    t: People you read, follow, or just want to highlight for their work.
+
+  - key: resources.resources_surveys
+    t: Other developer surveys
+  - key: resources.resources_surveys.question
+    t: What other developer surveys do you participate in?
+
+  # results
+
+  - key: resources.resources_experience
+    t: React Native Directory
+
+  - key: resources.resources_ratios
+    t: React Native Directory
+
+  ######################################################
+  #                    Opinions                        #
+  ######################################################
+
+  - key: sections.opinions.title
+    t: Opinions
+  - key: sections.opinions.description
+    t: How do you feel about the state of React Native?
+
+  - key: opinions.opinions_right_direction
+    t: React Native direction
+  - key: opinions.opinions_right_direction.question
+    t: Is React Native moving in the right direction?
+
+  - key: opinions.opinions_complex
+    t: Building React Native apps is overly complex right now
+  - key: opinions.opinions_complex.question
+    t: Building React Native apps is overly complex right now
+
+  - key: opinions.opinions_changing_too_fast
+    t: The React Native ecosystem is changing too fast
+  - key: opinions.opinions_changing_too_fast.question
+    t: The React Native ecosystem is changing too fast
+
+  - key: opinions.opinions_pain_points_multiple
+    t: React Native pain points
+  - key: opinions.opinions_pain_points_multiple.question
+    t: What are the things that makes you feel annoyed while developing React Native apps?
+
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_building
+    t: App building
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_app_deployment
+    t: App deployment
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_bundle_size
+    t: Bundle size
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_build_times
+    t: Build times
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_continuous_deployment
+    t: Continuous deployment
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_dealing_with_native_code
+    t: Dealing with native code
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_debugging
+    t: Debugging
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_documentation
+    t: Documentation
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_end_to_end_testing
+    t: E2E testing
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_unusable_error_messages
+    t: Unusable error messages
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_graphics_and_animations
+    t: Graphics and animations
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_keyboard_handling
+    t: Keyboard handling
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_managing_secrets
+    t: Managing secrets
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_pain_monorepos
+    t: Monorepos
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_navigation_solutions
+    t: Navigation solutions
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_new_architecture
+    t: New architecture
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_performance
+    t: Performance
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_platforms_inconsistencies
+    t: Platforms inconsistencies
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_project_setup
+    t: Project setup
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_reliance_on_third_party_modules
+    t: Reliance on third-party modules
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_stability
+    t: Stability
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_styling_limitations
+    t: Styling limitations
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_unmaintained_packages
+    t: Unmaintained packages
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_upgrades
+    t: Upgrades
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_setting_up_servers
+    t: Setting up servers
+  - key: options.opinions_pain_points_multiple.opinions_pain_points_multiple_code_sharing_with_web
+    t: Sharing code with Web
+
+  - key: opinions.opinions_missing_multiple
+    t: Missing features
+  - key: opinions.opinions_missing_multiple.question
+    t: What do you feel currently is missing from React Native?
+
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_animations_gestures
+    t: Better animations/gestures
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_debugging
+    t: Better debugging
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_profiling
+    t: Better profiling
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_documentation
+    t: Better documentation
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_flatlist
+    t: Better FlatList
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_keyboard_handling
+    t: Better keyboard handling
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_performance
+    t: Better performance
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_testing
+    t: Better testing
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_better_web_compatibility
+    t: Better web compatibility
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_css_features
+    t: CSS features
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_first_party_libraries
+    t: First-party libraries
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_multithreading
+    t: Multithreading
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_swiftui_jetpack_compose_integration
+    t: SwiftUI/Jetpack Compose integration
+  - key: options.opinions_missing_multiple.opinions_missing_multiple_fetch_stream_support
+    t: Fetch API stream support (GPT-like apps)
+
+  - key: opinions.opinions_advantages_multiple
+    t: React Native advantages
+  - key: opinions.opinions_advantages_multiple.question
+    t: What are advantages of React Native over other solutions?
+
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_code_sharing
+    t: Code sharing
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_community
+    t: Community
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_cost_effective
+    t: Cost-effective
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_cross_platform
+    t: Cross-platform
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_developer_experience
+    t: Developer experience
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_documentation
+    t: Documentation
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_easy_to_learn
+    t: Easy to learn
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_ecosystem
+    t: Ecosystem
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_expo
+    t: Expo
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_fast_iteration
+    t: Fast iteration
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_hot_reloading
+    t: Hot reloading
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_learn_once
+    t: Learn once, write anywhere
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_native_feel_of_app
+    t: Native feel of app
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_over_the_air_updates
+    t: Over-the-air updates
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_performance
+    t: Performance
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_single_codebase
+    t: Single codebase
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_stable
+    t: Stable
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_time_to_market
+    t: Time to market
+  - key: options.opinions_advantages_multiple.opinions_advantages_multiple_web_technologies
+    t: Web technologies
+
+  ######################################################
+  #                    ABOUT YOU                       #
+  ######################################################
+
+  # This sections is registered under `user_info` id/key
+
+  - key: sections.user_info.title
+    t: About You
+  - key: sections.user_info.description
+    t: Let's get to know the real you.
+
+  - key: user_info.age
+    t: Age
+  - key: user_info.age.question
+    t: How old are you, in years?
+
+  - key: user_info.country
+    t: Country or region
+  - key: user_info.country.question
+    t: Where do you currently reside?
+
+  - key: user_info.years_of_experience
+    t: Years of Experience
+  - key: user_info.years_of_experience.question
+    t: How long have you been working as a programmer or studying programming?
+  - key: user_info.years_of_experience.note
+    t: |
+      App.js Conf is the biggest React Native and Expo-focused conference, where you can meet the creators and contributors to React Native and Expo, share ideas, connect with the community, and shape the future of app development.
+      This year’s edition will take place on 28-30 May in Kraków, Poland. It’s the perfect opportunity to level up your React Native skills through hands-on workshops on Reanimated, brownfield integrations, 3d graphics, performance optimization, and more.
+      <a target="_blank" href="https://appjs.co/">Visit the website</a> to learn the details and grab your tickets!
+
+  - key: user_info.years_of_experience_rn
+    t: RN Experience
+  - key: user_info.years_of_experience_rn.question
+    t: How long have you been working with or studying React Native, in years?
+
+  - key: user_info.company_size
+    t: Company Size
+  - key: user_info.company_size.question
+    t: How big is your company, in the number of employees?
+
+  - key: user_info.higher_education_degree
+    t: Higher education degree
+  - key: user_info.higher_education_degree.question
+    t: Do you have a higher education degree?
+
+  - key: user_info.yearly_salary
+    t: Yearly income
+  - key: user_info.yearly_salary.question
+    t: Your yearly salary in U.S. dollars.
+
+  - key: user_info.gender
+    t: Gender
+  - key: user_info.gender.question
+    t: >
+      Which of the following options describes you, if any?
+  - key: user_info.gender.note
+    t: >
+      While we know collecting and publishing diversity data can be a sensitive issue,
+      we do think it's important to obtain this data to help measure and improve
+      the survey's efforts in terms of inclusivity and representativeness.
+
+  - key: user_info.how_did_user_find_out_about_the_survey
+    t: Source
+  - key: user_info.how_did_user_find_out_about_the_survey.question
+    t: Where did you hear about this survey?
+
+  - key: user_info.how_can_we_improve
+    t: Survey improvements
+  - key: user_info.how_can_we_improve.question
+    t: How could we improve this survey?
+
+  - key: user_info.receive_notifications
+    t: Want to stay up to date?
+  - key: user_info.receive_notifications.note
+    t: >
+      If you select this option, we will send you an email to subscribe to our newsletter.
+
+  ######################################################
+  #           FINISHING / THANK YOU PAGE
+  ######################################################
+
+  - key: thanks.learn_more_about
+    t: "Some of the features you might want to learn more about:"
+
+  - key: thanks.features_score
+    t: Features Score
+
+  - key: thanks.score_statistics
+    t: >
+      Of the {total} features mentioned in the survey,
+      you have used {usage_count} and heard of {awareness_count} more,
+      which puts you in the top {knowledgeRankingFromTop} of all respondents.
+      Well done!
+  - key: thanks.score_statistics_noranking
+    t: >
+      Of the {total} features mentioned in the survey,
+      you have used {usage_count} and heard of {awareness_count} more.
+      Well done!
+  - key: thanks.points
+    t: >
+      points
+  - key: thanks.score_awareness_explanation
+    t: >
+      For fairness, this percentage is calculated over only the {awareness_total} features you could express you knew
+  - key: thanks.share_on_twitter
+    t: Share on Twitter
+  - key: thanks.share_score_message
+    t: >
+      I got a {score} points knowledge score on this year’s #{hashtag} survey!
+      I have used {usage_count} features, and knew {awareness_count} more,
+      placing me in the top {rank}% of all respondents.
+      Can you beat my score? {shareUrl}
+
+  ##############################################################################
+  ##############################################################################
+  ##########################       RESULTS          ############################
+  ##############################################################################
+  ##############################################################################
+
+  - key: general.results.description
+    t: A survey about everything React Native
+
+  - key: blocks.newsletter.email
+    t: Your Email
+
+  - key: picks.intro
+    t: We asked members of the React Native community to share their opinions about the results
+
+  - key: sections.conclusion.title
+    t: Conclusion
+
+  - key: sections.about.title
+    t: About
+
+  ######################################################
+  #########             ABOUT                  #########
+  ######################################################
+
+  - key: about.content
+    t: >
+      The State of React Native survey is a grassroots initiative from [Bartłomiej Bukowski](https://x.com/bbarthec)
+      software engineer working at [Software Mansion](https://swmansion.com/).
+      The survey started on 9th December 2025 and run till 8th January 2026 gathering 3501 responses in total.
+
+      ### Goal
+
+      The goal of the State of React Native survey is to provide you with a resource
+      for comparing different aspects of React Native development to help you make better technical decisions.
+      The survey can be used as a resource to find alternatives in different categories of application development.
+      Keep in mind that these types of results should always be taken with a grain of salt,
+      as it's impossible to capture the state of the entire ecosystem.
+
+      ### Design
+
+      The survey was modelled and built on the foundations of [Devographics'](https://www.devographics.com/) [State of JavaScript](https://stateofjs.com/), [State of CSS](https://stateofcss.com/) and [State of React](https://stateofreact.com/) surveys.
+      Unlike the 1st and 2nd editions, where we used the same codebase, for the 3rd edition we've done a proper update
+      of the base framework to take advantage of the improvements the [Devographics team](https://www.devographics.com/)
+      has made over the years. A team of developers and a designer at [Software Mansion](https://swmansion.com/),
+      led by [Bartłomiej Bukowski](https://x.com/bbarthec), redesigned and adapted the survey framework to achieve
+      custom visuals and behaviours. The question set was designed based on [Software Mansion](https://swmansion.com/)'s
+      experience with the React Native ecosystem, with some help from external contributors.
+      We asked the community for input in a GitHub discussion, most of which was incorporated into the final survey.
+      All questions in the survey were optional.
+
+      ### Audience
+
+      The survey was open for everyone to participate and the responders weren't filtered or selected in any way.
+      We were thrilled to see the survey trending organically on X, Slack and Discord communities.
+      The survey was promoted through social media accounts and the [This Week in React](https://thisweekinreact.com/?utm_source=state_of_rn) newsletter.
+
+      ### Technical overview
+
+      This edition was built by forking the [framework code](https://github.com/Devographics/Monorepo)
+      from the [Devographics team](https://www.devographics.com/) in mid-2024.
+      From there, we've redesigned the visuals and made some minor changes to the behaviour
+      to give you software that's still very similar to the original surveys,
+      but with our own twist.
+
+      <br/>
+      <br/>
+
+      _Note: This is not an official React Native survey, and the survey team is not affiliated with Meta or the React Native team._
+
+  ######################################################
+  #########             COMMENTS               #########
+  ######################################################
+
+  - key: conclusion.rn2025.bartlomiej_bukowski.bio
+    t: Software Engineer at Software Mansion, Creator of the State of React Native survey
+  - key: conclusion.rn2025.bartlomiej_bukowski
+    t: >
+        React Native has continued to evolve significantly, establishing itself as a leading framework for cross-platform mobile app development.
+        Over the past year, the community has witnessed substantial advancements, particularly with [Expo emerging as the primary framework for
+        React Native](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps) development.
+        This shift has been accompanied by the integration of new architectural features, which are [now enabled by default](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture),
+        enhancing performance and developer experience. The introduction of [React (Native) Server Components](https://docs.expo.dev/guides/server-components/) has also marked a pivotal moment,
+        allowing developers to build more dynamic and efficient applications.
+        <br/>
+        <br/>
+        The rise of AI-driven tools has transformed how developers approach app creation, enabling them to focus more on product innovation rather than
+        technical complexities. This trend reflects a broader movement within the React Native community towards leveraging advanced technologies
+        to streamline development processes and enhance user experiences. Building a full-featured mobile app has never been faster.
+        <br/>
+        <br/>
+        Looking ahead, the momentum in React Native development tools is expected to accelerate further. Meta's commitment to improving the foundation
+        of React Native through initiatives like the [Chrome DevTools Protocol](https://reactnative.dev/docs/react-native-devtools) is paving the way for a new generation of development tools.
+        With Expo's recent releases, including dev plugins and [Atlas](https://expo.dev/blog/introducing-expo-atlas) for better code visibility, the framework is poised for continued growth.
+        As the community embraces these advancements, 2025 promises to be an exciting year for React Native developers, with enhanced capabilities
+        and a more robust ecosystem.
+
+
+  - key: cedric_van_putten_&_gabriel_donadel_comment_description
+    t: >
+      2024 was yet another big year for React Native. From Expo becoming the React Native Framework, the new architecture by default, to the React (Native) Server Components development preview.
+
+      This year, yarn v1 has finally been dethroned by npm overall usage, signaling that the React Native community is ready to move to modern package managers. This also clearly shows in the more-than-double usage compared to last year. Bun even scored the highest "well-received" vote, which should come as no surprise considering it's one of the fastest package managers currently out there.
+
+      After 10 years of React Native, we've seen developers build all kinds of apps. Now, AI-driven tools are accelerating this and enabling teams to ship higher-quality apps faster while shifting their focus from technical overhead to product creativity. There is a clear trend of companies investing to support React Native and Expo with AI, such as  Replit, Stackblitz, Google's Project IDX and we expect more and more developers to embrace it in one form or another in their daily basis.
+
+      Both Meta, Expo, and other community partners continue to invest in React Native dev tooling. Meta launched the CDP-based React Native DevTools, creating a foundation for the next generation of dev tools, like Radeon. Expo released <a target="_blank" href="https://docs.expo.dev/debugging/devtools-plugins/">dev plugins</a>, making it easy for library authors to ship specific debugging tools and helping users access, modify, and understand complex libraries like <a href="https://github.com/drizzle-team/drizzle-studio-expo" target="_blank">Drizzle</a>. Expo also launched Atlas this year to help build out RSC and tree-shaking, giving users complete visibility into how code is bundled in their apps and now Expo Orbit is available on all desktop platforms, simplifying the way developers install their apps and manage devices.
+
+      The momentum of React Native dev tools continues to speed up. With Meta focusing on the foundation through the Chrome Devtools Protocol, 2025 will be an even more exciting year for developers.
