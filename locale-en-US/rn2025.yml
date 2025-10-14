@@ -706,6 +706,7 @@ translations:
   #   t:
   #     What pain points have you encountered with state management in your React Native projects?
   #     If applicable, point out the specific solution and its problems.
+  # moved to REACT NATIVE ARCHITECTURE section
   # - key: state_management.state_management_app_architecture_pattern_local_first
   #   t: Local-first app architecture
   # - key: state_management.state_management_app_architecture_pattern_local_first.question
@@ -779,10 +780,11 @@ translations:
     t: Navigation pain points
   - key: navigation.navigation_pain_points.description
     t: What pain points have you encountered with navigation in your React Native projects? If applicable, point out the specific solution and its problems.
-  - key: navigation.navigation_app_architecture_pattern_file_based_routing
-    t: Filed-based routing pattern
-  - key: navigation.navigation_app_architecture_pattern_file_based_routing.question
-    t: Are you familiar with file-based routing architecture pattern?
+  # moved to REACT NATIVE ARCHITECTURE section
+  # - key: navigation.navigation_app_architecture_pattern_file_based_routing
+  #   t: Filed-based routing pattern
+  # - key: navigation.navigation_app_architecture_pattern_file_based_routing.question
+  #   t: Are you familiar with file-based routing architecture pattern?
 
   # results
 
@@ -791,13 +793,14 @@ translations:
   - key: navigation.navigation_experience
     t: Navigation experience & sentiment
 
-  - key: navigation.navigation_app_architecture_patterns_experience
-    t: Filed-based routing pattern
-  - key: navigation.navigation_app_architecture_patterns_experience.question
-    t: Are you familiar with file-based routing architecture pattern?
+  # moved to REACT NATIVE ARCHITECTURE section
+  # - key: navigation.navigation_app_architecture_patterns_experience
+  #   t: Filed-based routing pattern
+  # - key: navigation.navigation_app_architecture_patterns_experience.question
+  #   t: Are you familiar with file-based routing architecture pattern?
 
-  - key: navigation.navigation_app_architecture_patterns_ratios
-    t: Filed-based routing pattern
+  # - key: navigation.navigation_app_architecture_patterns_ratios
+  #   t: Filed-based routing pattern
 
   ######################################################
   #########              STYLING               #########
@@ -1172,12 +1175,43 @@ translations:
   - key: options.react_native_architecture_mobile_web_code_sharing.react_native_architecture_mobile_web_code_sharing_independent_projects
     t: No code sharing. Independent project for the web counterpart of my application.
 
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_file_based_routing
+    t: Filed-based routing pattern
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_file_based_routing.question
+    t: Are you familiar with file-based routing architecture pattern?
+
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_local_first
+    t: Local-first app architecture
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_local_first.question
+    t: Are you familiar with local-first app architecture pattern?
+
   # results
 
   - key: react_native_architecture.react_native_architecture_ratios
     t: React Native architecture ratios over time
   - key: react_native_architecture.react_native_architecture_experience
     t: React Native architecture experience & sentiment
+
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_file_based_routing_experience
+    t: Filed-based routing pattern
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_file_based_routing_experience.question
+    t: Are you familiar with file-based routing architecture pattern?
+
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_file_based_routing_ratios
+    t: Filed-based routing pattern
+
+  - key: react_native_architecture.react_native_architecture_app_architecture_patterns_experience
+    t: Local-first app architecture
+  - key: react_native_architecture.react_native_architecture_app_architecture_patterns_experience.question
+    t: Are you familiar with local-first app architecture pattern?
+
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_local_first_ratios
+    t: Local-first app architecture
+
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_local_first_experience
+    t: Local-first app architecture
+  - key: react_native_architecture.react_native_architecture_app_architecture_pattern_local_first_experience.question
+    t: Are you familiar with local-first app architecture pattern?
 
   ######################################################
   #########        BUILD AND PUBLISH           #########
