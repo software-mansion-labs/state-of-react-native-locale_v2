@@ -266,7 +266,7 @@ translations:
   ##############################################################################
 
   - key: general.rn2025.survey_intro
-    t: TODO add survey_intro text # TODO: add survey_intro text
+    t: "TODO: to be delivered"
   - key: general.start_survey
     t: Start Survey
   - key: general.continue_survey
