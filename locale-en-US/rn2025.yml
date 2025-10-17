@@ -998,12 +998,13 @@ translations:
   - key: testing_and_monitoring.testing_and_monitoring_testing.question
     t: What testing solutions do you use in your React Native apps?
 
-  - key: testing_and_monitoring.testing_and_monitoring_testing_others
-    t: Other testing solutions
-  - key: testing_and_monitoring.testing_and_monitoring_testing_others.question
-    t: Other testing solutions
-  - key: testing_and_monitoring.testing_and_monitoring_testing_others.description
-    t: What other solutions not mentioned above have you used in your React Native apps?
+  # removed to shorten the survey, these options were redundant with a previous question
+  # - key: testing_and_monitoring.testing_and_monitoring_testing_others
+  #   t: Other testing solutions
+  # - key: testing_and_monitoring.testing_and_monitoring_testing_others.question
+  #   t: Other testing solutions
+  # - key: testing_and_monitoring.testing_and_monitoring_testing_others.description
+  #   t: What other solutions not mentioned above have you used in your React Native apps?
 
   - key: testing_and_monitoring.testing_and_monitoring_analytics
     t: Analytics
