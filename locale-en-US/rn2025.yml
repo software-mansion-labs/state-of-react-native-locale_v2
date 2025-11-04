@@ -265,8 +265,8 @@ translations:
   ##############################################################################
   ##############################################################################
 
-  - key: general.rn2025.survey_intro
-    t: "TODO: to be delivered"
+  # - key: general.rn2025.survey_intro
+  #   t: "TODO: to be delivered"
   - key: general.start_survey
     t: Start Survey
   - key: general.continue_survey
@@ -1049,14 +1049,14 @@ translations:
   #   t: "0.71"
   # - key: options.react_native_architecture_version.react_native_architecture_version_0_72
   #   t: "0.72"
-  - key: options.react_native_architecture_version.react_native_architecture_version_0_72_or_lower
-    t: "0.72 or lower"
-  - key: options.react_native_architecture_version.react_native_architecture_version_0_73
-    t: "0.73"
-  - key: options.react_native_architecture_version.react_native_architecture_version_0_74
-    t: "0.74"
-  - key: options.react_native_architecture_version.react_native_architecture_version_0_75
-    t: "0.75"
+  # - key: options.react_native_architecture_version.react_native_architecture_version_0_72_or_lower
+  #   t: "0.72 or lower"
+  # - key: options.react_native_architecture_version.react_native_architecture_version_0_73
+  #   t: "0.73"
+  # - key: options.react_native_architecture_version.react_native_architecture_version_0_74
+  #   t: "0.74"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_75_or_lower
+    t: "0.75 or lower"
   - key: options.react_native_architecture_version.react_native_architecture_version_0_76
     t: "0.76"
   - key: options.react_native_architecture_version.react_native_architecture_version_0_77
@@ -1069,6 +1069,10 @@ translations:
     t: "0.80"
   - key: options.react_native_architecture_version.react_native_architecture_version_0_81
     t: "0.81"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_82
+    t: "0.82"
+  - key: options.react_native_architecture_version.react_native_architecture_version_0_83
+    t: "0.83"
   - key: options.react_native_architecture_version.react_native_architecture_version_next
     t: next / rc (release candidate)
   - key: options.react_native_architecture_version.react_native_architecture_version_nightly
@@ -1142,6 +1146,12 @@ translations:
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_both.short
     t: Both
 
+  - key: react_native_architecture.react_native_architecture_subheading_architectural_apis
+    t: Architectural APIs powering React Native
+
+  - key: react_native_architecture.react_native_architecture_subheading_application_architecture
+    t: Application architecture patterns
+
   - key: react_native_architecture.react_native_architecture_ota_updates
     t: Over-the-air updates
   - key: react_native_architecture.react_native_architecture_ota_updates.question
@@ -1150,14 +1160,6 @@ translations:
   - key: options.react_native_architecture_ota_updates.react_native_architecture_ota_updates_self_hosted
     t: Self-hosted
 
-  - key: react_native_architecture.react_native_architecture_nitro_modules.description
-    t: Have you started using Nitro Modules in your React Native projects?
-  - key: options.react_native_architecture_nitro_modules.react_native_architecture_nitro_modules_yes
-    t: Yes, they are fully implemented
-  - key: options.react_native_architecture_nitro_modules.react_native_architecture_nitro_modules_partial
-    t: Partially implemented
-  - key: options.react_native_architecture_nitro_modules.react_native_architecture_nitro_modules_no
-    t: No
 
   - key: react_native_architecture.react_native_architecture_framework_usage
     t: React Native frameworks
