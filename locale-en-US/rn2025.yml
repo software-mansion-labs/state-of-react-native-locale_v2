@@ -380,16 +380,16 @@ translations:
     t: As a hobby
 
   # Desktop OS
-  - key: developer_background.developer_background_primarily_system
+  - key: developer_background.developer_background_desktop_os
     t: Desktop OS
-  - key: developer_background.developer_background_primarily_system.question
-    t: What desktop OS do you primarily use?
+  - key: developer_background.developer_background_desktop_os.question
+    t: Which desktop OS do you use for React Native development? 
 
-  - key: options.developer_background_primarily_system.developer_background_primarily_system_macos
+  - key: options.developer_background_desktop_os.developer_background_desktop_os_macos
     t: macOS
-  - key: options.developer_background_primarily_system.developer_background_primarily_system_linux
+  - key: options.developer_background_desktop_os.developer_background_desktop_os_linux
     t: Linux
-  - key: options.developer_background_primarily_system.developer_background_primarily_system_windows
+  - key: options.developer_background_desktop_os.developer_background_desktop_os_windows
     t: Windows
 
   # Top React Native App User Count
@@ -417,11 +417,11 @@ translations:
 
   # Mobile App Team Size
   - key: developer_background.developer_background_team_size
-    t: Mobile app team size
+    t: React Native app team size
   - key: developer_background.developer_background_team_size.question
-    t: What is your mobile app team size?
+    t: What is the size of your app team?
   - key: developer_background.developer_background_team_size.description
-    t: What was the average size of your mobile team last year?
+    t: What was the average size of your React Native app team in the last year?
 
   - key: options.developer_background_team_size.developer_background_team_size_solo
     t: Solo developer
@@ -439,6 +439,8 @@ translations:
     t: Target platforms
   - key: developer_background.developer_background_target_platforms.question
     t: Which platforms do you target with React Native?
+  - key: developer_background.developer_background_target_platforms.description
+    t: Over the past year, which platforms did you target when building React Native apps?
 
   - key: options.developer_background_target_platforms.developer_background_target_platforms_ios
     t: iOS
@@ -767,7 +769,7 @@ translations:
   - key: sections.navigation.title
     t: Navigation
   - key: sections.navigation.description
-    t: What navigation solutions do you use in your React Native apps?
+    t: What navigation solutions have you used in your React Native apps in the last year?
   - key: navigation.navigation_others.question
     t: Other navigation solutions
   - key: navigation.navigation_others.description
@@ -808,7 +810,7 @@ translations:
   - key: sections.styling.title
     t: Styling
   - key: sections.styling.description
-    t: What styling techniques do you use in your React Native apps?
+    t: What styling techniques have you used in your React Native apps in the last year?
 
   - key: styling.intro_message
     t: |
@@ -845,7 +847,7 @@ translations:
   - key: sections.animations.title
     t: Graphics and animations
   - key: sections.animations.description
-    t: What graphics and animations solutions do you use in your React Native apps?
+    t: What graphics and animations solutions have you used in your React Native apps in the last year?
   - key: animations.animations_other.question
     t: Other animations solutions
   - key: animations.animations_other.description
@@ -919,18 +921,15 @@ translations:
   - key: sections.debugging_and_profiling.description
     t: What tools do you use to debug and profile your React Native apps?
 
-  - key: debugging_and_profiling.debugging_and_profiling_subheading_clients_and_tools
-    t: Debugging clients and tools
+  - key: debugging_and_profiling.debugging_and_profiling_clients_and_tools
+    t: Tools
+  - key: debugging_and_profiling.debugging_and_profiling_clients_and_tools.question
+    t: Which debugging and profiling tools do you use?
 
-  - key: debugging_and_profiling.debugging_and_profiling_subheading_features
-    t: Debugging features
-
-  - key: debugging_and_profiling.debugging_profiling_others
-    t: Other solutions
-  - key: debugging_and_profiling.debugging_profiling_others.question
-    t: Other debugging and profiling solutions
-  - key: debugging_and_profiling.debugging_profiling_others.description
-    t: What other solutions not mentioned above have you used in your React Native apps?
+  - key: debugging_and_profiling.debugging_profiling_features
+    t: Features
+  - key: debugging_and_profiling.debugging_profiling_features.question
+    t: Which debugging and profiling features do you use?
 
   # removed to shorten the survey, as it provided low-value data
   # - key: debugging_and_profiling.debugging_profiling_intent
@@ -1146,11 +1145,11 @@ translations:
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_both.short
     t: Both
 
-  - key: react_native_architecture.react_native_architecture_subheading_architectural_apis
-    t: Architectural APIs powering React Native
 
-  - key: react_native_architecture.react_native_architecture_subheading_application_architecture
-    t: Application architecture patterns
+  - key: react_native_architecture.react_native_architecture_platform_specific_apis
+    t: Platform-specific APIs
+  - key: react_native_architecture.react_native_architecture_platform_specific_apis.question
+    t: Which React Native APIs have you used in the last year?
 
   - key: react_native_architecture.react_native_architecture_ota_updates
     t: Over-the-air updates
@@ -1326,6 +1325,11 @@ translations:
     t: Other development tools
   - key: dev_tools.dev_tools_other_tools.description
     t: What other dev tools not mentioned above have you used for your React Native projects?
+
+  - key: dev_tools.dev_tools_development_tools
+    t: Development tools
+  - key: dev_tools.dev_tools_development_tools.question
+    t: Which tools have you used in the past year in your React Native projects?
 
   # results
 
