@@ -795,6 +795,8 @@ translations:
   # email_temporary (receive updates?)
   - key: options.receive_notifications.yes
     t: Yes, email me when the results or the next survey are published.
+  - key: options.receive_notifications.yes_swmansion
+    t: I want to receive Software Mansion monthly newsletter with updates on React Native, AI, and multimedia. You can unsubscribe anytime. See our <a target="_blank" href="https://swmansion.com/privacy">Privacy Policy</a> for details.
 
   # usage type
 

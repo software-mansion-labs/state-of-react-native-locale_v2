@@ -49,7 +49,7 @@ translations:
   - key: newsletter.stay_tuned
     t: Don't Miss the Next Survey
   - key: newsletter.leave_your_email
-    t: Leave your e-mail address, and we'll keep you up to date with the developments of the next year's survey.
+    t: Leave your e-mail address, and we'll let you know when the survey results are published.
   - key: newsletter.email
     t: Your Email
   - key: newsletter.submit
