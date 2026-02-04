@@ -1175,6 +1175,22 @@ translations:
     t: |
       Video creator #{index}…
 
+  # react native directory (short versions)
+  - key: options.resources_react_native_directory.never_heard.short
+    t: Never heard about
+  - key: options.resources_react_native_directory.heard.short
+    t: Heard about
+  - key: options.resources_react_native_directory.used.short
+    t: Used
+
+  # react native directory
+  - key: options.resources_react_native_directory.never_heard
+    t: Never heard about it
+  - key: options.resources_react_native_directory.heard
+    t: Heard about it
+  - key: options.resources_react_native_directory.used
+    t: Used it
+
   ###########################################################################
   # Follow-Up Questions
   ###########################################################################
