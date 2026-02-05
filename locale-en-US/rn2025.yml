@@ -383,7 +383,7 @@ translations:
   - key: developer_background.developer_background_desktop_os
     t: Desktop OS
   - key: developer_background.developer_background_desktop_os.question
-    t: Which desktop OS do you use for React Native development? 
+    t: Which desktop OS do you use for React Native development?
 
   - key: options.developer_background_desktop_os.developer_background_desktop_os_macos
     t: macOS
@@ -631,9 +631,9 @@ translations:
   - key: options.developer_background_industry_sector.developer_background_industry_sector_parenting_kids
     t: Parenting and Kids
 
-######################################################
-#########                Results               #########
-######################################################
+  ######################################################
+  #########                Results               #########
+  ######################################################
 
   - key: tools.all_tools_experience
     t: Libraries experience & sentiment
@@ -713,7 +713,6 @@ translations:
   #   t: Local-first app architecture
   # - key: state_management.state_management_app_architecture_pattern_local_first.question
   #   t: Are you familiar with local-first app architecture pattern?
-
 
   # # results
 
@@ -866,11 +865,7 @@ translations:
     t: Animations ratios over time
   - key: animations.animations_ratios.results_note
     t: >
-      The stable version of Reanimated 4 has been released. It brings long-awaited support for CSS Animations and Transitions, making it easier to create high-performance animations.
-
-      The new features build on the existing worklet-based APIs, offering an intuitive approach while staying compatible with Reanimated 3. If your app uses the New Architecture, you can explore the beta version and see how it streamlines your animation workflow.
-
-      For a deeper dive into what’s new, check out the <a target="_blank" href="https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40">announcement blog post</a>.
+      TBD
   - key: animations.animations_experience
     t: Animations experience & sentiment
 
@@ -979,9 +974,7 @@ translations:
 
   - key: debugging_and_profiling.debugging_profiling_pain_points.results_note
     t: |
-      <a href="https://ide.swmansion.com/" target="_blank">Radon IDE</a> is a new VSCode and Cursor extension that simplifies debugging and streamlines React Native development. It turns your editor into a fully-fledged IDE, eliminating context switching and automatically pausing runtime errors.
-      Radon IDE allows you to add breakpoints in VSCode to easily debug your React Native app. Its click-to-inspect feature makes it possible to quickly jump directly from preview to a file where your component is defined, while the integrated log panel helps to pinpoint issues effortlessly by showing logs directly in the VSCode console.
-      Try Radon IDE for free <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=swmansion.react-native-ide">here</a>.
+      TBD
 
   ######################################################
   #########        TESTING AND MONITORING      #########
@@ -1110,10 +1103,7 @@ translations:
     t: Not planned
   - key: react_native_architecture.react_native_architecture_new_architecture_migration.results_note
     t: |
-      React Native 0.76+ defaults to the New Architecture, which may be challenging to navigate. On the Software Mansion blog, you can find insights on handling common New Architecture challenges like view flattening, view recycling, custom shadow nodes, and more.
-      Read <a target="_blank" href="https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-1-2-bb0c16950f2d">part 1</a>
-      Read <a target="_blank" href="https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-2-2-ac5f2adf22ec">part 2</a>
-      P.S. If you need help adopting the new architecture in your app, <a target="_blank" href="https://swmansion.com/contact/projects">contact us</a>. We have already ported 25+ libraries, migrated several apps for clients, and contributed 30+ fixes to React Native core for issues related to the new arch.
+      TBD
 
   - key: react_native_features.brownfield
     t: Do you integrate React Native with applications written using other technology?
@@ -1128,10 +1118,7 @@ translations:
     t: What type of React Native project are you working on?
   - key: react_native_architecture.react_native_architecture_brownfield.results_note
     t: |
-      Brownfield integration comes with its challenges. If you are looking for resources on how to successfully integrate React Native into an iOS or Android app, Software Mansion has put together a miniguide to walk you through the process:
-      Read <a target="_blank" href="https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-1-ios-ffb61819031e">part 1 (iOS)</a>
-      Read <a target="_blank" href="https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-2-android-803c1b726582">part 2 (Android)</a>
-      If you prefer a video format, you can also view <a target="_blank" href="https://www.youtube.com/watch?v=mOg29UnIMMA">the talk on brownfield integration</a> from App.js Conf 2024
+      TBD
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green
     t: I mainly work on standalone React Native apps (greenfield)
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green.short
@@ -1145,7 +1132,6 @@ translations:
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_both.short
     t: Both
 
-
   - key: react_native_architecture.react_native_architecture_platform_specific_apis
     t: Platform-specific APIs
   - key: react_native_architecture.react_native_architecture_platform_specific_apis.question
@@ -1158,7 +1144,6 @@ translations:
 
   - key: options.react_native_architecture_ota_updates.react_native_architecture_ota_updates_self_hosted
     t: Self-hosted
-
 
   - key: react_native_architecture.react_native_architecture_framework_usage
     t: React Native frameworks
@@ -1360,7 +1345,6 @@ translations:
   # - key: react_native_alternatives.react_native_alternatives_experience
   #   t: Cross-platform frameworks experience & sentiment
 
-
   ######################################################
   #                    Resources                       #
   ######################################################
@@ -1440,12 +1424,12 @@ translations:
   # results
 
   # removed as it provided low value data
-  # - key: resources.resources_experience
-  #   t: React Native Directory
+  - key: resources.resources_experience
+    t: React Native Directory
 
   # removed as it provided low value data
-  # - key: resources.resources_ratios
-  #   t: React Native Directory
+  - key: resources.resources_ratios
+    t: React Native Directory
 
   ######################################################
   #                    Opinions                        #
@@ -1634,9 +1618,7 @@ translations:
     t: How long have you been working as a programmer or studying programming?
   - key: user_info.years_of_experience.results_note
     t: |
-      App.js Conf is the biggest React Native and Expo-focused conference, where you can meet the creators and contributors to React Native and Expo, share ideas, connect with the community, and shape the future of app development.
-      This year’s edition will take place on 27-29 May in Kraków, Poland. It’s the perfect opportunity to level up your React Native skills through hands-on workshops on Reanimated, brownfield integrations, 3d graphics, performance optimization, and more.
-      <a target="_blank" href="https://appjs.co/">Visit the website</a> to learn the details and grab your tickets!
+      TBD
 
   - key: user_info.years_of_experience_rn
     t: RN Experience
@@ -1799,34 +1781,8 @@ translations:
     t: Software Engineer at Software Mansion, Creator of the State of React Native survey
   - key: conclusion.rn2025.bartlomiej_bukowski
     t: >
-        React Native has continued to evolve significantly, establishing itself as a leading framework for cross-platform mobile app development.
-        Over the past year, the community has witnessed substantial advancements, particularly with [Expo emerging as the primary framework for
-        React Native](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps) development.
-        This shift has been accompanied by the integration of new architectural features, which are [now enabled by default](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture),
-        enhancing performance and developer experience. The introduction of [React (Native) Server Components](https://docs.expo.dev/guides/server-components/) has also marked a pivotal moment,
-        allowing developers to build more dynamic and efficient applications.
-        <br/>
-        <br/>
-        The rise of AI-driven tools has transformed how developers approach app creation, enabling them to focus more on product innovation rather than
-        technical complexities. This trend reflects a broader movement within the React Native community towards leveraging advanced technologies
-        to streamline development processes and enhance user experiences. Building a full-featured mobile app has never been faster.
-        <br/>
-        <br/>
-        Looking ahead, the momentum in React Native development tools is expected to accelerate further. Meta's commitment to improving the foundation
-        of React Native through initiatives like the [Chrome DevTools Protocol](https://reactnative.dev/docs/react-native-devtools) is paving the way for a new generation of development tools.
-        With Expo's recent releases, including dev plugins and [Atlas](https://expo.dev/blog/introducing-expo-atlas) for better code visibility, the framework is poised for continued growth.
-        As the community embraces these advancements, 2025 promises to be an exciting year for React Native developers, with enhanced capabilities
-        and a more robust ecosystem.
-
+      TBD
 
   - key: cedric_van_putten_&_gabriel_donadel_comment_description
     t: >
-      2024 was yet another big year for React Native. From Expo becoming the React Native Framework, the new architecture by default, to the React (Native) Server Components development preview.
-
-      This year, yarn v1 has finally been dethroned by npm overall usage, signaling that the React Native community is ready to move to modern package managers. This also clearly shows in the more-than-double usage compared to last year. Bun even scored the highest "well-received" vote, which should come as no surprise considering it's one of the fastest package managers currently out there.
-
-      After 10 years of React Native, we've seen developers build all kinds of apps. Now, AI-driven tools are accelerating this and enabling teams to ship higher-quality apps faster while shifting their focus from technical overhead to product creativity. There is a clear trend of companies investing to support React Native and Expo with AI, such as  Replit, Stackblitz, Google's Project IDX and we expect more and more developers to embrace it in one form or another in their daily basis.
-
-      Both Meta, Expo, and other community partners continue to invest in React Native dev tooling. Meta launched the CDP-based React Native DevTools, creating a foundation for the next generation of dev tools, like Radeon. Expo released <a target="_blank" href="https://docs.expo.dev/debugging/devtools-plugins/">dev plugins</a>, making it easy for library authors to ship specific debugging tools and helping users access, modify, and understand complex libraries like <a href="https://github.com/drizzle-team/drizzle-studio-expo" target="_blank">Drizzle</a>. Expo also launched Atlas this year to help build out RSC and tree-shaking, giving users complete visibility into how code is bundled in their apps and now Expo Orbit is available on all desktop platforms, simplifying the way developers install their apps and manage devices.
-
-      The momentum of React Native dev tools continues to speed up. With Meta focusing on the foundation through the Chrome Devtools Protocol, 2025 will be an even more exciting year for developers.
+      TBD
