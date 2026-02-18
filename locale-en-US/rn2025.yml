@@ -1777,12 +1777,8 @@ translations:
   #########             COMMENTS               #########
   ######################################################
 
-  - key: conclusion.rn2025.bartlomiej_bukowski.bio
-    t: Software Engineer at Software Mansion, Creator of the State of React Native survey
-  - key: conclusion.rn2025.bartlomiej_bukowski
-    t: >
-      TBD
-
-  - key: cedric_van_putten_&_gabriel_donadel_comment_description
+  - key: conclusion.rn2025.aleksander_mikucki.bio
+    t: Staff Engineer at Software Mansion
+  - key: conclusion.rn2025.aleksander_mikucki
     t: >
       TBD
