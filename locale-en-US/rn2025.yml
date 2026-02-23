@@ -863,9 +863,9 @@ translations:
   # Results
   - key: animations.animations_ratios
     t: Animations ratios over time
-  - key: animations.animations_ratios.results_note
-    t: >
-      TBD
+  # - key: animations.animations_ratios.results_note
+  #   t: >
+  #     TBD
   - key: animations.animations_experience
     t: Animations experience & sentiment
 
@@ -972,9 +972,9 @@ translations:
   - key: debugging_and_profiling.debugging_and_profiling_experience
     t: Debugging and profiling experience & sentiment
 
-  - key: debugging_and_profiling.debugging_profiling_pain_points.results_note
-    t: |
-      TBD
+  # - key: debugging_and_profiling.debugging_profiling_pain_points.results_note
+  #   t: |
+  #     TBD
 
   ######################################################
   #########        TESTING AND MONITORING      #########
@@ -1101,9 +1101,9 @@ translations:
     t: Planned for future
   - key: options.react_native_architecture_new_architecture_migration.react_native_architecture_new_arch_migration_not_planned
     t: Not planned
-  - key: react_native_architecture.react_native_architecture_new_architecture_migration.results_note
-    t: |
-      TBD
+  # - key: react_native_architecture.react_native_architecture_new_architecture_migration.results_note
+  #   t: |
+  #     TBD
 
   - key: react_native_features.brownfield
     t: Do you integrate React Native with applications written using other technology?
@@ -1116,9 +1116,9 @@ translations:
     t: Greenfield vs brownfield
   - key: react_native_architecture.react_native_architecture_brownfield.question
     t: What type of React Native project are you working on?
-  - key: react_native_architecture.react_native_architecture_brownfield.results_note
-    t: |
-      TBD
+  # - key: react_native_architecture.react_native_architecture_brownfield.results_note
+  #   t: |
+  #     TBD
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green
     t: I mainly work on standalone React Native apps (greenfield)
   - key: options.react_native_architecture_brownfield.react_native_architecture_brownfield_green.short
@@ -1616,9 +1616,9 @@ translations:
     t: Years of Experience
   - key: user_info.years_of_experience.question
     t: How long have you been working as a programmer or studying programming?
-  - key: user_info.years_of_experience.results_note
-    t: |
-      TBD
+  # - key: user_info.years_of_experience.results_note
+  #   t: |
+  #     TBD
 
   - key: user_info.years_of_experience_rn
     t: RN Experience
