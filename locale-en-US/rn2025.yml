@@ -1783,15 +1783,21 @@ translations:
     t: |
       2025 was a busy year for React Native devs. 
       <br/>
+      <br/>
       New architecture adoption, embracing native UIs and a constant barrage of other improvements made it sometimes hard to keep up, but it resulted in a collective shift into one of the most future-proof mobile frameworks out there, and is reflected in an overwhelming positive sentiment in the changes and the framework itself (88% agree or strongly agree that React Native is moving in the right direction).
       <br/>
+      <br/>
       Wider industry trends are clearly visible as well, with both very high TypeScriptTtypescript adoption and an evenr larger percentage of code written with AI tools. It’s clearly shaping upout to be a major talking point for our community next year, hopefully with many new innovations and workflow improvements.
+      <br/>
       <br/>
       Some results are perhaps predictable – like relative newcomers like Expo Router and the new debugging tools climbing in adoption, or alternative package managers (such as pnpm or bun) picking up popularity due to better support. 
       Others are unexpected and impressive – I was surprised by the percentage of the largest apps (with the user base of more than 1 millionmln) growing 3% Y2Y in our breakdown. 
       <br/>
+      <br/>
       I’m also incredibly happy about the support for web APIs, such as styling using modern CSS properties, becoming more commonplace. It’s a gamechanger to make React Native easier to use, for humans and agents alike.
       <br/>
+      <br/>
       As always, thanks to all of you whothat shared and submitted the survey, and if you decide to share these results as well.
+      <br/>
       <br/>
       Overall, another great year for React Native – here’s to many more!
